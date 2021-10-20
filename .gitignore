@@ -1,0 +1,16 @@
+node_modules
+
+# CDK asset staging directory
+.cdk.staging
+cdk.out
+
+# Parcel build directories
+.parcel-cache
+.cache
+.build
+
+# Eleventy output directory
+_site
+
+# Parcel output directory
+dist

@@ -1,0 +1,51 @@
+{
+  "name": "mvsp",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "rm -rf _site dist && yarn run eleventy && yarn run parcel build '_site/**/*.html'",
+    "11ty:watch": "eleventy --watch",
+    "parcel:watch": "parcel watch '_site/**/*.html'",
+    "serve": "sirv dist --dev",
+    "dev": "run-p -l 11ty:watch parcel:watch serve",
+    "test": "jest",
+    "cdk": "cdk",
+    "deploy": "yarn build && yarn cdk deploy \"MvspDev*\""
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "8.10.76",
+    "@types/jest": "26.0.23",
+    "@types/node": "15.3.0",
+    "@typescript-eslint/eslint-plugin": "4.24.0",
+    "@typescript-eslint/parser": "4.24.0",
+    "esbuild": "0",
+    "eslint": "7.26.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-jest": "24.3.6",
+    "eslint-plugin-prettier": "3.4.0",
+    "jest": "26.6.3",
+    "prettier": "2.3.0",
+    "sirv-cli": "1.0.12",
+    "source-map-support": "0.5.19",
+    "ts-jest": "26.5.6",
+    "ts-node": "9.1.1",
+    "typescript": "4.2.4"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "0.12.1",
+    "@aws-cdk/assert": "2.0.0-rc.21",
+    "@parcel/packager-raw-url": "2.0.0-beta.3.1",
+    "@parcel/transformer-webmanifest": "2.0.0-beta.3.1",
+    "@tailwindcss/typography": "0.4.1",
+    "asciidoctor": "2.2.4",
+    "autoprefixer": "10.2.5",
+    "aws-cdk": "2.0.0-rc.21",
+    "aws-cdk-lib": "2.0.0-rc.21",
+    "constructs": "10.0.0",
+    "npm-run-all": "4.1.5",
+    "parcel": "2.0.0-beta.3.1",
+    "postcss": "8.2.15",
+    "postcss-import": "14.0.2",
+    "postcss-nested": "5.0.5",
+    "tailwindcss": "2.1.2"
+  }
+}

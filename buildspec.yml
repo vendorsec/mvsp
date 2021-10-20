@@ -1,0 +1,34 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - yarn install --production=true
+  build:
+    commands:
+      - yarn run build
+      - cd dist
+      - OLDNAME=`ls -1 index.*.css` NEWNAME="index.`sha256sum $OLDNAME | cut -c57-64`.css" 
+      - 'echo "was: $OLDNAME; now: $NEWNAME"'
+      - find . -name "*.html" -exec sed -i "s/$OLDNAME/$NEWNAME/" {} +
+      - mv $OLDNAME $NEWNAME
+      - mkdir assets
+      - find . -maxdepth 1 -type f -not -name '*.html' -exec mv -t assets {} +
+
+artifacts:
+  secondary-artifacts:
+    ImmutableAssets:
+      files:
+        - '**/*'
+      base-directory: 'dist/assets'
+      name: ImmutableAssets
+    NotCachedAssets:
+      files:
+        - '**/*.html'
+      base-directory: 'dist'
+      name: NotCachedAssets
+
+cache:
+  paths:
+    - 'node_modules/**/*'
+    - '/usr/local/share/.cache/yarn/v6'

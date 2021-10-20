@@ -1,0 +1,21 @@
+env:
+  es2020: true
+  node: true
+extends:
+  - 'eslint:recommended'
+  - 'plugin:@typescript-eslint/recommended'
+  - 'prettier'
+  - 'prettier/@typescript-eslint'
+  - 'plugin:jest/recommended'
+globals:
+  Atomics: readonly
+  SharedArrayBuffer: readonly
+parser: '@typescript-eslint/parser'
+parserOptions:
+  sourceType: module
+plugins:
+  - '@typescript-eslint'
+  - prettier
+  - jest
+rules:
+  'prettier/prettier': error

@@ -1,0 +1,21 @@
+env:
+  es2020: true
+  node: true
+extends:
+  - 'eslint:recommended'
+  - 'prettier'
+globals:
+  Atomics: readonly
+  SharedArrayBuffer: readonly
+plugins:
+  - prettier
+rules:
+  'prettier/prettier': error
+ignorePatterns:
+  - node_modules/
+  - dist/
+  - cdk.out
+  - .yarn
+  - .vscode
+  - '!.eleventy.js'
+  - .cache/
