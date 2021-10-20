@@ -87,7 +87,7 @@ h| Description
   Example: ORM for database access, UI framework for rendering DOM
 
 | 2.6 Patching
-| Apply security patches with a severity score of "medium" or higher, or ensure equivalent mitigations are available for all components of the application stack within one month of patch release
+| Apply security patches with a severity score of "medium" or higher, or ensure equivalent mitigations are available for all components of the application stack within one month of the patch release
 
 | 2.7 Logging
 | Keep logs of:
