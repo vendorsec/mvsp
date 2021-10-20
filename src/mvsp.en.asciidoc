@@ -38,7 +38,7 @@ h| Description
 
 | 1.6 Compliance
 | * Comply with all industry security standards relevant to your business such as PCI DSS, HITRUST, ISO27001, and SSAE 18
-* Comply with local laws and regulations in your company and your customers' jurisdictions such as GDPR, customers' Binding Corporate Rules, and Standard Contractual Clauses
+* Comply with local laws and regulations in jurisdictions applicable to your company and your customers, such as GDPR, Binding Corporate Rules, and Standard Contractual Clauses
 
 | 1.7 Incident handling
 | * Notify your customers about a breach without undue delay, no later than 72 hours upon discovery
