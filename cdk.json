@@ -1,3 +1,0 @@
-{
-  "app": "yarn ts-node aws/deploy.ts"
-}

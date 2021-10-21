@@ -30,5 +30,5 @@ artifacts:
 
 cache:
   paths:
-    - 'node_modules/**/*'
-    - '/usr/local/share/.cache/yarn/v6'
+    - 'node_modules/'
+    - '/usr/local/share/.cache/yarn/v6/'

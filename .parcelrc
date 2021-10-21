@@ -1,0 +1,5 @@
+{
+  "extends": "@parcel/config-default",
+  "resolvers": ["...", "@mvsp/parcel-resolver-mvsp"],
+  "namers": ["@mvsp/parcel-namer-mvsp", "..."]
+}

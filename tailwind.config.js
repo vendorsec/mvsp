@@ -1,5 +1,6 @@
 module.exports = {
-  purge: false,
+  jit: true,
+  purge: ['./src/**/*.*'],
   theme: {
     fontFamily: {
       sans: ['Open Sans', 'DejaVu Sans', 'sans-serif'],

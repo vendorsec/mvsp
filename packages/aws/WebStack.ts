@@ -7,7 +7,6 @@ import {
   aws_route53_targets as targets,
   aws_cloudfront as cloudfront,
   aws_cloudfront_origins as origins,
-  aws_lambda_nodejs as lambda,
 } from 'aws-cdk-lib'
 
 interface WebStackProps extends StackProps {
@@ -31,13 +30,13 @@ export class WebStack extends Stack {
 
     const headersFunction = new cloudfront.Function(this, 'ResponseFunction', {
       code: cloudfront.FunctionCode.fromFile({
-        filePath: './aws/functions/response.js',
+        filePath: './functions/response.js',
       }),
     })
 
     const uriFunction = new cloudfront.Function(this, 'RequestFunction', {
       code: cloudfront.FunctionCode.fromFile({
-        filePath: './aws/functions/request.js',
+        filePath: './functions/request.js',
       }),
     })
 

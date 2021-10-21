@@ -1,6 +1,7 @@
 {
   "name": "mvsp",
   "version": "0.1.0",
+  "private": true,
   "scripts": {
     "build": "rm -rf _site dist && yarn run eleventy && yarn run parcel build '_site/**/*.html'",
     "11ty:watch": "eleventy --watch",
@@ -32,20 +33,23 @@
   },
   "dependencies": {
     "@11ty/eleventy": "0.12.1",
-    "@aws-cdk/assert": "2.0.0-rc.21",
-    "@parcel/packager-raw-url": "2.0.0-beta.3.1",
-    "@parcel/transformer-webmanifest": "2.0.0-beta.3.1",
+    "@aws-cdk/assert": "2.0.0-rc.24",
+    "@parcel/packager-raw-url": "2.0.0",
+    "@parcel/transformer-webmanifest": "2.0.0",
     "@tailwindcss/typography": "0.4.1",
     "asciidoctor": "2.2.4",
     "autoprefixer": "10.2.5",
-    "aws-cdk": "2.0.0-rc.21",
-    "aws-cdk-lib": "2.0.0-rc.21",
+    "aws-cdk": "2.0.0-rc.24",
+    "aws-cdk-lib": "2.0.0-rc.24",
     "constructs": "10.0.0",
     "npm-run-all": "4.1.5",
-    "parcel": "2.0.0-beta.3.1",
+    "parcel": "2.0.0",
     "postcss": "8.2.15",
     "postcss-import": "14.0.2",
     "postcss-nested": "5.0.5",
     "tailwindcss": "2.1.2"
-  }
+  },
+  "workspaces": [
+    "packages/*"
+  ]
 }
