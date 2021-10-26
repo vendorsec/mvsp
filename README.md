@@ -10,7 +10,7 @@ Universal baseline for vendor selection simplifies the jobs of the sourcing team
 
 ### Self-assessment
 
-Smaller companies that are not mature enough to afford large compliance efforts such as SOC 2 or PCI DSS use MVSP as the baseline ensuring the security posture of their MVP.
+Smaller companies that are not mature enough to afford large compliance efforts such as SOC 2 or PCI DSS use MVSP as the baseline for the security posture of their MVP.
 
 ### Third-party security
 
