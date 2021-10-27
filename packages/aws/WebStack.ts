@@ -20,8 +20,6 @@ export class WebStack extends Stack {
     super(scope, id, props)
 
     this.websiteBucket = new s3.Bucket(this, 'WebsiteBucket')
-    this.websiteBucket.grantPublicAccess()
-
     const certificate = new acm.Certificate(this, 'WebsiteCertificate', {
       domainName: props.aliases[0],
       subjectAlternativeNames: props.aliases.slice(1),
