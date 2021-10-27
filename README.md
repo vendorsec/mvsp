@@ -28,7 +28,7 @@ As a vendor you may be asked if you are able to comply with the MVSP baseline. A
 
 MVSP is designed to be simple, understandable and minimalistic. It must be considered that the goal is **not** to become another complex standard. Before sending a PULL request contributors should always ask themselves the question: _Could I consider a vendor secure if they did not comply with the control I am adding?_ If the answer is yes, then the control should not be there.
 
-For more information, see [Contributing](CONTRIBUTING.md)
+For more information, see [Contributing](src/contributing.md)
 
 ## License
 
