@@ -69,7 +69,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["postcss-nested", "virtual:a78f548ec3c40b61d2fcc0d731d5128d49977bff2d4769457d6172e3594cd17576a8afdbd31bfd786ac98fc54c40a900e51321c7b9393a636947326809f326fc#npm:5.0.6"],
             ["prettier", "npm:2.4.1"],
             ["sirv-cli", "npm:1.0.14"],
-            ["tailwindcss", "virtual:a78f548ec3c40b61d2fcc0d731d5128d49977bff2d4769457d6172e3594cd17576a8afdbd31bfd786ac98fc54c40a900e51321c7b9393a636947326809f326fc#npm:2.2.17"]
+            ["tailwindcss", "virtual:a78f548ec3c40b61d2fcc0d731d5128d49977bff2d4769457d6172e3594cd17576a8afdbd31bfd786ac98fc54c40a900e51321c7b9393a636947326809f326fc#npm:2.2.17"],
+            ["typescript", "patch:typescript@npm%3A4.2.4#~builtin<compat/typescript>::version=4.2.4&hash=ddd1e8"]
           ],
           "linkType": "SOFT",
         }]
@@ -11246,7 +11247,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["postcss-nested", "virtual:a78f548ec3c40b61d2fcc0d731d5128d49977bff2d4769457d6172e3594cd17576a8afdbd31bfd786ac98fc54c40a900e51321c7b9393a636947326809f326fc#npm:5.0.6"],
             ["prettier", "npm:2.4.1"],
             ["sirv-cli", "npm:1.0.14"],
-            ["tailwindcss", "virtual:a78f548ec3c40b61d2fcc0d731d5128d49977bff2d4769457d6172e3594cd17576a8afdbd31bfd786ac98fc54c40a900e51321c7b9393a636947326809f326fc#npm:2.2.17"]
+            ["tailwindcss", "virtual:a78f548ec3c40b61d2fcc0d731d5128d49977bff2d4769457d6172e3594cd17576a8afdbd31bfd786ac98fc54c40a900e51321c7b9393a636947326809f326fc#npm:2.2.17"],
+            ["typescript", "patch:typescript@npm%3A4.2.4#~builtin<compat/typescript>::version=4.2.4&hash=ddd1e8"]
           ],
           "linkType": "SOFT",
         }]
