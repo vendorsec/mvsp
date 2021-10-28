@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     commands:
-      - yarn install --production=true
+      - yarn install --immutable
   build:
     commands:
       - yarn run build
@@ -25,10 +25,6 @@ artifacts:
     NotCachedAssets:
       files:
         - '**/*.html'
+        - '**/site.webmanifest'
       base-directory: 'dist'
       name: NotCachedAssets
-
-cache:
-  paths:
-    - 'node_modules/'
-    - '/usr/local/share/.cache/yarn/v6/'
