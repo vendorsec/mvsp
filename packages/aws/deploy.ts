@@ -32,7 +32,7 @@ const tokenStack = new TokensStack(app, 'MvspDevGitHubToken', {
 new CICDStack(app, 'MvspDevCICDStack', {
   codeBuildImage: 'public.ecr.aws/bitnami/node:14',
   github: {
-    owner: 'sfdc-entsec',
+    owner: 'vendorsec',
     repo: 'mvsp',
     branch: 'master',
     secret: tokenStack.githubSecret,
