@@ -22,7 +22,7 @@
     "typescript": "4.4.4"
   },
   "dependencies": {
-    "@11ty/eleventy": "0.12.1",
+    "@11ty/eleventy": "1.0.0-beta.4",
     "@mvsp/parcel-namer-mvsp": "workspace:*",
     "@mvsp/parcel-resolver-mvsp": "workspace:*",
     "@parcel/config-default": "2.0.1",
