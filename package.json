@@ -10,32 +10,33 @@
     "dev": "run-p -l 11ty:watch parcel:watch serve",
     "test": "jest",
     "cdk": "cdk",
-    "deploy": "yarn build && yarn workspace @mvsp/aws cdk deploy --all"
+    "deploy": "yarn build && yarn workspace @mvsp/aws cdk deploy --all",
+    "pnpify": "yarn dlx @yarnpkg/sdks vscode"
   },
   "devDependencies": {
-    "eslint": "8.1.0",
+    "eslint": "8.2.0",
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-prettier": "4.0.0",
     "prettier": "2.4.1",
     "sirv-cli": "1.0.14",
-    "typescript": "4.2.4"
+    "typescript": "4.4.4"
   },
   "dependencies": {
     "@11ty/eleventy": "0.12.1",
     "@mvsp/parcel-namer-mvsp": "workspace:*",
     "@mvsp/parcel-resolver-mvsp": "workspace:*",
-    "@parcel/config-default": "2.0.0",
-    "@parcel/packager-raw-url": "2.0.0",
-    "@parcel/transformer-webmanifest": "2.0.0",
+    "@parcel/config-default": "2.0.1",
+    "@parcel/packager-raw-url": "2.0.1",
+    "@parcel/transformer-webmanifest": "2.0.1",
     "@tailwindcss/typography": "0.4.1",
     "asciidoctor": "2.2.5",
     "autoprefixer": "10.4.0",
     "npm-run-all": "4.1.5",
-    "parcel": "2.0.0",
+    "parcel": "2.0.1",
     "postcss": "8.3.11",
     "postcss-import": "14.0.2",
     "postcss-nested": "5.0.6",
-    "tailwindcss": "2.2.17"
+    "tailwindcss": "2.2.19"
   },
   "workspaces": [
     "packages/*"
