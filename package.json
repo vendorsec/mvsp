@@ -5,12 +5,10 @@
   "scripts": {
     "build": "rm -rf _site dist && yarn run eleventy && yarn run parcel build '_site/**/*.html'",
     "11ty:watch": "eleventy --watch",
-    "parcel:watch": "parcel watch '_site/**/*.html'",
+    "parcel:watch": "parcel '_site/*.html' '_site/*/*.html' '_site/*/*/*.html'",
     "serve": "sirv dist --dev",
-    "dev": "run-p -l 11ty:watch parcel:watch serve",
-    "test": "jest",
-    "cdk": "cdk",
-    "deploy": "yarn build && yarn workspace @mvsp/aws cdk deploy --all",
+    "dev": "run-p -l 11ty:watch parcel:watch",
+    "deploy": "yarn run build && yarn workspace @mvsp/aws cdk deploy --all",
     "pnpify": "yarn dlx @yarnpkg/sdks vscode"
   },
   "devDependencies": {
@@ -18,11 +16,11 @@
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-prettier": "4.0.0",
     "prettier": "2.4.1",
-    "sirv-cli": "1.0.14",
     "typescript": "4.4.4"
   },
   "dependencies": {
     "@11ty/eleventy": "1.0.0-beta.4",
+    "@mvsp/doc": "workspace:*",
     "@mvsp/parcel-namer-mvsp": "workspace:*",
     "@mvsp/parcel-resolver-mvsp": "workspace:*",
     "@parcel/config-default": "2.0.1",
@@ -38,8 +36,10 @@
     "postcss-nested": "5.0.6",
     "tailwindcss": "2.2.19"
   },
-  "workspaces": [
-    "packages/*"
-  ],
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
   "packageManager": "yarn@3.1.0"
 }

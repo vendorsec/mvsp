@@ -3,7 +3,9 @@ const asciidoctor = require('asciidoctor')()
 
 class Mvsp {
   render() {
-    const content = fs.readFileSync('./src/mvsp.en.asciidoc')
+    const content = fs.readFileSync(
+      require.resolve('@mvsp/doc/mvsp.en.asciidoc')
+    )
     return asciidoctor.convert(content)
   }
   data() {

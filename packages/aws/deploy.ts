@@ -6,9 +6,14 @@ import { HostedZoneStack } from './HostedZoneStack'
 import { WebStack } from './WebStack'
 import { TokensStack } from './TokensStack'
 import { CICDStack } from './CICDStack'
+import {SesForwarderStack} from './SesForwarderStack'
 
 const ZONE_NAME = 'mvsp.dev'
 const tags = { service: 'mvsp.dev' }
+const env = {
+  account: process.env.CDK_DEFAULT_ACCOUNT,
+  region: process.env.CDK_DEFAULT_REGION
+}
 
 const app = new App()
 
@@ -30,7 +35,7 @@ const tokenStack = new TokensStack(app, 'MvspDevGitHubToken', {
 })
 
 new CICDStack(app, 'MvspDevCICDStack', {
-  codeBuildImage: 'public.ecr.aws/bitnami/node:14',
+  codeBuildImage: 'public.ecr.aws/docker/library/node:16.13-alpine',
   github: {
     owner: 'vendorsec',
     repo: 'mvsp',
@@ -38,5 +43,12 @@ new CICDStack(app, 'MvspDevCICDStack', {
     secret: tokenStack.githubSecret,
   },
   websiteBucket: webstack.websiteBucket,
+  tags,
+})
+
+
+new SesForwarderStack(app, 'MvspDevSesForwarder', {
+  domain: 'mvsp.dev',
+  env,
   tags,
 })

@@ -3,6 +3,7 @@ version: 0.2
 phases:
   install:
     commands:
+      - apk add --no-cache python3 make g++
       - yarn install --immutable
   build:
     commands:

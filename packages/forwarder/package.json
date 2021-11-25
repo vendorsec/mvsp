@@ -1,0 +1,24 @@
+{
+  "name": "@mvsp/forwarder",
+  "private": true,
+  "version": "0.1.0",
+  "dependencies": {
+    "addressparser": "1.0.1",
+    "mailparser": "3.1.0",
+    "nodemailer": "6.5.0",
+    "source-map-support": "0.5.19"
+  },
+  "devDependencies": {
+    "@types/addressparser": "1.0.0",
+    "@types/aws-lambda": "8.10.73",
+    "@types/mailparser": "3.0.2",
+    "@types/node": "14.14.36",
+    "@types/nodemailer": "6.4.1",
+    "@types/source-map-support": "0.5.3",
+    "aws-sdk": "2.873.0",
+    "typescript": "4.2.3"
+  },
+  "scripts": {
+    "build": "tsc && rm -rf layer && mkdir -p layer/nodejs && cp package.json layer/nodejs/ && cd layer/nodejs && npm install --no-package-lock --no-bin-links --no-fund --no-audit --only=production"
+  }
+}
