@@ -4,10 +4,9 @@
   "private": true,
   "scripts": {
     "build": "rm -rf _site dist && yarn run eleventy && yarn run parcel build '_site/**/*.html'",
-    "11ty:watch": "eleventy --watch",
-    "parcel:watch": "parcel '_site/*.html' '_site/*/*.html' '_site/*/*/*.html'",
-    "serve": "sirv dist --dev",
-    "dev": "run-p -l 11ty:watch parcel:watch",
+    "11ty": "eleventy --watch",
+    "parcel": "parcel '_site/*.html' '_site/*/*.html' '_site/*/*/*.html'",
+    "dev": "run-p -l 11ty parcel",
     "deploy": "yarn run build && yarn workspace @mvsp/aws cdk deploy --all",
     "pnpify": "yarn dlx @yarnpkg/sdks vscode"
   },
@@ -19,7 +18,7 @@
     "typescript": "4.4.4"
   },
   "dependencies": {
-    "@11ty/eleventy": "1.0.0-beta.4",
+    "@11ty/eleventy": "1.0.0-beta.8",
     "@mvsp/doc": "workspace:*",
     "@mvsp/parcel-namer-mvsp": "workspace:*",
     "@mvsp/parcel-resolver-mvsp": "workspace:*",

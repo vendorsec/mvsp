@@ -12,9 +12,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@11ty/eleventy@npm:1.0.0-beta.4":
-  version: 1.0.0-beta.4
-  resolution: "@11ty/eleventy@npm:1.0.0-beta.4"
+"@11ty/eleventy@npm:1.0.0-beta.8":
+  version: 1.0.0-beta.8
+  resolution: "@11ty/eleventy@npm:1.0.0-beta.8"
   dependencies:
     "@11ty/dependency-tree": ^2.0.0
     "@iarna/toml": ^2.2.5
@@ -30,9 +30,9 @@ __metadata:
     hamljs: ^0.6.2
     handlebars: ^4.7.7
     is-glob: ^4.0.3
-    liquidjs: 9.25.1
+    liquidjs: ^9.28.5
     lodash: ^4.17.21
-    luxon: ^2.0.2
+    luxon: ^2.1.1
     markdown-it: ^12.2.0
     minimist: ^1.2.5
     moo: ^0.5.1
@@ -46,11 +46,11 @@ __metadata:
     pug: ^3.0.2
     recursive-copy: ^2.0.13
     semver: ^7.3.5
-    slugify: ^1.6.1
+    slugify: ^1.6.2
     time-require: ^0.1.2
   bin:
     eleventy: cmd.js
-  checksum: 8a0f828e731a055cca012f2a52f1a78674d9ea3b543909d15d1a856fad37b9e47b48b37c288c44a6aac0848043e859449567041bfef6adc5582fb585686c6bdd
+  checksum: 764a76014d2c8f4217cefdd2ec31a054c41d5a58f71576f1d82c270ffd4969f9de1d825b4d114de580bcb652e6bf70ae9321c75ea3d514c5fc1f3b2e10d294d7
   languageName: node
   linkType: hard
 
@@ -9032,13 +9032,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"liquidjs@npm:9.25.1":
-  version: 9.25.1
-  resolution: "liquidjs@npm:9.25.1"
+"liquidjs@npm:^9.28.5":
+  version: 9.28.5
+  resolution: "liquidjs@npm:9.28.5"
   bin:
     liquid: bin/liquid.js
     liquidjs: bin/liquid.js
-  checksum: 837c2ac056c2b04c935eeedad91bea43df00d9ac4d3fcd7c09949804d3bb07c04a9aace9168ca044de4a6069d5147072d01ad3c0b8ef1bfb3d3de5f5dbacb361
+  checksum: 34d9f7754fd20a2b2845628bd26fa413173d152916e436791ad6b5baa2cbcbaa145210c483818eb30beed3536eae374eb934e82d48f43a1dd1d26531dad0c7d3
   languageName: node
   linkType: hard
 
@@ -9279,7 +9279,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"luxon@npm:^2.0.2":
+"luxon@npm:^2.1.1":
   version: 2.1.1
   resolution: "luxon@npm:2.1.1"
   checksum: 6d562796c4df195988f2afdca733e5a36457d6449c196cbf16710c706fde8d6b96c7d47fa54cd37c0cb29e4d2e7d8628a9677f36e23490139a8c90232f489e02
@@ -9791,7 +9791,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "mvsp@workspace:."
   dependencies:
-    "@11ty/eleventy": 1.0.0-beta.4
+    "@11ty/eleventy": 1.0.0-beta.8
     "@mvsp/doc": "workspace:*"
     "@mvsp/parcel-namer-mvsp": "workspace:*"
     "@mvsp/parcel-resolver-mvsp": "workspace:*"
@@ -12633,10 +12633,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"slugify@npm:^1.6.1":
-  version: 1.6.2
-  resolution: "slugify@npm:1.6.2"
-  checksum: 5cf3370be849e56c5d09c4139bd174d19c37bb580ec7ac0c6515ffc3a55baee6b384204cd340f00b93fbb9563f751854adb692f8484ac17231d48193ee6b029f
+"slugify@npm:^1.6.2":
+  version: 1.6.3
+  resolution: "slugify@npm:1.6.3"
+  checksum: fc3861f41c0550ad7d2c48e7e5866bd51e9634bc0495b921c4b1112f6a8b76de51cc4ebb8210636878cad750238adf641548bb9b82432e520d039004b99a1bb6
   languageName: node
   linkType: hard
 

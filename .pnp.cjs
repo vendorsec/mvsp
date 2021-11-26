@@ -60,7 +60,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {
           "packageLocation": "./",
           "packageDependencies": [
-            ["@11ty/eleventy", "npm:1.0.0-beta.4"],
+            ["@11ty/eleventy", "npm:1.0.0-beta.8"],
             ["@mvsp/doc", "workspace:packages/mvsp"],
             ["@mvsp/parcel-namer-mvsp", "workspace:packages/parcel-namer-mvsp"],
             ["@mvsp/parcel-resolver-mvsp", "workspace:packages/parcel-resolver-mvsp"],
@@ -95,10 +95,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@11ty/eleventy", [
-        ["npm:1.0.0-beta.4", {
-          "packageLocation": "./.yarn/cache/@11ty-eleventy-npm-1.0.0-beta.4-76e4c279df-8a0f828e73.zip/node_modules/@11ty/eleventy/",
+        ["npm:1.0.0-beta.8", {
+          "packageLocation": "./.yarn/cache/@11ty-eleventy-npm-1.0.0-beta.8-fb59310d0e-764a76014d.zip/node_modules/@11ty/eleventy/",
           "packageDependencies": [
-            ["@11ty/eleventy", "npm:1.0.0-beta.4"],
+            ["@11ty/eleventy", "npm:1.0.0-beta.8"],
             ["@11ty/dependency-tree", "npm:2.0.0"],
             ["@iarna/toml", "npm:2.2.5"],
             ["@sindresorhus/slugify", "npm:1.1.2"],
@@ -113,7 +113,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["hamljs", "npm:0.6.2"],
             ["handlebars", "npm:4.7.7"],
             ["is-glob", "npm:4.0.3"],
-            ["liquidjs", "npm:9.25.1"],
+            ["liquidjs", "npm:9.28.5"],
             ["lodash", "npm:4.17.21"],
             ["luxon", "npm:2.1.1"],
             ["markdown-it", "npm:12.2.0"],
@@ -122,14 +122,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["multimatch", "npm:5.0.0"],
             ["mustache", "npm:4.2.0"],
             ["normalize-path", "npm:3.0.0"],
-            ["nunjucks", "virtual:76e4c279df99dd6084af01c07abcae4ea8f420af304a0b0b88d35e690bc95c22968c8fe350915e0755ff4be28a63bda9a2ace2cb6f10364584349152d0a19048#npm:3.2.3"],
+            ["nunjucks", "virtual:fb59310d0ece875b7ef7593058ad9d38422ab629957531365ba822eb25f18055d4999b97cb7a5685ab62b8351a9a52569018cce768c6b6a17e1041592cc9758b#npm:3.2.3"],
             ["path-to-regexp", "npm:6.2.0"],
             ["please-upgrade-node", "npm:3.2.0"],
             ["pretty", "npm:2.0.0"],
             ["pug", "npm:3.0.2"],
             ["recursive-copy", "npm:2.0.13"],
             ["semver", "npm:7.3.5"],
-            ["slugify", "npm:1.6.2"],
+            ["slugify", "npm:1.6.3"],
             ["time-require", "npm:0.1.2"]
           ],
           "linkType": "HARD",
@@ -10717,10 +10717,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["liquidjs", [
-        ["npm:9.25.1", {
-          "packageLocation": "./.yarn/cache/liquidjs-npm-9.25.1-d107b26c8c-837c2ac056.zip/node_modules/liquidjs/",
+        ["npm:9.28.5", {
+          "packageLocation": "./.yarn/cache/liquidjs-npm-9.28.5-d8a2a426ae-34d9f7754f.zip/node_modules/liquidjs/",
           "packageDependencies": [
-            ["liquidjs", "npm:9.25.1"]
+            ["liquidjs", "npm:9.28.5"]
           ],
           "linkType": "HARD",
         }]
@@ -11556,7 +11556,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["mvsp", "workspace:."],
-            ["@11ty/eleventy", "npm:1.0.0-beta.4"],
+            ["@11ty/eleventy", "npm:1.0.0-beta.8"],
             ["@mvsp/doc", "workspace:packages/mvsp"],
             ["@mvsp/parcel-namer-mvsp", "workspace:packages/parcel-namer-mvsp"],
             ["@mvsp/parcel-resolver-mvsp", "workspace:packages/parcel-resolver-mvsp"],
@@ -11941,10 +11941,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:76e4c279df99dd6084af01c07abcae4ea8f420af304a0b0b88d35e690bc95c22968c8fe350915e0755ff4be28a63bda9a2ace2cb6f10364584349152d0a19048#npm:3.2.3", {
-          "packageLocation": "./.yarn/__virtual__/nunjucks-virtual-224662c42c/0/cache/nunjucks-npm-3.2.3-ae8b5fd14c-9d0125acf9.zip/node_modules/nunjucks/",
+        ["virtual:fb59310d0ece875b7ef7593058ad9d38422ab629957531365ba822eb25f18055d4999b97cb7a5685ab62b8351a9a52569018cce768c6b6a17e1041592cc9758b#npm:3.2.3", {
+          "packageLocation": "./.yarn/__virtual__/nunjucks-virtual-2cc7d136e0/0/cache/nunjucks-npm-3.2.3-ae8b5fd14c-9d0125acf9.zip/node_modules/nunjucks/",
           "packageDependencies": [
-            ["nunjucks", "virtual:76e4c279df99dd6084af01c07abcae4ea8f420af304a0b0b88d35e690bc95c22968c8fe350915e0755ff4be28a63bda9a2ace2cb6f10364584349152d0a19048#npm:3.2.3"],
+            ["nunjucks", "virtual:fb59310d0ece875b7ef7593058ad9d38422ab629957531365ba822eb25f18055d4999b97cb7a5685ab62b8351a9a52569018cce768c6b6a17e1041592cc9758b#npm:3.2.3"],
             ["@types/chokidar", null],
             ["a-sync-waterfall", "npm:1.0.1"],
             ["asap", "npm:2.0.6"],
@@ -15070,10 +15070,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["slugify", [
-        ["npm:1.6.2", {
-          "packageLocation": "./.yarn/cache/slugify-npm-1.6.2-a12c1b1155-5cf3370be8.zip/node_modules/slugify/",
+        ["npm:1.6.3", {
+          "packageLocation": "./.yarn/cache/slugify-npm-1.6.3-a546131f8d-fc3861f41c.zip/node_modules/slugify/",
           "packageDependencies": [
-            ["slugify", "npm:1.6.2"]
+            ["slugify", "npm:1.6.3"]
           ],
           "linkType": "HARD",
         }]
