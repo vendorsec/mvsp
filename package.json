@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "build": "rm -rf _site dist && yarn run eleventy && yarn run parcel build '_site/**/*.html'",
-    "11ty": "eleventy --watch",
-    "parcel": "parcel '_site/*.html' '_site/*/*.html' '_site/*/*/*.html'",
-    "dev": "run-p -l 11ty parcel",
+    "11ty:watch": "eleventy --watch",
+    "parcel:watch": "parcel '_site/*.html' '_site/*/*.html' '_site/*/*/*.html'",
+    "dev": "run-p -l 11ty:watch parcel:watch",
     "deploy": "yarn run build && yarn workspace @mvsp/aws cdk deploy --all",
     "pnpify": "yarn dlx @yarnpkg/sdks vscode"
   },
