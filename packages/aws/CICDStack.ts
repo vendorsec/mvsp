@@ -1,5 +1,5 @@
 import { Construct } from 'constructs'
-import { Stack, StackProps } from 'aws-cdk-lib'
+import { Stack, StackProps, Duration } from 'aws-cdk-lib'
 import {
   aws_codepipeline as codepipeline,
   aws_codepipeline_actions as actions,
@@ -33,6 +33,7 @@ export class CICDStack extends Stack {
         ),
         computeType: codebuild.ComputeType.SMALL,
       },
+      timeout: Duration.minutes(5),
     })
 
     const sourceOutput = new codepipeline.Artifact()
