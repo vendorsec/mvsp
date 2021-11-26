@@ -29,6 +29,3 @@ artifacts:
         - '**/site.webmanifest'
       base-directory: 'dist'
       name: NotCachedAssets
-cache:
-  paths:
-    - '.yarn/unplugged'
