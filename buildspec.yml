@@ -31,5 +31,4 @@ artifacts:
       name: NotCachedAssets
 cache:
   paths:
-    - '.yarn/unplugged/'
-    - '.yarn/install-state.gz'
+    - '.yarn/unplugged'
