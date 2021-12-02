@@ -76,7 +76,7 @@ Pull requests should only be accepted against the current draft version and not
 directly against a published version (with the exception of minor typos). After
 the group has had the possibility to review PULL requests and sufficient
 consensus is reached, PULL requests can be merged. Merging will need the general
-consensus of the editorial team.. In the event of a dispute over whether a
+consensus of the editorial team. In the event of a dispute over whether a
 change should be incorporated, an additional ad hoc meeting of working group
 members or editors may be called to discuss issues and reach reasonable
 consensus.
