@@ -28,6 +28,9 @@ a working group member a company must:
 In order to withdraw membership information from the MVSP website, the member
 must follow the change management process described further down in this
 document. The change will be reflected upon the next release of MVSP.
+    
+If you'd like to join, please feel free to send an email to our mailing list:
+working-group@mvsp.dev
 
 ### Working Group Meetings
 
