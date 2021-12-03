@@ -128,7 +128,7 @@ Additional guidance on Memorized Secrets (password/pin) can be found in NIST 800
 
 **Why this control is important:** Enforcing the use of established, tried, and tested security libraries and frameworks ensures developers are able to rely on existing solutions and are not expected to reinvent the wheel. By standardizing on libraries and frameworks that systemically address various implementation weaknesses, you can reduce or eliminate entire classes of bugs from your platform, and ensure new code does not include regressions that reintroduce these vulnerabilities.
 
-| 2.6 Patching
+| 2.6 Dependency Patching
 | **What this control measures:** Processes are in place to identify, and maintain up-to-date components within your product and/or service.
 
 ---
