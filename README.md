@@ -1,6 +1,10 @@
 # Minimum Viable Secure Product
 
+<img height=120px align="right" src="https://github.com/vendorsec/mvsp/blob/master/src/images/logo.svg">
+
 MVSP is a minimum security baseline for enterprise-ready products and services. The baseline checklist can be used at various stages of the sales cycle, from RFP through to contractual controls.
+
+The best way to read about SLSA is to visit [mvsp.dev](https://mvsp.dev).
 
 ## How to use it
 
