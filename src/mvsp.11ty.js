@@ -10,7 +10,8 @@ class Mvsp {
   }
   data() {
     return {
-      title: 'Minimum Viable Secure Product',
+      title: 'Minimum Viable Secure Product - Controls',
+      description: 'Minimum Viable Secure Product is a minimalistic security checklist for B2B software and business process outsourcing suppliers.',
       layout: 'article',
       permalink: '/mvsp.en/',
     }
