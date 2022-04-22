@@ -10,7 +10,8 @@ class Faq {
   }
   data() {
     return {
-      title: 'Minimum Viable Secure Product',
+      title: 'Minimum Viable Secure Product - Controls FAQ',
+      description: 'FAQ: Additional context on the controls listed in the Minimum Viable Secure Product (MVSP).',
       layout: 'page',
       permalink: '/faq.en/',
     }
