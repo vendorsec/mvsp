@@ -1,0 +1,6 @@
+---
+permalink: '/robots.txt'
+eleventyExcludeFromCollections: true
+---
+
+User-agent: * Allow: / Sitemap: {{ site.url }}/sitemap.xml
