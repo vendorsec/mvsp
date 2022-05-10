@@ -3,42 +3,36 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "rm -rf _site dist && yarn run eleventy && yarn run parcel build '_site/**/*.html'",
+    "build": "rm -rf _site dist && pnpm exec eleventy && pnpm exec parcel build '_site/**/*.html'",
     "11ty:watch": "eleventy --watch",
     "parcel:watch": "parcel '_site/*.html' '_site/*/*.html' '_site/*/*/*.html'",
     "dev": "run-p -l 11ty:watch parcel:watch",
-    "deploy": "yarn run build && yarn workspace @mvsp/aws cdk deploy --all",
-    "pnpify": "yarn dlx @yarnpkg/sdks vscode"
+    "deploy": "pnpm run build && pnpm --filter @mvsp/aws exec -- cdk deploy --all"
   },
   "devDependencies": {
-    "eslint": "8.2.0",
-    "eslint-config-prettier": "8.3.0",
+    "@parcel/core": "2.5.0",
+    "eslint": "8.15.0",
+    "eslint-config-prettier": "8.5.0",
     "eslint-plugin-prettier": "4.0.0",
-    "prettier": "2.4.1",
-    "typescript": "4.4.4"
+    "prettier": "2.6.2",
+    "typescript": "4.6.4"
   },
   "dependencies": {
-    "@11ty/eleventy": "1.0.0-beta.8",
+    "@11ty/eleventy": "1.0.1",
     "@mvsp/doc": "workspace:*",
     "@mvsp/parcel-namer-mvsp": "workspace:*",
     "@mvsp/parcel-resolver-mvsp": "workspace:*",
-    "@parcel/config-default": "2.0.1",
-    "@parcel/packager-raw-url": "2.0.1",
-    "@parcel/transformer-webmanifest": "2.0.1",
-    "@tailwindcss/typography": "0.4.1",
-    "asciidoctor": "2.2.5",
-    "autoprefixer": "10.4.0",
+    "@parcel/config-default": "2.5.0",
+    "@parcel/packager-raw-url": "2.5.0",
+    "@parcel/transformer-webmanifest": "2.5.0",
+    "@tailwindcss/typography": "0.5.2",
+    "asciidoctor": "2.2.6",
+    "autoprefixer": "10.4.7",
     "npm-run-all": "4.1.5",
-    "parcel": "2.0.1",
-    "postcss": "8.3.11",
-    "postcss-import": "14.0.2",
+    "parcel": "2.5.0",
+    "postcss": "8.4.13",
+    "postcss-import": "14.1.0",
     "postcss-nested": "5.0.6",
-    "tailwindcss": "2.2.19"
-  },
-  "workspaces": {
-    "packages": [
-      "packages/*"
-    ]
-  },
-  "packageManager": "yarn@3.1.0"
+    "tailwindcss": "3.0.24"
+  }
 }

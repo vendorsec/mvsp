@@ -35,7 +35,7 @@ const tokenStack = new TokensStack(app, 'MvspDevGitHubToken', {
 })
 
 new CICDStack(app, 'MvspDevCICDStack', {
-  codeBuildImage: 'public.ecr.aws/docker/library/node:16.13-alpine',
+  codeBuildImage: 'public.ecr.aws/docker/library/node:18-bullseye',
   github: {
     owner: 'vendorsec',
     repo: 'mvsp',

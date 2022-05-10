@@ -3,13 +3,13 @@ version: 0.2
 phases:
   install:
     commands:
-      - apk add --no-cache python3 make g++
-      - yarn install --immutable
+      - npm install --silent -g pnpm@7.0.1
+      - pnpm install --frozen-lockfile --prod
   build:
     commands:
-      - yarn run build
+      - pnpm run build
       - cd dist
-      - OLDNAME=`ls -1 index.*.css` NEWNAME="index.`sha256sum $OLDNAME | cut -c57-64`.css" 
+      - OLDNAME=`ls -1 index.*.css` NEWNAME="index.`sha256sum $OLDNAME | cut -c57-64`.css"
       - 'echo "was: $OLDNAME; now: $NEWNAME"'
       - find . -name "*.html" -exec sed -i "s/$OLDNAME/$NEWNAME/" {} +
       - mv $OLDNAME $NEWNAME
