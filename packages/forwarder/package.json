@@ -17,8 +17,5 @@
     "@types/source-map-support": "0.5.4",
     "aws-sdk": "2.1131.0",
     "typescript": "4.6.4"
-  },
-  "scripts": {
-    "build": "tsc && rm -rf layer && mkdir -p layer/nodejs && cp package.json layer/nodejs/ && cd layer/nodejs && npm install --no-package-lock --no-bin-links --no-fund --no-audit --only=production"
   }
 }

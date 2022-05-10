@@ -1,4 +1,3 @@
-import * as fs from 'fs'
 import * as path from 'path'
 
 const FUNCTION_PATH = path.dirname(require.resolve('@mvsp/forwarder'))
@@ -41,26 +40,13 @@ export class SesForwarderStack extends Stack {
       pointInTimeRecovery: false,
     })
 
-    const nodeModules = new lambda.LayerVersion(this, 'nodeModules', {
-      compatibleRuntimes: [lambda.Runtime.NODEJS_14_X],
-      code: lambda.AssetCode.fromAsset(path.join(FUNCTION_PATH, 'layer')),
-    })
-
-    const externalModules = Object.keys(
-      JSON.parse(
-        fs.readFileSync(path.join(FUNCTION_PATH, 'package.json'), 'utf-8')
-      )?.dependencies ?? {}
-    )
-    externalModules.push('aws-sdk', 'aws-sdk/clients/*')
-
     const forwarder = new NodejsFunction(this, 'ForwarderFunction', {
       logRetention: logs.RetentionDays.INFINITE,
       runtime: lambda.Runtime.NODEJS_14_X,
       entry: path.join(FUNCTION_PATH, 'index.ts'),
       bundling: {
-        externalModules,
+        externalModules: ['aws-sdk', 'aws-sdk/clients/*'],
       },
-      layers: [nodeModules],
       environment: {
         BUCKET: mailBucket.bucketName,
         DOMAIN: props.domain,
