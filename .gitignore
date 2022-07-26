@@ -16,3 +16,6 @@ _site
 
 # Parcel output directory
 dist
+
+# VIM Temporary Files
+*~
