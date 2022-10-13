@@ -33,7 +33,7 @@ h| Description
 | Contract a security vendor to perform annual, comprehensive penetration tests on your systems
 
 | 1.5 Training
-| Implement role-specific security training for your personnel that is relevant to their business function.
+| Implement role-specific security training for your personnel that is relevant to their business function
 
 | 1.6 Compliance
 | * Comply with all industry security standards relevant to your business such as PCI DSS, HITRUST, ISO27001, and SSAE 18
