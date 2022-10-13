@@ -73,7 +73,7 @@ Using an independent company for annual third party testing is important as they
 **Why this control is important:** Clear and timely notification of incidents is important to ensure customers are able to understand how an incident may affect their data, and prepare for further actions required to mitigate the effects of a breach. The initial notification is expected within 72 hours of discovery, however it should be augmented and extended upon once a more detailed analysis has occurred and root causes are identified. Not all information will be available within 72 hours, however it is important to ensure processes are in place to provide initial information within this timeframe.
 
 | 1.8 Data handling
-| **What this control measures:** Data is appropriately handled based on classification including retention on removable or decommissioned hardware.
+| **What this control measures:** Data stored on removable or decommissioned hardware is appropriately handled.
 
 ---
 
@@ -147,14 +147,16 @@ Libraries or application versions marked as end-of-life should be considered as 
 
 Regular vulnerability scanning allows you to easily identify new vulnerabilities, as well as monitor where existing patches have not yet been fully implemented.
 
-| 2.7 Backup and Disaster Recovery
-| **What this control measures:** Processes are in place to ensure backup and recovery of your product and/or service in the event of a disaster.
+| 2.7 Logging
+| **What this control measures:** Appropriate logs are stored to assist with debugging and incident response activities.
 
 ---
 
-**Why this control is important:** Ensuring suitably tested backups are in place for disaster recovery is a critical step. This backup should be at a different location, and planned so it is possible to recover from a disaster scenario preventing access to any and all online data for an extended period of time.
+**Why this control is important:** Having detailed logs ensures you are able to perform a detailed analysis of actions taken in the event of a breach. Ensure you record not only failed login attempts, but also successful logins, as this puts you in a better position to track the movement of a malicious actor across multiple areas of the infrastructure.
 
-Consideration should be given to planning how your disaster recovery processes would respond to commonly seen attacks (e.g ransomware, large-scale cloud service outages).
+Care should be taken to avoid logging sensitive information such as passwords or other credentials.
+
+Ensuring logs are available for an extended period of time also ensures you are able to track back any intrusion to the source.
 
 | 2.8 Encryption
 | **What this control measures:** Sensitive data is encrypted at rest within your product and/or service.
@@ -231,15 +233,13 @@ h| Detailed Description
 
 **Why this control is important:** Where you may use third-party subprocessors, it is important to ensure that they are appropriately measured against the MVSP baseline to ensure that data and integrations do not lower the overall security of the platform or service.
 
-| 4.4 Logging
-| **What this control measures:** Appropriate logs are stored to assist with debugging and incident response activities.
+| 4.4 Backup and Disaster Recovery
+| **What this control measures:** Processes are in place to ensure backup and recovery of your product and/or service in the event of a disaster.
 
 ---
 
-**Why this control is important:** Having detailed logs ensures you are able to perform a detailed analysis of actions taken in the event of a breach. Ensure you record not only failed login attempts, but also successful logins, as this puts you in a better position to track the movement of a malicious actor across multiple areas of the infrastructure.
+**Why this control is important:** Ensuring suitably tested backups are in place for disaster recovery is a critical step. This backup should be at a different location, and planned so it is possible to recover from a disaster scenario preventing access to any and all online data for an extended period of time.
 
-Care should be taken to avoid logging sensitive information such as passwords or other credentials.
-
-Ensuring logs are available for an extended period of time also ensures you are able to track back any intrusion to the source.
+Consideration should be given to planning how your disaster recovery processes would respond to commonly seen attacks (e.g ransomware, large-scale cloud service outages).
 
 |===

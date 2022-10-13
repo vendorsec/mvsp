@@ -90,10 +90,16 @@ h| Description
 | 2.6 Dependency Patching
 | Apply security patches with a severity score of "medium" or higher, or ensure equivalent mitigations are available for all components of the application stack within one month of the patch release
 
-| 2.7 Backup and Disaster recovery
-| * Securely back up all data to a different location than where the application is running
-  * Maintain and periodically test disaster recovery plans
-  * Periodically test backup restoration
+| 2.7 Logging
+| Keep logs of:
+
+  * Users logging in and out
+  * Read, write, delete operations on application and system users and objects
+  * Security settings changes (including disabling logging)
+  * Application owner access to customer data (access transparency)
+
+Logs must include user ID, IP address, valid timestamp, type of action performed, and object of this action.
+Logs must be stored for at least 30 days, and should not contain sensitive data or payloads.
 
 | 2.8 Encryption
 | Use available means of encryption to protect sensitive data in transit between systems and at rest in online data storages and backups
@@ -146,16 +152,10 @@ h| Description
 | * Publish a list of third-party companies with access to customer data on your website
   * Assess third-party companies annually against this baseline
 
-| 4.4 Logging
-| Keep logs of:
-
-  * Users logging in and out
-  * Read, write, delete operations on application and system users and objects
-  * Security settings changes (including disabling logging)
-  * Application owner access to customer data (access transparency)
-
-Logs must include user ID, IP address, valid timestamp, type of action performed, and object of this action.
-Logs must be stored for at least 30 days, and should not contain sensitive data or payloads.
+| 4.4 Backup and Disaster recovery
+| * Securely back up all data to a different location than where the application is running
+  * Maintain and periodically test disaster recovery plans
+  * Periodically test backup restoration
 
 |===
 
