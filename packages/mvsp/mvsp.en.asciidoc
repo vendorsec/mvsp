@@ -83,7 +83,7 @@ h| Description
   * Enforce appropriate account lockout and brute-force protection on account access
 
 | 2.5 Security libraries
-| Use frameworks, template languages, or libraries that systemically address implementation weaknesses by escaping the outputs and sanitizing the inputs.
+| Use frameworks, template languages, or libraries that systemically address implementation weaknesses by escaping the outputs and sanitizing the inputs
 
   Example: ORM for database access, UI framework for rendering DOM
 
@@ -119,10 +119,10 @@ h| Description
   * Use of vulnerable libraries. Example: Using server-side frameworks or JavaScript libraries with known vulnerabilities
 
 | 3.4 Time to fix vulnerabilities
-| Produce and deploy patches to address application vulnerabilities that materially impact security within 90 days of discovery.
+| Produce and deploy patches to address application vulnerabilities that materially impact security within 90 days of discovery
 
 | 3.5 Build process
-| Build processes must be fully scripted/automated and generate provenance (https://slsa.dev/spec/v0.1/levels[SLSA Level 1]).
+| Build processes must be fully scripted/automated and generate provenance (https://slsa.dev/spec/v0.1/levels[SLSA Level 1])
 
 2+<h| 4 Operational controls
 h| Control

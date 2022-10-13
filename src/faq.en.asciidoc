@@ -48,7 +48,7 @@ Although more tightly scoped release testing may take place throughout the year,
 Using an independent company for annual third party testing is important as they approach the review without any pre-existing opinions on how the application should function. This greenfield viewpoint ensures no assumptions are made regarding the security of specific functions or areas of the service which could lead to a lack of coverage or depth of review.
 
 | 1.5 Training
-| **What this control measures:** Processes are in place to provide regular and ongoing security awareness training. This training should include:
+| **What this control measures:** Processes are in place to provide regular and ongoing security awareness training. Example areas of training that should be considered are:
 
   * Applicable company policies
   * Proper data handling and protection of sensitive information
@@ -111,6 +111,8 @@ To ensure that cookies are also only transmitted via encrypted and integrity pro
 ---
 
 **Why this control is important:** Content Security Policy is a mechanism designed to make applications more secure against common web vulnerabilities, particularly cross-site scripting while iframing websites could lead to unexpected vulnerabilities. By adopting strict policies, which prevents the loading of untrusted scripts or plugins and limiting being iframed an application can add important defense-in-depth layers against markup injection attacks.
+
+Security headers can also assist in providing isolation and protection against common attacks beyond those discussed above. You can find more information at [securityheaders.com](https://securityheaders.com).
 
 | 2.4 Password policy
 | **What this control measures:** Appropriate controls are in place to protect users who opt to use password-based authentication.
@@ -196,11 +198,13 @@ h| Detailed Description
 **Why this control is important:** Acting in a timely manner to address vulnerabilities detected within your platform ensures you are effectively protecting sensitive data. In cases where addressing a vulnerability requires a longer period of time, or users to alter the way they interact with your application, care should be taken to inform users in a timely manner.
 
 | 3.5 Build process
-| **What this control measures:** Build process is repeatable and artifacts can be verified.
+| **What this control measures:** Build processes are fully scripted/automated and generate provenance.
 
 ---
 
-**Why this control is important:** Hardening the build process is essential to stop insiders from adding backdoors and ensuring supply chain security. Automation furthermore enables reacting quickly to threats and incidents by ensuring a new version can be released with a vulnerabilty or bug fix or by upgrading a compromised dependency. Signing the build artifacts will help preventing the deployment of a compromised package.
+**Why this control is important:** Hardening and automation of build processes is an essential first step to prevent tampering and provide the ability to auditability. Automation of build processes furthermore enables teams to react quickly to threats and incidents by ensuring a new version can be released with a vulnerability or bug fix or by upgrading a compromised dependency. Provenance is metadata about how an artifact was built, including the build process, top-level source, and dependencies. Knowing the provenance allows software consumers to make risk-based security decisions.
+
+Provenance at SLSA level 1 does not protect against tampering, but it offers a basic level of code source identification and can aid in vulnerability management. For applications and services that process particularly sensitive data, higher [SLSA levels](https://slsa.dev/spec/v0.1/levels#detailed-explanation) can provide additional guarantees.
 
 2+<h| 4 Operational controls
 h| Control
@@ -218,7 +222,7 @@ h| Detailed Description
 
 ---
 
-**Why this control is important:** Where your staff have legitimate access to sensitive data as part of their day-to-day work, this access should be regularly reviewed to ensure access is limited. The principle of least privilege should be applied to ensure only authorized users with a valid business need can access sensitive data. By adding Multi-Factor Authorization the risk of a compromise through employees is significantly reduced.
+**Why this control is important:** Where your staff have legitimate access to sensitive data as part of their day-to-day work, this access should be regularly reviewed to ensure access is limited. The principle of least privilege should be applied to ensure only authorized users with a valid business need can access sensitive data. By adding Multi-Factor Authorization the risk of a compromise through phishing, or other attacks targeting employee systems or credentials is significantly reduced.
 
 | 4.3 Subprocessors
 | **What this control measures:** Processes are in place to validate the security posture of third-party subprocessors.
