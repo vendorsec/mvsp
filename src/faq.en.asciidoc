@@ -3,7 +3,7 @@
 Minimum Viable Secure Product Control Descriptions
 ==================================================
 MVSP Working Group <wg@mvsp.dev>
-v0.2, 2021-09-06
+v2.0, 2022-10-12
 
 This document is designed to provide additional context on the controls listed in the Minimum Viable Secure Product.
 
@@ -14,7 +14,7 @@ h| Control
 h| Detailed Description
 
 | 1.1 Vulnerability reports
-| **What this control measures:** Appropriate processes are in place to accept and process reports of security issues in your products and/or services. 
+| **What this control measures:** Appropriate processes are in place to accept and process reports of security issues in your products and/or services.
 
 ---
 
@@ -48,7 +48,11 @@ Although more tightly scoped release testing may take place throughout the year,
 Using an independent company for annual third party testing is important as they approach the review without any pre-existing opinions on how the application should function. This greenfield viewpoint ensures no assumptions are made regarding the security of specific functions or areas of the service which could lead to a lack of coverage or depth of review.
 
 | 1.5 Training
-| **What this control measures:** Processes are in place to provide regular and ongoing security awareness training.
+| **What this control measures:** Processes are in place to provide regular and ongoing security awareness training. Example areas of training that should be considered are:
+
+  * Applicable company policies
+  * Proper data handling and protection of sensitive information
+  * How to report suspicious activities
 
 ---
 
@@ -67,8 +71,8 @@ Using an independent company for annual third party testing is important as they
 ---
 
 **Why this control is important:** Clear and timely notification of incidents is important to ensure customers are able to understand how an incident may affect their data, and prepare for further actions required to mitigate the effects of a breach. The initial notification is expected within 72 hours of discovery, however it should be augmented and extended upon once a more detailed analysis has occurred and root causes are identified. Not all information will be available within 72 hours, however it is important to ensure processes are in place to provide initial information within this timeframe.
-  
-| 1.8 Data sanitization
+
+| 1.8 Data handling
 | **What this control measures:** Data stored on removable or decommissioned hardware is appropriately handled.
 
 ---
@@ -101,12 +105,14 @@ Implementation of strong encryption, and enforcement using Strict-Transport-Secu
 
 To ensure that cookies are also only transmitted via encrypted and integrity protected channels, cookies must use the Secure flag.
 
-| 2.3 Content Security Policy
+| 2.3 Security Headers
 | **What this control measures:** Appropriate browser protections are in place within your product and/or service to protect against common web threats.
 
 ---
 
-**Why this control is important:** Content Security Policy is a mechanism designed to make applications more secure against common web vulnerabilities, particularly cross-site scripting. By adopting a strict policy, which prevents the loading of untrusted scripts or plugins, an application can add an important defense-in-depth layer against markup injection attacks.
+**Why this control is important:** Content Security Policy is a mechanism designed to make applications more secure against common web vulnerabilities, particularly cross-site scripting while iframing websites could lead to unexpected vulnerabilities. By adopting strict policies, which prevents the loading of untrusted scripts or plugins and limiting being iframed an application can add important defense-in-depth layers against markup injection attacks.
+
+Security headers can also assist in providing isolation and protection against common attacks beyond those discussed above. You can find more information at [securityheaders.com](https://securityheaders.com).
 
 | 2.4 Password policy
 | **What this control measures:** Appropriate controls are in place to protect users who opt to use password-based authentication.
@@ -150,18 +156,9 @@ Regular vulnerability scanning allows you to easily identify new vulnerabilities
 
 Care should be taken to avoid logging sensitive information such as passwords or other credentials.
 
-Ensuring logs are available for an extended period of time also ensures you are able to track back any intrusion to the source. 
+Ensuring logs are available for an extended period of time also ensures you are able to track back any intrusion to the source.
 
-| 2.8 Backup and Disaster Recovery
-| **What this control measures:** Processes are in place to ensure backup and recovery of your product and/or service in the event of a disaster.
-
----
-
-**Why this control is important:** Ensuring suitably tested backups are in place for disaster recovery is a critical step. This backup should be at a different location, and planned so it is possible to recover from a disaster scenario preventing access to any and all online data for an extended period of time.
-
-Consideration should be given to planning how your disaster recovery processes would respond to commonly seen attacks (e.g ransomware, large-scale cloud service outages).
-
-| 2.9 Encryption
+| 2.8 Encryption
 | **What this control measures:** Sensitive data is encrypted at rest within your product and/or service.
 
 ---
@@ -202,6 +199,15 @@ h| Detailed Description
 
 **Why this control is important:** Acting in a timely manner to address vulnerabilities detected within your platform ensures you are effectively protecting sensitive data. In cases where addressing a vulnerability requires a longer period of time, or users to alter the way they interact with your application, care should be taken to inform users in a timely manner.
 
+| 3.5 Build process
+| **What this control measures:** Build processes are fully scripted/automated and generate provenance.
+
+---
+
+**Why this control is important:** Hardening and automation of build processes is an essential first step to prevent tampering and provide the ability to auditability. Automation of build processes furthermore enables teams to react quickly to threats and incidents by ensuring a new version can be released with a vulnerability or bug fix or by upgrading a compromised dependency. Provenance is metadata about how an artifact was built, including the build process, top-level source, and dependencies. Knowing the provenance allows software consumers to make risk-based security decisions.
+
+Provenance at SLSA level 1 does not protect against tampering, but it offers a basic level of code source identification and can aid in vulnerability management. For applications and services that process particularly sensitive data, higher [SLSA levels](https://slsa.dev/spec/v0.1/levels#detailed-explanation) can provide additional guarantees.
+
 2+<h| 4 Operational controls
 h| Control
 h| Detailed Description
@@ -218,7 +224,7 @@ h| Detailed Description
 
 ---
 
-**Why this control is important:** Where your staff have legitimate access to sensitive data as part of their day-to-day work, this access should be regularly reviewed to ensure access is limited. The principle of least privilege should be applied to ensure only authorized users with a valid business need can access sensitive data.
+**Why this control is important:** Where your staff have legitimate access to sensitive data as part of their day-to-day work, this access should be regularly reviewed to ensure access is limited. The principle of least privilege should be applied to ensure only authorized users with a valid business need can access sensitive data. By adding Multi-Factor Authorization the risk of a compromise through phishing, or other attacks targeting employee systems or credentials is significantly reduced.
 
 | 4.3 Subprocessors
 | **What this control measures:** Processes are in place to validate the security posture of third-party subprocessors.
@@ -226,5 +232,14 @@ h| Detailed Description
 ---
 
 **Why this control is important:** Where you may use third-party subprocessors, it is important to ensure that they are appropriately measured against the MVSP baseline to ensure that data and integrations do not lower the overall security of the platform or service.
+
+| 4.4 Backup and Disaster Recovery
+| **What this control measures:** Processes are in place to ensure backup and recovery of your product and/or service in the event of a disaster.
+
+---
+
+**Why this control is important:** Ensuring suitably tested backups are in place for disaster recovery is a critical step. This backup should be at a different location, and planned so it is possible to recover from a disaster scenario preventing access to any and all online data for an extended period of time.
+
+Consideration should be given to planning how your disaster recovery processes would respond to commonly seen attacks (e.g ransomware, large-scale cloud service outages).
 
 |===
