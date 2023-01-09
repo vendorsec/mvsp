@@ -1,8 +1,7 @@
 import 'source-map-support/register'
-import S3 from 'aws-sdk/clients/s3'
-import SES from 'aws-sdk/clients/ses'
-import DynamoDB from 'aws-sdk/clients/dynamodb'
-import nodemailer from 'nodemailer'
+import { S3, GetObjectCommand } from '@aws-sdk/client-s3'
+import { SESv2, SendEmailCommand } from '@aws-sdk/client-sesv2'
+import { DynamoDBClient, BatchGetItemCommand } from '@aws-sdk/client-dynamodb'
 import type { ParsedMail, AddressObject } from 'mailparser'
 import { simpleParser } from 'mailparser'
 
@@ -15,14 +14,13 @@ if (!process.env.TABLE)
   throw new Error('The `TABLE` environment variable must be specified')
 const { TABLE } = process.env
 
-const s3 = new S3()
-const transporter = nodemailer.createTransport({
-  SES: new SES({ apiVersion: '2010-12-01' }),
+const s3 = new S3({})
+const dynamo = new DynamoDBClient({})
+const ses = new SESv2({
+  apiVersion: '2019-09-27',
 })
-const dbClient = new DynamoDB.DocumentClient()
 
 export async function handler(event: AWSLambda.SESEvent): Promise<void> {
-  // console.log('event', JSON.stringify(event, null, 2))
   const record = event.Records[0].ses
   const messageId = record.mail.messageId
   const fromRaw = record.mail.commonHeaders.from?.[0]
@@ -55,7 +53,14 @@ export async function handler(event: AWSLambda.SESEvent): Promise<void> {
   }
 
   try {
-    await transporter.sendMail(transform(parsed, destinations))
+    const entries = transform(parsed, destinations)
+    await Promise.all(
+      entries.map((e) =>
+        e.then((Data) =>
+          ses.send(new SendEmailCommand({ Content: { Raw: { Data } } }))
+        )
+      )
+    )
   } catch (e) {
     console.error('Failed to send message. Transporter error:', e)
   }
@@ -63,17 +68,14 @@ export async function handler(event: AWSLambda.SESEvent): Promise<void> {
 
 async function getFromS3(messageId: string): Promise<Buffer> {
   try {
-    const { Body: data } = await s3
-      .getObject({
-        Bucket: BUCKET,
-        Key: messageId,
-      })
-      .promise()
-    if (!(data instanceof Buffer))
-      throw new Error(
-        `Unexpected type of the S3 bucket object body: '${typeof data}'. Expected Buffer`
-      )
-    return data
+    const command = new GetObjectCommand({
+      Bucket: BUCKET,
+      Key: messageId,
+    })
+    const { Body } = await s3.send(command)
+    if (Body === undefined) throw new Error(`Body is undefined`)
+    const data = await Body.transformToByteArray()
+    return Buffer.from(data, data.byteOffset, data.byteLength)
   } catch (e) {
     throw new Error(
       `Could not fetch message ID ${messageId} from S3 bucket: ${e}`
@@ -86,7 +88,7 @@ export interface Recipient {
   address: string
 }
 
-function getRecipients(email: ParsedMail): Recipient[] {
+export function getRecipients(email: ParsedMail): Recipient[] {
   function getRecipientList(
     addrObjects: AddressObject | AddressObject[] | undefined
   ): Recipient[] {
@@ -112,29 +114,23 @@ function getRecipients(email: ParsedMail): Recipient[] {
 async function getForwardingDestinations(
   recipients: Recipient[]
 ): Promise<string[]> {
-  const { Responses } = await dbClient
-    .batchGet({
-      RequestItems: {
-        [TABLE]: {
-          Keys: recipients.map((recipient) => ({
-            in: recipient.address.toLowerCase(),
-          })),
-        },
+  const command = new BatchGetItemCommand({
+    RequestItems: {
+      [TABLE]: {
+        Keys: recipients.map((recipient) => ({
+          in: { S: recipient.address.toLowerCase() },
+        })),
       },
-    })
-    .promise()
+    },
+  })
+  const { Responses } = await dynamo.send(command)
   if (!Responses) {
     console.warn('No forwarding destinations found')
     return []
   }
   const result: string[] = []
   for (const record of Responses[TABLE].values()) {
-    if (
-      record.out &&
-      record.out.wrapperName === 'Set' &&
-      record.out.type === 'String'
-    )
-      result.push(...(record.out.values as string[]))
+    if (record.out && record.out.SS) result.push(...record.out.SS)
   }
   console.log('Found recipients', result)
   return result

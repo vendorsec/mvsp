@@ -1,7 +1,6 @@
 import * as path from 'path'
 
 const FUNCTION_PATH = path.dirname(require.resolve('@mvsp/forwarder'))
-console.log('Function path', FUNCTION_PATH)
 
 import {
   Stack,
@@ -44,7 +43,7 @@ export class SesForwarderStack extends Stack {
       runtime: lambda.Runtime.NODEJS_18_X,
       entry: path.join(FUNCTION_PATH, 'index.ts'),
       bundling: {
-        externalModules: ['aws-sdk', 'aws-sdk/clients/*'],
+        mainFields: ['module', 'main'],
       },
       environment: {
         BUCKET: mailBucket.bucketName,

@@ -1,21 +1,24 @@
 {
   "name": "@mvsp/forwarder",
   "private": true,
-  "version": "0.1.0",
+  "version": "2.0.0",
   "dependencies": {
+    "@aws-sdk/client-dynamodb": "3.245.0",
+    "@aws-sdk/client-s3": "3.245.0",
+    "@aws-sdk/client-sesv2": "3.245.0",
     "addressparser": "1.0.1",
     "mailparser": "3.6.3",
     "nodemailer": "6.8.0",
     "source-map-support": "0.5.21"
   },
   "devDependencies": {
+    "@aws-sdk/types": "3.226.0",
     "@types/addressparser": "1.0.1",
     "@types/aws-lambda": "8.10.109",
     "@types/mailparser": "3.4.0",
     "@types/node": "18.11.18",
     "@types/nodemailer": "6.4.7",
     "@types/source-map-support": "0.5.6",
-    "aws-sdk": "2.1290.0",
     "typescript": "4.9.4"
   }
 }

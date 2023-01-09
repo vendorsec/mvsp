@@ -1,12 +1,16 @@
 import type { ParsedMail, AttachmentCommon, AddressObject } from 'mailparser'
-import type { Options, Attachment } from 'nodemailer/lib/mailer'
+import type { Attachment } from 'nodemailer/lib/mailer'
 import { getHtmlHeader, getTextHeader } from './bodyHeaders'
+import MailComposer from 'nodemailer/lib/mail-composer'
 
 if (!process.env.DOMAIN)
   throw new Error('The `DOMAIN` environment variable must be specified')
 const { DOMAIN } = process.env
 
-export function transform(parsed: ParsedMail, destinations: string[]): Options {
+export function transform(
+  parsed: ParsedMail,
+  destinations: string[]
+): Promise<Uint8Array>[] {
   if (!parsed.from)
     throw new Error('Received mail without From header. Not forwarding')
 
@@ -26,23 +30,29 @@ export function transform(parsed: ParsedMail, destinations: string[]): Options {
     parsed.bcc
   )
 
-  return {
-    from: `forward@${DOMAIN}`,
-    bcc: [...destinations],
-    subject: parsed.subject,
-    text: textHeader + (parsed.text || ''),
-    html: parsed.html ? htmlHeader + parsed.html : undefined,
-    attachments: convertAttachments(parsed.attachments),
-    replyTo: {
-      address: parsed.from?.value?.[0].address || '',
-      name: parsed.from?.value[0].name,
-    },
-  }
+  return destinations.map((to) =>
+    new MailComposer({
+      from: `forward@${DOMAIN}`,
+      to,
+      subject: parsed.subject,
+      text: textHeader + (parsed.text || ''),
+      html: parsed.html ? htmlHeader + parsed.html : undefined,
+      attachments: convertAttachments(parsed.attachments),
+      replyTo: {
+        address: parsed.from?.value?.[0].address || '',
+        name: parsed.from?.value[0].name || '',
+      },
+    })
+      .compile()
+      .build()
+  )
 }
 
 function fromToString(from: AddressObject | undefined): string {
   if (!from) return ''
-  return from.value.map(v => v.name ? `${v.name} (${v.address})` : v.address).join(', ')
+  return from.value
+    .map((v) => (v.name ? `${v.name} (${v.address})` : v.address))
+    .join(', ')
 }
 
 function convertAttachments(attachments: AttachmentCommon[]): Attachment[] {
