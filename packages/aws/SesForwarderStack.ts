@@ -12,7 +12,6 @@ import {
   aws_ses as ses,
   aws_dynamodb as dynamodb,
   aws_ses_actions as sesActions,
-  aws_route53 as route53,
   aws_logs as logs,
   aws_iam as iam,
   aws_lambda as lambda,
@@ -83,20 +82,6 @@ export class SesForwarderStack extends Stack {
       actions: [
         new sesActions.S3({ bucket: mailBucket }),
         new sesActions.Lambda({ function: forwarder }),
-      ],
-    })
-
-    const hostedZone = route53.HostedZone.fromLookup(this, 'HostedZone', {
-      domainName: props.domain,
-    })
-
-    new route53.MxRecord(this, 'MxRecord', {
-      zone: hostedZone,
-      values: [
-        {
-          hostName: `inbound-smtp.${this.region}.amazonaws.com`,
-          priority: 10,
-        },
       ],
     })
 
