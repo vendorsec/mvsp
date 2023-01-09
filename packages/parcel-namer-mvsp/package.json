@@ -1,11 +1,11 @@
 {
   "name": "@mvsp/parcel-namer-mvsp",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "WebsiteNamer.js",
   "engines": {
-    "parcel": "2.5.0"
+    "parcel": "2.8.2"
   },
   "dependencies": {
-    "@parcel/plugin": "2.5.0"
+    "@parcel/plugin": "2.8.2"
   }
 }
