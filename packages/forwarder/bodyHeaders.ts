@@ -11,13 +11,15 @@ export function getHtmlHeader(
 ): string {
   const ccText = recipientsToString(cc)
   const bccText = recipientsToString(bcc)
-  return `
+  return (
+    `
     <b>From:</b> ${from}<br />
     <b>Sent:</b> ${dateToString(date ?? new Date())}<br />
-    <b>To:</b> ${recipientsToString(to)}<br />\n`
-    + (ccText ? `<b>Cc:</b> ${ccText} <br />\n` : '')
-    + (bccText ? `<b>Bcc:</b> ${bccText} <br />\n` : '')
-    + `<hr /><br />\n\n`
+    <b>To:</b> ${recipientsToString(to)}<br />\n` +
+    (ccText ? `<b>Cc:</b> ${ccText} <br />\n` : '') +
+    (bccText ? `<b>Bcc:</b> ${bccText} <br />\n` : '') +
+    `<hr /><br />\n\n`
+  )
 }
 
 export function getTextHeader(
@@ -29,12 +31,14 @@ export function getTextHeader(
 ): string {
   const ccText = recipientsToString(cc)
   const bccText = recipientsToString(bcc)
-  return `From: ${from}
-Отправлено: ${dateToString(date ?? new Date())}
-To: ${recipientsToString(to)}\n`
-+ (ccText ? `Cc: ${ccText}\n` : '')
-+ (bccText ? `Bcc: ${bccText}\n` : '')
-+ '--------------------------------\n\n'
+  return (
+    `From: ${from}
+Sent: ${dateToString(date ?? new Date())}
+To: ${recipientsToString(to)}\n` +
+    (ccText ? `Cc: ${ccText}\n` : '') +
+    (bccText ? `Bcc: ${bccText}\n` : '') +
+    '--------------------------------\n\n'
+  )
 }
 
 export function recipientsToString(recipients: AddressHeaderValue): string {
@@ -42,10 +46,12 @@ export function recipientsToString(recipients: AddressHeaderValue): string {
   if (!Array.isArray(recipients)) recipients = [recipients]
   return recipients
     .map((r) => {
-      return r.value.map(val => {
-        const name = val.name
-        return name ? `${name} (${val.address})` : val.address
-      }).join(', ')
+      return r.value
+        .map((val) => {
+          const name = val.name
+          return name ? `${name} (${val.address})` : val.address
+        })
+        .join(', ')
     })
     .join(', ')
 }

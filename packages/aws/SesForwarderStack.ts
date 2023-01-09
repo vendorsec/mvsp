@@ -41,7 +41,7 @@ export class SesForwarderStack extends Stack {
 
     const forwarder = new NodejsFunction(this, 'ForwarderFunction', {
       logRetention: logs.RetentionDays.INFINITE,
-      runtime: lambda.Runtime.NODEJS_14_X,
+      runtime: lambda.Runtime.NODEJS_18_X,
       entry: path.join(FUNCTION_PATH, 'index.ts'),
       bundling: {
         externalModules: ['aws-sdk', 'aws-sdk/clients/*'],
