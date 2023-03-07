@@ -2,7 +2,7 @@
 :compat-mode!:
 Minimum Viable Secure Product
 =============================
-MVSP Working Group <wg@mvsp.dev>
+MVSP Working Group <mvsp@groups.io>
 v2.0.0, 2022-10-12
 
 Minimum Viable Secure Product is a minimalistic security checklist for B2B software and business process outsourcing suppliers.
