@@ -63,13 +63,15 @@ h| Description
   This does not apply to secure protocols designed to run on top of unencrypted connections, such as OCSP
 
   * Scan and address issues using freely available modern TLS scanning tools
-  * Include the Strict-Transport-Security header on all pages with the `includeSubdomains` directive
+  * Include the Strict-Transport-Security header with the `includeSubdomains` directive
+  * Set authentication cookies as Secure
 
 | 2.3 Security Headers
 | Apply appropriate security headers to reduce the application attack surface and limit post exploitation:
 
   * Set a minimally permissive Content Security Policy
-  * Limit the ability to iframe sensitive application content where appropriate
+  * Limit the ability to iframe the application by enabling application-wide framing controls with X-Frame-Options
+    or CSP frame-ancestors.
 
 | 2.4 Password policy
 | If password authentication is used in addition to single sign-on:
@@ -102,7 +104,7 @@ Logs must include user ID, IP address, valid timestamp, type of action performed
 Logs must be stored for at least 30 days, and should not contain sensitive data or payloads.
 
 | 2.8 Encryption
-| Use available means of encryption to protect sensitive data in transit between systems and at rest in online data storages and backups
+| Use modern, accepted and available means of encryption to protect sensitive data in transit between systems and at rest in online data storages and backups
 
 2+<h| 3 Application implementation controls
 h| Control
