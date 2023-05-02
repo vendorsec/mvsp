@@ -1,0 +1,9 @@
+{% macro warn(value='') %}
+<div class="flex text-sm text-yellow-800 border border-yellow-300 rounded-lg bg-yellow-50 dark:bg-gray-800 dark:text-yellow-300 dark:border-yellow-800 border-solid" style="padding: 1rem; margin: 1rem" role="alert">
+    <span class="sr-only">Info</span>
+    <div>
+        <span class="font-bold">&#9432; Warning!</span> {{ value | safe }}
+    </div>
+</div>
+{% endmacro %}
+

@@ -9,19 +9,30 @@ pagination:
 permalink: '/mvsp.en/{% if control.version != "head" %}{{ control.version }}/{% endif %}'
 ---
 
+{% import "alerts.njk" as alerts %}
+
 Other versions:
 <ul>
 {%- for m in mvsp %}
   {% if m.version != control.version %}
   <li>
-    {% if m.version != "head" %}
-      <a href="/mvsp.en/{{ m.version }}/index.html">{{ m.version }}</a>
+    {% if m.version == "head" %}
+      <a href="/mvsp.en/index.html">Latest stable release</a>
     {% else %}
-      <a href="/mvsp.en/index.html">Latest release</a>
+      <a href="/mvsp.en/{{ m.version }}/index.html">
+        {{ m.version }}
+        {% if m.version == "alpha" %}
+          (work in progress)
+        {% endif %}
+      </a>
     {% endif %}
   </li>
   {% endif %}
 {% endfor -%}
 </ul>
+
+{% if control.warn %}
+   {{ alerts.warn(control.warn) }}
+{% endif %}
 
 {% asciidoc control.content %}
