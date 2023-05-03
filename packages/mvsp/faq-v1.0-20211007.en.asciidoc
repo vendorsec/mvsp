@@ -1,0 +1,230 @@
+:!last-update-label:
+:compat-mode!:
+Minimum Viable Secure Product Control Descriptions
+==================================================
+MVSP Working Group <wg@mvsp.dev>
+v0.2, 2021-09-06
+
+This document is designed to provide additional context on the controls listed in the Minimum Viable Secure Product.
+
+[cols="2,6a",stripes=none]
+|===
+2+<h| 1 Business controls
+h| Control
+h| Detailed Description
+
+| 1.1 Vulnerability reports
+| **What this control measures:** Appropriate processes are in place to accept and process reports of security issues in your products and/or services. 
+
+---
+
+**Why this control is important:** The ability for external parties to report possible vulnerabilities in your product or services is key to ensuring you can maintain an effective security and privacy posture. Sharing information on how users can directly report possible security or privacy issues to you ensures a clear and direct line of communication is available for users to report issues.
+
+| 1.2 Customer testing
+| **What this control measures:** Appropriate processes are in place to allow customers to safely and effectively perform testing against your products and/or services.
+
+---
+
+**Why this control is important:** If your service provides internet-accessible endpoints (e.g. a website or API), it is important to provide your customers with a suitable way to arrange security testing against a designated test environment. By building this requirement into your release schedule, you ensure testing is performed against designated test systems which replicate production, and are populated with non-production data.
+
+As the goal of testing is to ensure the security of the application under test, and not the efficacy of any WAF or IDS rulesets, it is important the testing is performed without a Web Application Firewall, or other blocking technology deployed.
+
+| 1.3 Self-assessment
+| **What this control measures:** Annual reviews of your security program are performed to identify corrective actions or areas of continued improvement.
+
+---
+
+**Why this control is important:** Running through the MVSP baseline once per year ensures that any changes to the product or offering are measured against the latest version of the baseline. Where gaps exist, highlighting these early on and taking corrective action ensures you maintain the baseline requirements.
+
+| 1.4 External testing
+| **What this control measures:** Processes are in place to schedule and perform regular third-party penetration testing against your products and/or services.
+
+---
+
+**Why this control is important:** Alongside any security testing performed by your customers, it is important to ensure a full scope penetration test of the service is performed at least once per year by an independent third-party testing company.
+
+Although more tightly scoped release testing may take place throughout the year, ensuring a holistic annual review of the platform is key to detecting issues which appear due to interaction between systems and new functionality. These kinds of issues are hard to detect during tightly scoped release reviews or code reviews.
+
+Using an independent company for annual third party testing is important as they approach the review without any pre-existing opinions on how the application should function. This greenfield viewpoint ensures no assumptions are made regarding the security of specific functions or areas of the service which could lead to a lack of coverage or depth of review.
+
+| 1.5 Training
+| **What this control measures:** Processes are in place to provide regular and ongoing security awareness training.
+
+---
+
+**Why this control is important:** Providing your employees with appropriate ongoing training specific to their roles is key to ensuring they are up to date with the latest advancements in their field, and are well equipped to deal with evolving threats and requirements. This training should include information on how to react to phishing, and awareness of processes in place to report phishing attempts.
+
+| 1.6 Compliance
+| **What this control measures:** Relevant compliance obligations are identified and completed.
+
+---
+
+**Why this control is important:** Compliance to standards and requirements relevant to your industry is a key element of a mature security and privacy program. The specifics depend on the area within which you operate. Compliance to a specific standard shouldn't replace the baseline requirements set out in the MVSP.
+
+| 1.7 Incident handling
+| **What this control measures:** Processes are in place to ensure the smooth handling of security and privacy incidents.
+
+---
+
+**Why this control is important:** Clear and timely notification of incidents is important to ensure customers are able to understand how an incident may affect their data, and prepare for further actions required to mitigate the effects of a breach. The initial notification is expected within 72 hours of discovery, however it should be augmented and extended upon once a more detailed analysis has occurred and root causes are identified. Not all information will be available within 72 hours, however it is important to ensure processes are in place to provide initial information within this timeframe.
+  
+| 1.8 Data sanitization
+| **What this control measures:** Data stored on removable or decommissioned hardware is appropriately handled.
+
+---
+
+**Why this control is important:** Data sanitization is an important step to ensure data is not left accessible on storage media during the decommissioning process. By following standard guidelines to sanitize media you protect against possible leaks of sensitive data.
+
+2+<h| 2 Application design controls
+h| Control
+h| Detailed Description
+
+| 2.1 Single Sign-On
+| **What this control measures:** Customers have the option to use single sign-on to access your product and/or service.
+
+---
+
+**Why this control is important:** Single sign-on using federated identity providers is important for organizations wishing to maintain control over their accounts in a more centralized manner. Offering the ability to use a federated identity allows users to rely on an established identity, with appropriate controls (e.g. two-factor authentication) implemented and enforced at the organization level.
+
+Centralized control over these federated accounts also ensures the organization can control access to applications and services via a centralized authority, with the ability to deactivate access as required.
+
+Single sign-on also ensures users are not required to remember, or store credentials for each individual service. This reduces the chance of account compromise.
+
+| 2.2 HTTPS-only
+| **What this control measures:** Sensitive data is encrypted in transit between the end-user and your product and/or service.
+
+---
+
+**Why this control is important:** Applications or services passing sensitive data must ensure they encrypt data in transit. This should include any sites which allow for authentication, or links to sensitive data.
+
+Implementation of strong encryption, and enforcement using Strict-Transport-Security ensures users are not exposed to unencrypted endpoints or attacks forcing them to leak sensitive data.
+
+To ensure that cookies are also only transmitted via encrypted and integrity protected channels, cookies must use the Secure flag.
+
+| 2.3 Content Security Policy
+| **What this control measures:** Appropriate browser protections are in place within your product and/or service to protect against common web threats.
+
+---
+
+**Why this control is important:** Content Security Policy is a mechanism designed to make applications more secure against common web vulnerabilities, particularly cross-site scripting. By adopting a strict policy, which prevents the loading of untrusted scripts or plugins, an application can add an important defense-in-depth layer against markup injection attacks.
+
+| 2.4 Password policy
+| **What this control measures:** Appropriate controls are in place to protect users who opt to use password-based authentication.
+
+---
+
+**Why this control is important:** For applications to additionally implement password authentication alongside single sign-on, a strong password policy must be put in place. These controls are designed to ensure users set strong, hard-to-guess passwords without an artificial upper bound on length or limitations in allowed charset. Setting a lower bound on length is encouraged, however. Entering the password should not disable or dissuade the use of password managers and should not disable the possibility of copy-pasting the password into the password field.
+
+Hardened processes for password change or password reset are critical to protecting access to accounts, and should be designed and implemented carefully. The password reset process should not depend solely on security questions, as that would provide a base for social engineering attacks.
+
+Storing passwords should only ever be done in a hashed and salted format using a memory-hard or CPU-hard one-way hash function specifically designed for passwords.
+
+Additional guidance on Memorized Secrets (password/pin) can be found in NIST 800-63r3 or later.
+
+| 2.5 Security libraries
+| **What this control measures:** Standardized libraries are used to improve the security of your product and/or service.
+
+---
+
+**Why this control is important:** Enforcing the use of established, tried, and tested security libraries and frameworks ensures developers are able to rely on existing solutions and are not expected to reinvent the wheel. By standardizing on libraries and frameworks that systemically address various implementation weaknesses, you can reduce or eliminate entire classes of bugs from your platform, and ensure new code does not include regressions that reintroduce these vulnerabilities.
+
+| 2.6 Patching
+| **What this control measures:** Processes are in place to identify, and maintain up-to-date components within your product and/or service.
+
+---
+
+**Why this control is important:** Applying security patches in common applications and libraries is an important step to securing your infrastructure and application. Processes to deploy these fixes within a reasonable timeframe ensure targeted attacks exploiting these vulnerabilities do not affect the security of your product or data.
+
+In cases where an application relies on a library with known vulnerabilities, ensuring the library is regularly patched also guarantees the application keeps pace with changes in the library. This reduces the chance of an urgent patch breaking application functionality due to a large jump in version.
+
+Libraries or application versions marked as end-of-life should be considered as unpatched as they are no longer receiving security fixes.
+
+Regular vulnerability scanning allows you to easily identify new vulnerabilities, as well as monitor where existing patches have not yet been fully implemented.
+
+| 2.7 Logging
+| **What this control measures:** Appropriate logs are stored to assist with debugging and incident response activities.
+
+---
+
+**Why this control is important:** Having detailed logs ensures you are able to perform a detailed analysis of actions taken in the event of a breach. Ensure you record not only failed login attempts, but also successful logins, as this puts you in a better position to track the movement of a malicious actor across multiple areas of the infrastructure.
+
+Care should be taken to avoid logging sensitive information such as passwords or other credentials.
+
+Ensuring logs are available for an extended period of time also ensures you are able to track back any intrusion to the source. 
+
+| 2.8 Backup and Disaster Recovery
+| **What this control measures:** Processes are in place to ensure backup and recovery of your product and/or service in the event of a disaster.
+
+---
+
+**Why this control is important:** Ensuring suitably tested backups are in place for disaster recovery is a critical step. This backup should be at a different location, and planned so it is possible to recover from a disaster scenario preventing access to any and all online data for an extended period of time.
+
+Consideration should be given to planning how your disaster recovery processes would respond to commonly seen attacks (e.g ransomware, large-scale cloud service outages).
+
+| 2.9 Encryption
+| **What this control measures:** Sensitive data is encrypted at rest within your product and/or service.
+
+---
+
+**Why this control is important:** Sensitive data transiting untrusted networks or shared connections always needs to be encrypted. Similarly, sensitive data at rest should be stored in an encrypted format to prevent unauthorized access.
+
+Where cryptographic keys are used, they should be managed in a way that ensures they are generated, stored, and deleted in a secure manner. Access to keys should be limited physically, logically, and through user/role access controls. Secret keys should not be accessible in source code.
+
+2+<h| 3 Application implementation controls
+h| Control
+h| Detailed Description
+
+| 3.1 List of data
+| **What this control measures:** Information on the type and amount of data handled by your product and/or service is available for threat modelling or incident response purposes.
+
+---
+
+**Why this control is important:** A list of sensitive data types processed by the application should be available. This allows for easier threat modelling and risk analysis of the platform as functionality changes over time. This data also helps you quickly understand the exposure in the event of an incident.
+
+| 3.2 Data flow diagram
+| **What this control measures:** Information on the flow of data through systems is available for threat modelling or incident response purposes.
+
+---
+
+**Why this control is important:** In complex systems it is often difficult to understand how data flows from the user through the platform, and where this data is stored. By ensuring a data flow diagram is available, it is easy to understand where weaknesses may exist within the system, and create an accurate threat model. This data also helps you quickly understand the exposure in the event of an incident.
+
+| 3.3 Vulnerability prevention
+| **What this control measures:** Appropriate developer training on common security issues is performed.
+
+---
+
+**Why this control is important:** Training your development and quality assurance teams on commonly seen security issues ensures they are well equipped to reduce the occurrences of these vulnerabilities within your systems. The examples provided in MVSP are a good starting point, however they should be reviewed based on your application's specifics and the environments used to ensure you are addressing language- and infrastructure-specific vulnerabilities affecting your applications.
+
+| 3.4 Time to fix vulnerabilities
+| **What this control measures:** Identified vulnerabilities are patched within a reasonable time frame.
+
+---
+
+**Why this control is important:** Acting in a timely manner to address vulnerabilities detected within your platform ensures you are effectively protecting sensitive data. In cases where addressing a vulnerability requires a longer period of time, or users to alter the way they interact with your application, care should be taken to inform users in a timely manner.
+
+2+<h| 4 Operational controls
+h| Control
+h| Detailed Description
+
+| 4.1 Physical access
+| **What this control measures:** Sensitive data stored or accessible from trusted locations is secured effectively.
+
+---
+
+**Why this control is important:** In instances where you use physical servers to house sensitive data, the physical security of these environments is crucial. Data center providers may implement these controls on your behalf.
+
+| 4.2 Logical access
+| **What this control measures:** Access to sensitive data is tightly controlled and regularly reviewed.
+
+---
+
+**Why this control is important:** Where your staff have legitimate access to sensitive data as part of their day-to-day work, this access should be regularly reviewed to ensure access is limited. The principle of least privilege should be applied to ensure only authorized users with a valid business need can access sensitive data.
+
+| 4.3 Subprocessors
+| **What this control measures:** Processes are in place to validate the security posture of third-party subprocessors.
+
+---
+
+**Why this control is important:** Where you may use third-party subprocessors, it is important to ensure that they are appropriately measured against the MVSP baseline to ensure that data and integrations do not lower the overall security of the platform or service.
+
+|===

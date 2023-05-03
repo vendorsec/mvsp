@@ -7,12 +7,13 @@ const wipWarn = 'This is a work in progress version of the controls, not suitabl
 module.exports = function () {
   const docPath = path.dirname(require.resolve('@mvsp/doc/package.json'))
   const versions = [];
-  glob.sync(path.join(docPath, '*.asciidoc')).forEach(function(file) {
+  glob.sync(path.join(docPath, 'mvsp*.asciidoc')).forEach(function(file) {
     const name = path.basename(file)
     const version = name.split(/mvsp-(.*)\...\.asciidoc/)[1] ?? "head"
     const content = fs.readFileSync(file)
+    const faq = fs.readFileSync(path.join(docPath, name.replace('mvsp', 'faq')))
     const warn = version == 'alpha' ? wipWarn : '';
-    versions.push({content, version, warn})
+    versions.push({content, faq, version, warn})
   })
   return versions;
 }
