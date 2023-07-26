@@ -63,7 +63,8 @@ h| Description
   This does not apply to secure protocols designed to run on top of unencrypted connections, such as OCSP
 
   * Scan and address issues using freely available modern TLS scanning tools
-  * Include the Strict-Transport-Security header with the `includeSubdomains` directive
+  * Include the Strict-Transport-Security header with a long `max-age` value
+
   * Set authentication cookies as Secure
 
 | 2.3 Security Headers
