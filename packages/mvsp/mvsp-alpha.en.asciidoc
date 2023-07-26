@@ -129,8 +129,10 @@ h| Description
 | 3.4 Time to fix vulnerabilities
 | Produce and deploy patches to address application vulnerabilities that materially impact security within 90 days of discovery
 
-| 3.5 Build process
+| 3.5 Build and release process
 | Build processes must be fully scripted/automated and generate provenance (https://slsa.dev/spec/v0.1/levels[SLSA Level 1])
+
+Sensitive application credentials and tokens should be stored separately from the application's source code repository.
 
 2+<h| 4 Operational controls
 h| Control
