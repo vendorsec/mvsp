@@ -71,7 +71,7 @@ h| Description
 | Apply appropriate security headers to reduce the application attack surface and limit post exploitation:
 
   * Set a minimally permissive Content Security Policy
-  * Limit the ability to iframe the application by enabling application-wide framing controls with X-Frame-Options
+  * Limit the ability to iframe the application by enabling framing controls with X-Frame-Options
     or CSP frame-ancestors.
 
 | 2.4 Password policy
@@ -133,7 +133,7 @@ h| Description
 | 3.5 Build and release process
 | Build processes must be fully scripted/automated and generate provenance (https://slsa.dev/spec/v1.0/levels#build-l1[SLSA Level 1])
 
-Sensitive application credentials and tokens should be stored separately from the application's source code repository.
+Sensitive application credentials and tokens should be stored separately from the application's source code.
 
 2+<h| 4 Operational controls
 h| Control
