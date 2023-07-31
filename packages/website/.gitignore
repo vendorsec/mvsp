@@ -1,0 +1,6 @@
+# Parcel plugin temp directory
+.11ty-parcel-temp
+# Parcel cache
+.parcel-cache
+# Eleventy output directory
+_site
