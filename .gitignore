@@ -1,22 +1,6 @@
 node_modules
 .pnpm-debug.log
 
-# CDK asset staging directory
-.cdk.staging
-cdk.out
-cdk.context.json
-
-# Parcel build directories
-.parcel-cache
-.cache
-.build
-
-# Eleventy output directory
-_site
-
-# Parcel output directory
-dist
-
 # VIM Temporary Files
 *~
 *.swp

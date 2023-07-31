@@ -1,3 +1,0 @@
-{
-  "app": "pnpm exec ts-node deploy.ts"
-}
