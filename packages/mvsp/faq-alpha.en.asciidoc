@@ -206,7 +206,7 @@ h| Detailed Description
 
 **Why this control is important:** Hardening and automation of build processes is an essential first step to prevent tampering and provide the ability to auditability. Automation of build processes furthermore enables teams to react quickly to threats and incidents by ensuring a new version can be released with a vulnerability or bug fix or by upgrading a compromised dependency. Provenance is metadata about how an artifact was built, including the build process, top-level source, and dependencies. Knowing the provenance allows software consumers to make risk-based security decisions.
 
-Provenance at SLSA level 1 does not protect against tampering, but it offers a basic level of code source identification and can aid in vulnerability management. For applications and services that process particularly sensitive data, higher [SLSA levels](https://slsa.dev/spec/v0.1/levels#detailed-explanation) can provide additional guarantees.
+Provenance at SLSA Build level 1 does not protect against tampering, but it offers a basic level of code source identification and can aid in vulnerability management. For applications and services that process particularly sensitive data, higher [SLSA levels](https://slsa.dev/spec/v1.0/levels) can provide additional guarantees.
 
 2+<h| 4 Operational controls
 h| Control
