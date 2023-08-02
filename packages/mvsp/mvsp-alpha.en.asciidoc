@@ -131,7 +131,7 @@ h| Description
 | Produce and deploy patches to address application vulnerabilities that materially impact security within 90 days of discovery
 
 | 3.5 Build and release process
-| Build processes must be fully scripted/automated and generate provenance (https://slsa.dev/spec/v1.0/levels#build-l1[SLSA Level 1])
+| Build processes must be fully scripted/automated and generate provenance (https://slsa.dev/spec/v1.0/levels#build-l1[SLSA Build Level 1])
 
 Sensitive application credentials and tokens should be stored separately from the application's source code.
 
