@@ -19,7 +19,8 @@ h| Description
 
 | 1.1 Vulnerability reports
 | * Publish the point of contact for security reports on your website
-* Respond to security reports within a reasonable time frame
+* Develop and document procedures for triaging reported vulnerabilities
+* Respond to reports within a reasonable time frame
 
 | 1.2 Customer testing
 | * On request, enable your customers or their delegates to test the security of your application
@@ -41,14 +42,15 @@ h| Description
 * Ensure data localization requirements are implemented in line with local regulations and contractual obligations
 
 | 1.7 Incident handling
-| * Notify your customers about a breach without undue delay, no later than 72 hours upon discovery
+| * Notify relevant parties about any security breach that affects personal data without undue delay, no later than 72 hours upon discovery
   * Include the following information in the notification:
-  ** Relevant point of contact
-  ** Preliminary technical analysis of the breach
-  ** Remediation plan with reasonable timelines
+  ** Nature of the breach
+  ** Relevant contact information
+  ** Consequences of the breach
+  ** Measures taken to remediate the issue
 
 | 1.8 Data handling
-| * Ensure media sanitization processes based on NIST SP 800-88 or equivalent are implemented
+| * Ensure media sanitization processes based on NIST SP 800-88 (or equivalent) are implemented for storage media holding unencrypted production data
 
 2+<h| 2 Application design controls
 h| Control
@@ -72,7 +74,8 @@ h| Description
 
   * Set a minimally permissive Content Security Policy
   * Limit the ability to iframe the application by enabling framing controls with X-Frame-Options
-    or CSP frame-ancestors.
+    or CSP frame-ancestors
+  * Disable caching for APIs and endpoints that return sensitive data
 
 | 2.4 Password policy
 | If password authentication is used in addition to single sign-on:
@@ -91,12 +94,13 @@ h| Description
   Example: ORM for database access, UI framework for rendering DOM
 
 | 2.6 Dependency Patching
-| Apply security patches with a severity score of "medium" or higher, or ensure equivalent mitigations are available for all components of the application stack within one month of the patch release
+| * Ensure third-party dependencies are maintained and up-to-date, with security relevant updates having a severity score of "medium" or higher applied in line with your application patching schedule
+  * Where dependency patching or upgrades are not possible, equivalent mitigations should be implemented for all components of the application stack
 
 | 2.7 Logging
 | Keep logs of:
 
-  * Users logging in and out
+  * Authentication events (success and failure)
   * Read, write, delete operations on application and system users and objects
   * Security settings changes (including disabling logging)
   * Application owner access to customer data (access transparency)
@@ -121,19 +125,18 @@ h| Description
 | Train your developers and implement development guidelines to prevent at least the following vulnerabilities:
 
   * Authorization bypass. Example: Accessing other customers' data or admin features from a regular account
-  * Insecure session ID. Examples: Guessable token; a token stored in an insecure location (e.g. cookie without secure and httpOnly flags set)
+  * Insecure session management. Examples: Guessable token; a token stored in an insecure location (e.g. cookie without Secure and HttpOnly flags set)
   * Injections. Examples: SQL injection, NoSQL injection, XXE, OS command injection
   * Cross-site scripting. Examples: Calling insecure JavaScript functions, performing insecure DOM manipulations, echoing back user input into HTML without escaping
   * Cross-site request forgery. Example: Accepting requests with an Origin header from a different domain
-  * Use of vulnerable libraries. Example: Using server-side frameworks or JavaScript libraries with known vulnerabilities
+  * Handling untrusted data. Example: Reusing data supplied by users within sensitive application contexts
 
 | 3.4 Time to fix vulnerabilities
 | Produce and deploy patches to address application vulnerabilities that materially impact security within 90 days of discovery
 
 | 3.5 Build and release process
-| Build processes must be fully scripted/automated and generate provenance (https://slsa.dev/spec/v1.0/levels#build-l1[SLSA Build Level 1])
-
-Sensitive application credentials and tokens should be stored separately from the application's source code.
+| * Must use a version control system and consistent build process that generates provenance describing how the artifact was built (https://slsa.dev/spec/v1.0/levels#build-l1[SLSA Build Level 1])
+  * Sensitive application credentials and tokens should be stored separately from the application's source code
 
 2+<h| 4 Operational controls
 h| Control
@@ -145,7 +148,7 @@ h| Description
   * Layered perimeter controls and interior barriers
   * Managed access to keys
   * Entry and exit logs
-  * Appropriate response plan for intruder alerts
+  * Appropriate response plan for unauthorized access
 
 | 4.2 Logical access
 | * Limit sensitive data access exclusively to users with a legitimate need. The data owner must authorize such access
@@ -154,13 +157,13 @@ h| Description
   * Ensure remote access to customer data or production systems requires the use of Multi-Factor Authentication
 
 | 4.3 Subprocessors
-| * Publish a list of third-party companies with access to customer data on your website
+| * Maintain a list of third-party companies with access to customer data, and make it available to clients and business partners upon request
   * Assess third-party companies annually against this baseline
 
 | 4.4 Backup and Disaster recovery
 | * Securely back up all data to a different location than where the application is running
-  * Maintain and periodically test disaster recovery plans
-  * Periodically test backup restoration
+  * Maintain and periodically test disaster recovery plans in concert with your incident response planning
+  * Periodically test backup restoration and disaster recovery processes
 
 |===
 
