@@ -43,14 +43,16 @@ h| Description
 
 | 1.7 Incident handling
 | * Notify relevant parties about any security breach that affects personal data without undue delay, no later than 72 hours upon discovery
-  * Include the following information in the notification:
+  
+Include the following information in the notification:
+
   ** Nature of the breach
   ** Relevant contact information
   ** Consequences of the breach
   ** Measures taken to remediate the issue
 
 | 1.8 Data handling
-| * Ensure media sanitization processes based on NIST SP 800-88 (or equivalent) are implemented for storage media holding unencrypted production data
+| Ensure media sanitization processes based on NIST SP 800-88 (or equivalent) are implemented for storage media holding unencrypted production data
 
 2+<h| 2 Application design controls
 h| Control
@@ -101,8 +103,8 @@ h| Description
 | Keep logs of:
 
   * Authentication events (success and failure)
-  * Read, write, delete operations on application and system users and objects
-  * Security settings changes (including disabling logging)
+  * Create, Read, Update, and Delete (CRUD) operations on application and system users and objects
+  * Security relevant configuration changes (including disabling logging)
   * Application owner access to customer data (access transparency)
 
 Logs must include user ID, IP address, valid timestamp, type of action performed, and object of this action.
