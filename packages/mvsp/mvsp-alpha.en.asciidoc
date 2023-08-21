@@ -11,7 +11,7 @@ Designed with simplicity in mind, the checklist contains only those controls tha
 
 We recommend that all companies building B2B software or otherwise handling sensitive information under its broadest definition implement at least the following controls, and are strongly encouraged to go well beyond them in their security programs.
 
-[cols="1,3a",stripes=none]
+[%autowidth.stretch]
 |===
 2+<h| 1 Business controls
 h| Control
