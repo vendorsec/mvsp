@@ -37,7 +37,7 @@ h| Description
 | Implement role-specific security training for your personnel that is relevant to their business function
 
 | 1.6 Compliance
-| * Comply with all industry security standards relevant to your business such as PCI DSS, HITRUST, ISO27001, and SSAE 18
+| * Comply with industry security standards relevant to your business such as PCI DSS, HITRUST, ISO27001, and SSAE 18
 * Comply with local laws and regulations in jurisdictions applicable to your company and your customers, such as GDPR, Binding Corporate Rules, and Standard Contractual Clauses
 * Ensure data localization requirements are implemented in line with local regulations and contractual obligations
 
