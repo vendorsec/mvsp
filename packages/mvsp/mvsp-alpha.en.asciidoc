@@ -29,7 +29,7 @@ h| Description
 * Ensure non-production environments do not contain production data
 
 | 1.3 Self-assessment
-| Perform annual (at a minimum) security self-assessments using the latest MVSP checklist
+| Perform annual (at a minimum) security self-assessments using the latest MVSP release
 
 | 1.4 External testing
 | Contract a security vendor to perform annual, comprehensive penetration tests on your systems
@@ -161,7 +161,7 @@ h| Description
 
 | 4.3 Subprocessors
 | * Maintain a list of third-party companies with access to customer data, and make it available to clients and business partners upon request
-  * Assess third-party companies annually against the latest MVSP checklist
+  * Assess third-party companies annually against the latest MVSP release
 
 | 4.4 Backup and Disaster recovery
 | * Securely backup all data to a different location than where the application is running
