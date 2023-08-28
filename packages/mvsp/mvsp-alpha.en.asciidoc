@@ -18,17 +18,18 @@ h| Control
 h| Description
 
 | 1.1 Vulnerability reports
-| * Publish the point of contact for security reports on your website
+| * Publish the method and/or point of contact for security reports on your website
+  ** Example: Using the https://securitytxt.org/)[security.txt] standard
 * Develop and document procedures for triaging reported vulnerabilities
 * Respond to reports within a reasonable time frame
 
 | 1.2 Customer testing
 | * On request, enable your customers or their delegates to test the security of your application
-* Test on a non-production environment if it closely resembles the production environment in functionality
+* Test on a non-production environment that closely resembles the production environment in functionality
 * Ensure non-production environments do not contain production data
 
 | 1.3 Self-assessment
-| Perform annual (at a minimum) security self-assessments using this document
+| Perform annual (at a minimum) security self-assessments using the latest MVSP release
 
 | 1.4 External testing
 | Contract a security vendor to perform annual, comprehensive penetration tests on your systems
@@ -49,7 +50,7 @@ Include the following information in the notification:
   ** Nature of the breach
   ** Relevant contact information
   ** Consequences of the breach
-  ** Measures taken to remediate the issue
+  ** Measures taken, or needing to be taken, to remediate the issue
 
 | 1.8 Data handling
 | Ensure media sanitization processes based on NIST SP 800-88 (or equivalent) are implemented for storage media holding unencrypted production data
@@ -59,7 +60,7 @@ h| Control
 h| Description
 
 | 2.1 Single Sign-On
-| Implement single sign-on using modern and industry standard protocols
+| Implement single sign-on using modern, maintained, and industry standard protocols
 
 | 2.2 HTTPS-only
 | * Redirect traffic from HTTP protocol (port 80) to HTTPS (port 443)
@@ -91,7 +92,7 @@ h| Description
   * Enforce appropriate account lockout and brute-force protection on account access
 
 | 2.5 Security libraries
-| Use frameworks, template languages, or libraries that systemically address implementation weaknesses by escaping the outputs and sanitizing the inputs
+| Use modern, maintained, and industry standard frameworks, template languages, or libraries that systemically address implementation weaknesses by escaping the outputs and sanitizing the inputs
 
   Example: ORM for database access, UI framework for rendering DOM
 
@@ -111,7 +112,7 @@ Logs must include user ID, IP address, valid timestamp, type of action performed
 Logs must be stored for at least 30 days, and should not contain sensitive data or payloads.
 
 | 2.8 Encryption
-| Use modern, accepted and available means of encryption to protect sensitive data in transit between systems and at rest in online data storages and backups
+| Use modern, maintained, and industry standard means of encryption to protect sensitive data in transit between systems, and at rest in online data storages and backups
 
 2+<h| 3 Application implementation controls
 h| Control
@@ -160,12 +161,11 @@ h| Description
 
 | 4.3 Subprocessors
 | * Maintain a list of third-party companies with access to customer data, and make it available to clients and business partners upon request
-  * Assess third-party companies annually against this baseline
+  * Assess third-party companies annually against the latest MVSP release
 
 | 4.4 Backup and Disaster recovery
-| * Securely back up all data to a different location than where the application is running
-  * Maintain and periodically test disaster recovery plans in concert with your incident response planning
-  * Periodically test backup restoration and disaster recovery processes
+| * Securely backup all data to a different location than where the application is running
+  * Maintain and test disaster recovery plans in concert with your incident response planning, at least annually or after significant changes
 
 |===
 
