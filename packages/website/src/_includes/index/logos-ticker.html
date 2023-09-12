@@ -1,5 +1,8 @@
 <script>
-document.ready(shuffle());
+document.addEventListener("DOMContentLoaded", (event) => {
+	// wait for DOM to complete loading before altering the images
+	shuffle();
+});
 
 function shuffle(){
 	// arr contains the max-h- valuem the src, and the alt text.
