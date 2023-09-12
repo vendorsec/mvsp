@@ -1,3 +1,51 @@
+<script>
+shuffle();
+
+function shuffle(){
+	var arr = [
+    ['16', '/images/contributors/salesforce.svg', 'Salesforce'],
+    ['14', '/images/contributors/google.svg', 'Google'],
+    ['12', '/images/contributors/okta.png', 'Okta'],
+    ['12', '/images/contributors/slack.svg', 'Slack'],
+    ['10', '/images/contributors/vanta.png', 'Vanta'],
+    ['12', '/images/contributors/c2sec.svg', 'C2SEC'],
+    ['12', '/images/contributors/boxyhq.svg', 'BoxyHQ'],
+    ['12', '/images/contributors/secureframe.png', 'SecureFrame'],
+    ['12', '/images/contributors/reciprocity.png', 'Reciprocity'],
+    ['12', '/images/contributors/securityscorecard.png', 'SecurityScorecard'],
+    ['12', '/images/contributors/securestack.png', 'SecureStack'],
+    ['10', '/images/contributors/bitsight.png"', 'BitSight'],
+    ['12', '/images/contributors/safebase.png', 'Safebase'],
+    ['16', '/images/contributors/boberdoo.png', 'Boberdoo'],
+    ['16', '/images/contributors/compliancecow.png', 'Compliance Cow'],
+    ['12', '/images/contributors/terratrue.png', 'Terratrue'],
+    ['12', '/images/contributors/unicis.png', 'Unicis.Tech'],
+    ['14', '/images/contributors/whistic.png', 'Whistic'],
+    ['12', '/images/contributors/synaptics.png', 'Synpatics],
+    ['14', '/images/contributors/netflix.png', 'Netflix']
+  ];
+	var html = "<img class="max-h-16 w-1 mx-24 self-start flex m-auto"></a>";
+	shuffleArray(arr).forEach(item =>{
+		html += "<img class='max-h-" +item[0]+" w-64 mx-12 self-start flex m-auto' src='" +item[1]+ "' alt='" +item[2]+ "'></a>";
+	});
+  
+  html += "<img class="max-h-16 w-1 mx-24 self-start flex m-auto"></a>"
+	document.getElementById('ticker').innerHTML = html;
+  }
+ 
+function shuffleArray(arr) {
+    for (var i = 0, shuffled = [], randomIndex = 0; i < arr.length; i++) {
+        randomIndex = Math.floor(Math.random() *  arr.length);
+        while (shuffled.indexOf(arr[randomIndex]) !== -1) {
+            randomIndex = Math.floor(Math.random() *  arr.length);
+        }
+       shuffled.push(arr[randomIndex]);
+    }
+ 
+	return shuffled;
+}
+</script>
+
 <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
   <p class="text-center text-base font-semibold uppercase text-gray-600 tracking-wider">
     Contributors
@@ -6,34 +54,7 @@
 <!-- Wrap the slider in div with overflow hidden to hide scrollbars -->
 <div class="overflow-hidden bg-white">
   <!-- The slider itself is a flex grid -->
-  <div class="flex -mx-12 img-ticker">
-    <!-- Original set of images -->
-    <!-- Each image is a grid column with width 16rem (w-64) and horiztonal margin 3rem (mx-12) -->
-    <!-- START - Single spacer mx-24 to ensure initial logo starts on screen -->
-      <img class="max-h-16 w-1 mx-24 self-start flex m-auto"></a>
-    <!-- END -->
-      <img class="max-h-16 w-64 mx-12 self-start flex m-auto" src="/images/contributors/salesforce.svg" alt="Salesforce"></a>
-      <img class="max-h-14 w-64 mx-12 self-start flex m-auto" src="/images/contributors/google.svg" alt="Google"></a>
-      <img class="max-h-12 w-64 mx-12 self-start flex m-auto" src="/images/contributors/okta.png" alt="Okta"></a>
-      <img class="max-h-12 w-64 mx-12 self-start flex m-auto" src="/images/contributors/slack.svg" alt="Slack"></a>
-      <img class="max-h-10 w-64 mx-12 self-start flex m-auto" src="/images/contributors/vanta.png" alt="Vanta"></a>
-      <img class="max-h-12 w-64 mx-12 self-start flex m-auto" src="/images/contributors/c2sec.svg" alt="C2SEC"></a>
-      <img class="max-h-12 w-64 mx-12 self-start flex m-auto" src="/images/contributors/boxyhq.svg" alt="BoxyHQ"></a>
-      <img class="max-h-12 w-64 mx-12 self-start flex m-auto" src="/images/contributors/secureframe.png" alt="Secureframe"></a>
-      <img class="max-h-12 w-64 mx-12 self-start flex m-auto" src="/images/contributors/reciprocity.png" alt="Reciprocity"></a>
-      <img class="max-h-12 w-64 mx-12 self-start flex m-auto" src="/images/contributors/securityscorecard.png" alt="SecurityScorecard"></a>
-      <img class="max-h-12 w-64 mx-12 self-start flex m-auto" src="/images/contributors/securestack.png" alt="SecureStack"></a>
-      <img class="max-h-10 w-64 mx-12 self-start flex m-auto" src="/images/contributors/bitsight.png" alt="BitSight"></a>
-      <img class="max-h-12 w-64 mx-12 self-start flex m-auto" src="/images/contributors/safebase.png" alt="Safebase">
-      <img class="max-h-16 w-64 mx-12 self-start flex m-auto" src="/images/contributors/boberdoo.png" alt="Boberdoo">
-      <img class="max-h-16 w-64 mx-12 self-start flex m-auto" src="/images/contributors/compliancecow.png" alt="Compliance Cow">
-      <img class="max-h-12 w-64 mx-12 self-start flex m-auto" src="/images/contributors/terratrue.png" alt="Terratrue">
-      <img class="max-h-12 w-64 mx-12 self-start flex m-auto" src="/images/contributors/unicis.png" alt="Unicis.Tech">
-      <img class="max-h-14 w-64 mx-12 self-start flex m-auto" src="/images/contributors/whistic.png" alt="Whistic">
-      <img class="max-h-12 w-64 mx-12 self-start flex m-auto" src="/images/contributors/synaptics.png" alt="Synaptics"></a>
-      <img class="max-h-14 w-64 mx-12 self-start flex m-auto" src="/images/contributors/netflix.png" alt="Netflix">
-    <!-- START - Single spacer at the end mx-24 -->
-      <img class="max-h-16 w-1 mx-24 self-start flex m-auto"></a>
-    <!-- END -->
+  <div id=ticker class="flex -mx-12 img-ticker">
+    <!-- Filled by shuffle -->
   </div>
 </div>
