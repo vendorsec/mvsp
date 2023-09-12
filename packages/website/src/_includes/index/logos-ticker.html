@@ -2,34 +2,35 @@
 shuffle();
 
 function shuffle(){
+	// arr contains the max-h- valuem the src, and the alt text.
 	var arr = [
-    ['16', '/images/contributors/salesforce.svg', 'Salesforce'],
-    ['14', '/images/contributors/google.svg', 'Google'],
-    ['12', '/images/contributors/okta.png', 'Okta'],
-    ['12', '/images/contributors/slack.svg', 'Slack'],
-    ['10', '/images/contributors/vanta.png', 'Vanta'],
-    ['12', '/images/contributors/c2sec.svg', 'C2SEC'],
-    ['12', '/images/contributors/boxyhq.svg', 'BoxyHQ'],
-    ['12', '/images/contributors/secureframe.png', 'SecureFrame'],
-    ['12', '/images/contributors/reciprocity.png', 'Reciprocity'],
-    ['12', '/images/contributors/securityscorecard.png', 'SecurityScorecard'],
-    ['12', '/images/contributors/securestack.png', 'SecureStack'],
-    ['10', '/images/contributors/bitsight.png"', 'BitSight'],
-    ['12', '/images/contributors/safebase.png', 'Safebase'],
-    ['16', '/images/contributors/boberdoo.png', 'Boberdoo'],
-    ['16', '/images/contributors/compliancecow.png', 'Compliance Cow'],
-    ['12', '/images/contributors/terratrue.png', 'Terratrue'],
-    ['12', '/images/contributors/unicis.png', 'Unicis.Tech'],
-    ['14', '/images/contributors/whistic.png', 'Whistic'],
-    ['12', '/images/contributors/synaptics.png', 'Synpatics],
-    ['14', '/images/contributors/netflix.png', 'Netflix']
-  ];
-	var html = "<img class="max-h-16 w-1 mx-24 self-start flex m-auto"></a>";
+		['16', '/images/contributors/salesforce.svg', 'Salesforce'],
+		['14', '/images/contributors/google.svg', 'Google'],
+		['12', '/images/contributors/okta.png', 'Okta'],
+		['12', '/images/contributors/slack.svg', 'Slack'],
+		['10', '/images/contributors/vanta.png', 'Vanta'],
+		['12', '/images/contributors/c2sec.svg', 'C2SEC'],
+		['12', '/images/contributors/boxyhq.svg', 'BoxyHQ'],
+		['12', '/images/contributors/secureframe.png', 'SecureFrame'],
+		['12', '/images/contributors/reciprocity.png', 'Reciprocity'],
+		['12', '/images/contributors/securityscorecard.png', 'SecurityScorecard'],
+		['12', '/images/contributors/securestack.png', 'SecureStack'],
+		['10', '/images/contributors/bitsight.png"', 'BitSight'],
+		['12', '/images/contributors/safebase.png', 'Safebase'],
+		['16', '/images/contributors/boberdoo.png', 'Boberdoo'],
+		['16', '/images/contributors/compliancecow.png', 'Compliance Cow'],
+		['12', '/images/contributors/terratrue.png', 'Terratrue'],
+		['12', '/images/contributors/unicis.png', 'Unicis.Tech'],
+		['14', '/images/contributors/whistic.png', 'Whistic'],
+		['12', '/images/contributors/synaptics.png', 'Synpatics'],
+		['14', '/images/contributors/netflix.png', 'Netflix']
+	];
+	var html = "<img class='max-h-16 w-1 mx-24 self-start flex m-auto'></a>";
 	shuffleArray(arr).forEach(item =>{
 		html += "<img class='max-h-" +item[0]+" w-64 mx-12 self-start flex m-auto' src='" +item[1]+ "' alt='" +item[2]+ "'></a>";
 	});
   
-  html += "<img class="max-h-16 w-1 mx-24 self-start flex m-auto"></a>"
+  html += "<img class='max-h-16 w-1 mx-24 self-start flex m-auto'></a>";
 	document.getElementById('ticker').innerHTML = html;
   }
  
@@ -41,7 +42,6 @@ function shuffleArray(arr) {
         }
        shuffled.push(arr[randomIndex]);
     }
- 
 	return shuffled;
 }
 </script>
@@ -55,6 +55,6 @@ function shuffleArray(arr) {
 <div class="overflow-hidden bg-white">
   <!-- The slider itself is a flex grid -->
   <div id=ticker class="flex -mx-12 img-ticker">
-    <!-- Filled by shuffle -->
+    <!-- Filled by shuffle(); -->
   </div>
 </div>
