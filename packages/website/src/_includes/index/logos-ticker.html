@@ -7,7 +7,7 @@
 <!-- Wrap the slider in div with overflow hidden to hide scrollbars -->
 <div class="overflow-hidden bg-white">
 	<!-- The slider itself is a flex grid -->
-	<div id="ticker" class="flex -mx-16 img-ticker">
+	<div id="ticker" class="flex -mx-16">
 		<!-- Original set of images -->
 		<!-- Each image is a grid column with width 16rem (w-64) and horiztonal margin 4rem (mx-16) -->
 		<!-- shuffle(); acts on these-->
@@ -46,6 +46,8 @@ function shuffle() {
 	var img_div = document.getElementById('images');
 	var imgs = ticker.getElementsByTagName('img');
 	var tmpdiv = document.createElement('div');
+	tmpdiv.id = 'ticker_images';
+	tmpdiv.className = 'flex -mx-16 img-ticker';
 	var order = shuffleArray(Array.from({length: imgs.length}, (v, i) => i+1));
 	
 	for (var i = 0; i < order.length; i++) {
