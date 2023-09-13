@@ -10,7 +10,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('./src/images/')
   eleventyConfig.addPassthroughCopy('./src/images/contributors/')
   eleventyConfig.addPassthroughCopy('./src/styles/')
-  eleventyConfig.addPassthroughCopy('./src/_data/image_shuffle.js')
+  eleventyConfig.addPassthroughCopy('./src/_data/image_shuffle.11ty.js')
   eleventyConfig.addShortcode('asciidoc', function (value) {
     return `${asciidoctor.convert(value)}`
   })
