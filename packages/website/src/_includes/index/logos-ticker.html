@@ -52,10 +52,14 @@ function shuffle() {
 	
 	for (var i = 0; i < order.length; i++) {
 		tmpdiv.appendChild(  document.getElementById('img' + order[i])  );
-	  }
+	}
 
-	// ensure images appear for the duration of the animation by copying the list twice
-	tmpdiv = tmpdiv + tmpdiv
+	// ensure images appear for the duration of the animation by copying the node twice
+	var clone = tmpdiv.cloneNode(true);
+	while (clone.hasChildNodes()) {
+		tmpdiv.appendChild(clone.firstChild);
+	}
+
   	// replace img_div with shuffled order images
 	img_div.parentNode.replaceChild(tmpdiv, img_div);
 }
