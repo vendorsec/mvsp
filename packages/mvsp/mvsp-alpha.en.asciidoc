@@ -25,14 +25,15 @@ h| Description
 
 | 1.2 Customer testing
 | * On request, enable your customers or their delegates to test the security of your application
-* Test on a non-production environment that closely resembles the production environment in functionality
+* Test on a production or a non-production environment that closely resembles the production environment in functionality
 * Ensure non-production environments do not contain production data
+* Reasonable restrictions on testing can be defined
 
 | 1.3 Self-assessment
 | Perform annual (at a minimum) security self-assessments using the latest MVSP release
 
 | 1.4 External testing
-| Contract a security vendor to perform annual, comprehensive penetration tests on your systems
+| Contract a security vendor to perform annual, comprehensive penetration tests of your products/services and systems they depend on
 
 | 1.5 Training
 | Implement role-specific security training for your personnel that is relevant to their business function
@@ -129,7 +130,7 @@ h| Description
 
   * Authorization bypass. Example: Accessing other customers' data or admin features from a regular account
   * Insecure session management. Examples: Guessable token; a token stored in an insecure location (e.g. cookie without Secure and HttpOnly flags set)
-  * Injections. Examples: SQL injection, NoSQL injection, XXE, OS command injection
+  * Injections. Examples: (No)SQL injection, LLM / Prompt injection, XXE, OS command injection
   * Cross-site scripting. Examples: Calling insecure JavaScript functions, performing insecure DOM manipulations, echoing back user input into HTML without escaping
   * Cross-site request forgery. Example: Accepting requests with an Origin header from a different domain
   * Handling untrusted data. Example: Reusing data supplied by users within sensitive application contexts
