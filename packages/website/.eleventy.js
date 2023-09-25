@@ -11,8 +11,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('./src/images/contributors/')
   eleventyConfig.addPassthroughCopy('./src/styles/')
   eleventyConfig.addPassthroughCopy('./src/js/')
-  eleventyConfig.addShortcode('asciidoc', function (value) {
-    return `${asciidoctor.convert(value)}`
+  eleventyConfig.addShortcode('asciidoc', function (value, docname) {
+    return `${asciidoctor.convert(
+      value, { 'attributes': { 'docname': docname } } )
+    }`
   })
   return {
     templateFormats: ['html', 'njk', '11ty.js', 'md'],
