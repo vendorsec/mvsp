@@ -14,7 +14,7 @@ h| Control
 h| Detailed Description
 
 | 1.1 Vulnerability reports
-anchor:name[FAQ_1_1]
+anchor:FAQ_1_1[]
 | **What this control measures:** Appropriate processes are in place to accept and process reports of security issues in your products and/or services.
 
 ---
@@ -22,7 +22,7 @@ anchor:name[FAQ_1_1]
 **Why this control is important:** The ability for external parties to report possible vulnerabilities in your product or services is key to ensuring you can maintain an effective security and privacy posture. Sharing information on how users can directly report possible security or privacy issues to you ensures a clear and direct line of communication is available for users to report issues.
 
 | 1.2 Customer testing
-anchor:name[FAQ_1_2]
+anchor:FAQ_1_2[]
 | **What this control measures:** Appropriate processes are in place to allow customers to safely and effectively perform testing against your products and/or services.
 
 ---
@@ -34,7 +34,7 @@ As the goal of testing is to ensure the security of the application under test, 
 It is important to consider that someone will likely carry out testing on accessible services regardless of your internal policies. Making sure that there is a safe and clearly communicated way to perform testing, with optionally reasonable restrictions, is also helpful to protect your production environments.
 
 | 1.3 Self-assessment
-anchor:name[FAQ_1_3]
+anchor:FAQ_1_3[]
 | **What this control measures:** Annual reviews of your security program are performed to identify corrective actions or areas of continued improvement.
 
 ---
@@ -42,7 +42,7 @@ anchor:name[FAQ_1_3]
 **Why this control is important:** Running through the MVSP baseline once per year ensures that any changes to the product or offering are measured against the latest version of the baseline. Where gaps exist, highlighting these early on and taking corrective action ensures you maintain the baseline requirements.
 
 | 1.4 External testing
-anchor:name[FAQ_1_4]
+anchor:FAQ_1_4[]
 | **What this control measures:** Processes are in place to schedule and perform regular third-party penetration testing against your products and/or services.
 
 ---
@@ -54,7 +54,7 @@ Although more tightly scoped release testing may take place throughout the year,
 Using an independent company for annual third party testing is important as they approach the review without any pre-existing opinions on how the application should function. This greenfield viewpoint ensures no assumptions are made regarding the security of specific functions or areas of the service which could lead to a lack of coverage or depth of review.
 
 | 1.5 Training
-anchor:name[FAQ_1_5]
+anchor:FAQ_1_5[]
 | **What this control measures:** Processes are in place to provide regular and ongoing security awareness training. Example areas of training that should be considered are:
 
   * Applicable company policies
@@ -66,7 +66,7 @@ anchor:name[FAQ_1_5]
 **Why this control is important:** Providing your employees with appropriate ongoing training specific to their roles is key to ensuring they are up to date with the latest advancements in their field, and are well equipped to deal with evolving threats and requirements. This training should include information on how to react to phishing, and awareness of processes in place to report phishing attempts.
 
 | 1.6 Compliance
-anchor:name[FAQ_1_6]
+anchor:FAQ_1_6[]
 | **What this control measures:** Relevant compliance obligations are identified and completed.
 
 ---
@@ -74,7 +74,7 @@ anchor:name[FAQ_1_6]
 **Why this control is important:** Compliance to standards and requirements relevant to your industry is a key element of a mature security and privacy program. The specifics depend on the area within which you operate. Compliance to a specific standard shouldn't replace the baseline requirements set out in the MVSP.
 
 | 1.7 Incident handling
-anchor:name[FAQ_1_7]
+anchor:FAQ_1_7[]
 | **What this control measures:** Processes are in place to ensure the smooth handling of security and privacy incidents.
 
 ---
@@ -82,7 +82,7 @@ anchor:name[FAQ_1_7]
 **Why this control is important:** Clear and timely notification of incidents is important to ensure customers are able to understand how an incident may affect their data, and prepare for further actions required to mitigate the effects of a breach. The initial notification is expected within 72 hours of discovery, however it should be augmented and extended upon once a more detailed analysis has occurred and root causes are identified. Not all information will be available within 72 hours, however it is important to ensure processes are in place to provide initial information within this timeframe.
 
 | 1.8 Data handling
-anchor:name[FAQ_1_8]
+anchor:FAQ_1_8[]
 | **What this control measures:** Data stored on removable or decommissioned hardware is appropriately handled.
 
 ---
@@ -94,7 +94,7 @@ h| Control
 h| Detailed Description
 
 | 2.1 Single Sign-On
-anchor:name[FAQ_2_1]
+anchor:FAQ_2_1[]
 | **What this control measures:** Customers have the option to use single sign-on to access your product and/or service.
 
 ---
@@ -106,7 +106,7 @@ Centralized control over these federated accounts also ensures the organization 
 Single sign-on also ensures users are not required to remember, or store credentials for each individual service. This reduces the chance of account compromise.
 
 | 2.2 HTTPS-only
-anchor:name[FAQ_2_2]
+anchor:FAQ_2_2[]
 | **What this control measures:** Sensitive data is encrypted in transit between the end-user and your product and/or service.
 
 ---
@@ -118,7 +118,7 @@ Implementation of strong encryption, and enforcement using Strict-Transport-Secu
 To ensure that cookies are also only transmitted via encrypted and integrity protected channels, cookies must use the Secure flag.
 
 | 2.3 Security Headers
-anchor:name[FAQ_2_3]
+anchor:FAQ_2_3[]
 | **What this control measures:** Appropriate browser protections are in place within your product and/or service to protect against common web threats.
 
 ---
@@ -128,7 +128,7 @@ anchor:name[FAQ_2_3]
 Security headers can also assist in providing isolation and protection against common attacks beyond those discussed above. You can find more information at [securityheaders.com](https://securityheaders.com).
 
 | 2.4 Password policy
-anchor:name[FAQ_2_4]
+anchor:FAQ_2_4[]
 | **What this control measures:** Appropriate controls are in place to protect users who opt to use password-based authentication.
 
 ---
@@ -142,7 +142,7 @@ Storing passwords should only ever be done in a hashed and salted format using a
 Additional guidance on Memorized Secrets (password/pin) can be found in NIST 800-63r3 or later.
 
 | 2.5 Security libraries
-anchor:name[FAQ_2_5]
+anchor:FAQ_2_5[]
 | **What this control measures:** Standardized libraries are used to improve the security of your product and/or service.
 
 ---
@@ -150,7 +150,7 @@ anchor:name[FAQ_2_5]
 **Why this control is important:** Enforcing the use of established, tried, and tested security libraries and frameworks ensures developers are able to rely on existing solutions and are not expected to reinvent the wheel. By standardizing on libraries and frameworks that systemically address various implementation weaknesses, you can reduce or eliminate entire classes of bugs from your platform, and ensure new code does not include regressions that reintroduce these vulnerabilities.
 
 | 2.6 Dependency Patching
-anchor:name[FAQ_2_6]
+anchor:FAQ_2_6[]
 | **What this control measures:** Processes are in place to identify, and maintain up-to-date components within your product and/or service.
 
 ---
@@ -164,7 +164,7 @@ Libraries or application versions marked as end-of-life should be considered as 
 Regular vulnerability scanning allows you to easily identify new vulnerabilities, as well as monitor where existing patches have not yet been fully implemented.
 
 | 2.7 Logging
-anchor:name[FAQ_2_7]
+anchor:FAQ_2_7[]
 | **What this control measures:** Appropriate logs are stored to assist with debugging and incident response activities.
 
 ---
@@ -176,7 +176,7 @@ Care should be taken to avoid logging sensitive information such as passwords or
 Ensuring logs are available for an extended period of time also ensures you are able to track back any intrusion to the source.
 
 | 2.8 Encryption
-anchor:name[FAQ_2_8]
+anchor:FAQ_2_8[]
 | **What this control measures:** Sensitive data is encrypted at rest within your product and/or service.
 
 ---
@@ -190,7 +190,7 @@ h| Control
 h| Detailed Description
 
 | 3.1 List of data
-anchor:name[FAQ_3_1]
+anchor:FAQ_3_1[]
 | **What this control measures:** Information on the type and amount of data handled by your product and/or service is available for threat modelling or incident response purposes.
 
 ---
@@ -198,7 +198,7 @@ anchor:name[FAQ_3_1]
 **Why this control is important:** A list of sensitive data types processed by the application should be available. This allows for easier threat modelling and risk analysis of the platform as functionality changes over time. This data also helps you quickly understand the exposure in the event of an incident.
 
 | 3.2 Data flow diagram
-anchor:name[FAQ_3_2]
+anchor:FAQ_3_2[]
 | **What this control measures:** Information on the flow of data through systems is available for threat modelling or incident response purposes.
 
 ---
@@ -206,7 +206,7 @@ anchor:name[FAQ_3_2]
 **Why this control is important:** In complex systems it is often difficult to understand how data flows from the user through the platform, and where this data is stored. By ensuring a data flow diagram is available, it is easy to understand where weaknesses may exist within the system, and create an accurate threat model. This data also helps you quickly understand the exposure in the event of an incident.
 
 | 3.3 Vulnerability prevention
-anchor:name[FAQ_3_3]
+anchor:FAQ_3_3[]
 | **What this control measures:** Appropriate developer training on common security issues is performed.
 
 ---
@@ -214,7 +214,7 @@ anchor:name[FAQ_3_3]
 **Why this control is important:** Training your development and quality assurance teams on commonly seen security issues ensures they are well equipped to reduce the occurrences of these vulnerabilities within your systems. The examples provided in MVSP are a good starting point, however they should be reviewed based on your application's specifics and the environments used to ensure you are addressing language- and infrastructure-specific vulnerabilities affecting your applications.
 
 | 3.4 Time to fix vulnerabilities
-anchor:name[FAQ_3_4]
+anchor:FAQ_3_4[]
 | **What this control measures:** Identified vulnerabilities are patched within a reasonable time frame.
 
 ---
@@ -222,7 +222,7 @@ anchor:name[FAQ_3_4]
 **Why this control is important:** Acting in a timely manner to address vulnerabilities detected within your platform ensures you are effectively protecting sensitive data. In cases where addressing a vulnerability requires a longer period of time, or users to alter the way they interact with your application, care should be taken to inform users in a timely manner.
 
 | 3.5 Build process
-anchor:name[FAQ_3_5]
+anchor:FAQ_3_5[]
 | **What this control measures:** Build processes are fully scripted/automated and generate provenance.
 
 ---
@@ -236,7 +236,7 @@ h| Control
 h| Detailed Description
 
 | 4.1 Physical access
-anchor:name[FAQ_4_1]
+anchor:FAQ_4_1[]
 | **What this control measures:** Sensitive data stored or accessible from trusted locations is secured effectively.
 
 ---
@@ -244,7 +244,7 @@ anchor:name[FAQ_4_1]
 **Why this control is important:** In instances where you use physical servers to house sensitive data, the physical security of these environments is crucial. Data center providers may implement these controls on your behalf.
 
 | 4.2 Logical access
-anchor:name[FAQ_4_2]
+anchor:FAQ_4_2[]
 | **What this control measures:** Access to sensitive data is tightly controlled and regularly reviewed.
 
 ---
@@ -252,7 +252,7 @@ anchor:name[FAQ_4_2]
 **Why this control is important:** Where your staff have legitimate access to sensitive data as part of their day-to-day work, this access should be regularly reviewed to ensure access is limited. The principle of least privilege should be applied to ensure only authorized users with a valid business need can access sensitive data. By adding Multi-Factor Authorization the risk of a compromise through phishing, or other attacks targeting employee systems or credentials is significantly reduced.
 
 | 4.3 Subprocessors
-anchor:name[FAQ_4_3]
+anchor:FAQ_4_3[]
 | **What this control measures:** Processes are in place to validate the security posture of third-party subprocessors.
 
 ---
@@ -260,7 +260,7 @@ anchor:name[FAQ_4_3]
 **Why this control is important:** Where you may use third-party subprocessors, it is important to ensure that they are appropriately measured against the MVSP baseline to ensure that data and integrations do not lower the overall security of the platform or service.
 
 | 4.4 Backup and Disaster Recovery
-anchor:name[FAQ_4_4]
+anchor:FAQ_4_4[]
 | **What this control measures:** Processes are in place to ensure backup and recovery of your product and/or service in the event of a disaster.
 
 ---
