@@ -12,7 +12,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('./src/styles/')
   eleventyConfig.addPassthroughCopy('./src/js/')
   eleventyConfig.addShortcode('asciidoc', function (value) {
-    return `${asciidoctor.convertFile(value)}`
+    return `${asciidoctor.convert(value)}`
   })
   return {
     templateFormats: ['html', 'njk', '11ty.js', 'md'],
