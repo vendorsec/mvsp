@@ -11,7 +11,7 @@ module.exports = function () {
     const name = path.basename(file)
     const version = name.split(/mvsp-(.*)\...\.asciidoc/)[1] ?? "head"
     const content = fs.readFileSync(file)
-    const faq = fs.readFileSync(path.join(docPath, name.replace('mvsp', 'faq')))
+    const faq = fs.readFileSync(path.join(docPath, name.replace('mvsp', 'faq-mvsp')))
     const warn = version == 'alpha' ? wipWarn : '';
     versions.push({content, faq, version, warn})
   })
