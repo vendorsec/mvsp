@@ -13,7 +13,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('./src/js/')
   eleventyConfig.addShortcode('asciidoc', function (value, docname) {
     return `${asciidoctor.convert(
-      value, { 'attributes': { 'docname': docname } } )
+      value, { 'attributes': { 'custom': docname } } )
     }`
   })
   return {
