@@ -10,8 +10,7 @@ module.exports = function () {
   glob.sync(path.join(docPath, 'mvsp*.asciidoc')).forEach(function(file) {
     const name = path.basename(file)
     const version = name.split(/mvsp-(.*)\...\.asciidoc/)[1] ?? "head"
-    const content = fs.readFileSync(file, 'utf8')
-    const content_versioned = content.toString('utf8').replace('%7Bdocname%7D', 'mvsp-' + version)
+    const content = path.basename(file)
     const faq = fs.readFileSync(path.join(docPath, name.replace('mvsp', 'faq-mvsp')))
     const warn = version == 'alpha' ? wipWarn : '';
     versions.push({content_versioned, content, faq, version, warn})
