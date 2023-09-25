@@ -13,7 +13,7 @@ module.exports = function () {
     const content = path.basename(file)
     const faq = fs.readFileSync(path.join(docPath, name.replace('mvsp', 'faq-mvsp')))
     const warn = version == 'alpha' ? wipWarn : '';
-    versions.push({content_versioned, content, faq, version, warn})
+    versions.push({content, faq, version, warn})
   })
   return versions;
 }
