@@ -9,7 +9,7 @@ layout: page
 MVSP is a minimum checklist that serves as a stepping stone. We are aware of the [XKCD comic](https://xkcd.com/927/), however MVSP is not a standard and does not intend to compete with existing standards. Rather, it fills a void in standardized RFPs, contractual language, and many other areas.
 
 ## What differentiates MVSP from other industry standard questionnaires?
-MVSP is a basic framework and is not intended to be a comprehensive checklist. It is also not intended to replace more complex questionnaires, but rather as a starting point for companies that are currently developing their information security capabilities or who want to quickly understand the security capabilities of a enterprise-ready solution or service.
+MVSP is a basic framework and is not intended to be a comprehensive checklist. It is also not intended to replace more complex questionnaires, but rather as a starting point for companies that are currently developing their information security capabilities or who want to quickly understand the security capabilities of an enterprise-ready solution or service.
 
 Many other complex standards focus on a wide range of controls that should be implemented across the enterprise. MVSP, on the other hand, focuses specifically on the security of applications, which can vary from service to service. While a company can claim overal ISO compliance at a company level, MVSP would apply to a single application due to its narrow focus.
 
@@ -17,7 +17,7 @@ Many other complex standards focus on a wide range of controls that should be im
 It is possible, although the MVSP controls are designed to be brief. If you need to comply with different standards, you are likely meeting the MVSP requirements and will not need to gather data to complete the MVSP checklist. However, different companies may choose to use MVSP in different ways. We aim to ensure that widely used tools will support MVSP and use existing data to reduce your workload, even if a questionnaire is required.
 
 ## Does completing the MVSP checklist require sharing sensitive information?
-No, MVSP is specifically designed as a straightforward baseline checklist where controls are either met or not met.
+No, MVSP is specifically designed as a straight forward baseline checklist where controls are either met or not met.
 
 ## What sort of audit artifacts are required for MVSP?
 MVSP is not a standard, but rather a basic checklist. As such, it is not designed to include the collection of audit artifacts that are present in more comprehensive standards such as SOC2.
