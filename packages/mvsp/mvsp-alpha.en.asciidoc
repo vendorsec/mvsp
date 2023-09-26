@@ -19,7 +19,7 @@ h| Description
 
 | 1.1 Vulnerability reports
 | * Publish the method and/or point of contact for security reports on your website
-  ** Example: Using the https://securitytxt.org/)[security.txt] standard
+  ** Example: Using the https://securitytxt.org[security.txt] standard
 * Develop and document procedures for triaging reported vulnerabilities
 * Respond to reports within a reasonable time frame
 
