@@ -2,7 +2,7 @@
   "name": "@mvsp/website",
   "scripts": {
     "build": "eleventy",
-    "dev": "eleventy"
+    "dev": "eleventy --serve --quiet"
   },
   "devDependencies": {
     "rome": "12.1.3",
