@@ -1,5 +1,6 @@
 :!last-update-label:
 :compat-mode!:
+
 Minimum Viable Secure Product
 =============================
 MVSP Working Group <mvsp@groups.io>
@@ -45,7 +46,7 @@ h| Description
 
 | 1.7 Incident handling
 | * Notify relevant parties about any security breach that affects personal data without undue delay, no later than 72 hours upon discovery
-  
+
 Include the following information in the notification:
 
   ** Nature of the breach

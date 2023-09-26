@@ -6,7 +6,7 @@ pagination:
   data: mvsp
   size: 1
   alias: control
-permalink: '/faq.en/{% if control.version != "head" %}{{ control.version }}/{% endif %}'
+permalink: '/faq-mvsp.en/{% if control.version != "head" %}{{ control.version }}/{% endif %}'
 ---
 
 {% import "alerts.njk" as alerts %}
@@ -17,9 +17,9 @@ Other versions:
   {% if m.version != control.version %}
   <li>
     {% if m.version == "head" %}
-      <a href="/faq.en/index.html">Latest stable release</a>
+      <a href="/faq-mvsp.en/index.html">Latest stable release</a>
     {% else %}
-      <a href="/faq.en/{{ m.version }}/index.html">
+      <a href="/faq-mvsp.en/{{ m.version }}/index.html">
         {{ m.version }}
         {% if m.version == "alpha" %}
           (work in progress)
