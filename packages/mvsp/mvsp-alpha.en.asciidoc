@@ -19,10 +19,11 @@ h| Control
 h| Description
 
 | 1.1 Vulnerability reports
-| * Publish the method and/or point of contact for security reports on your website
-  ** Example: Using the https://securitytxt.org[security.txt] standard
-* Develop and document procedures for triaging reported vulnerabilities
+| * Publish a vulnerability disclosure policy on your website, defining the method and/or point of contact for security reports. The policy should list the scope for testing and include legal safe harbor authorizing testing
+  ** Example: Using template language from https://disclose.io[disclose.io] for a vulnerability disclosure policy, and the https://securitytxt.org[security.txt] standard to refer researchers to your policy.
+* Develop and document procedures for triaging reported vulnerabilities, including a plan to and aim to eliminate identified classes of vulnerabilities in the long term
 * Respond to reports within a reasonable time frame
+* Patch vulnerabilities consistent with Control 3.4
 
 | 1.2 Customer testing
 | * On request, enable your customers or their delegates to test the security of your application
@@ -31,10 +32,10 @@ h| Description
 * Reasonable restrictions on testing can be defined
 
 | 1.3 Self-assessment
-| Perform annual (at a minimum) security self-assessments using the latest MVSP release
+| Perform and publish annual (at a minimum) security self-assessments using the latest MVSP release
 
 | 1.4 External testing
-| Contract a security vendor to perform annual, comprehensive penetration tests of your products/services and systems they depend on
+| Contract a security vendor to perform (at minimum) annual, comprehensive penetration tests of your products/services and systems they depend on
 
 | 1.5 Training
 | Implement role-specific security training for your personnel that is relevant to their business function
@@ -45,7 +46,7 @@ h| Description
 * Ensure data localization requirements are implemented in line with local regulations and contractual obligations
 
 | 1.7 Incident handling
-| * Notify relevant parties about any security breach that affects personal data without undue delay, no later than 72 hours upon discovery
+| * Notify relevant parties about any security breach that affects personal data or other sensitive infromation without undue delay, no later than 72 hours upon discovery, and upon learning additional details of the breach. Consider reporting the breach to https://www.cisa.gov/report[CISA] or other relevant national cybersecurity agencies to help protect other potential victims
 
 Include the following information in the notification:
 
@@ -62,7 +63,7 @@ h| Control
 h| Description
 
 | 2.1 Single Sign-On
-| Implement single sign-on using modern, maintained, and industry standard protocols
+| Implement single sign-on using modern, maintained, and industry standard protocols and makes single sign-on available to configure for all customers at no additional cost
 
 | 2.2 HTTPS-only
 | * Redirect traffic from HTTP protocol (port 80) to HTTPS (port 443)
@@ -92,6 +93,7 @@ h| Description
   * Require the current password in addition to the new password during password change
   * Store passwords in a hashed and salted format using a memory-hard or CPU-hard one-way hash function
   * Enforce appropriate account lockout and brute-force protection on account access
+  * Do not provide default passwords for users or administrators
 
 | 2.5 Security libraries
 | Use modern, maintained, and industry standard frameworks, template languages, or libraries that systemically address implementation weaknesses by escaping the outputs and sanitizing the inputs
@@ -100,6 +102,7 @@ h| Description
 
 | 2.6 Dependency Patching
 | * Ensure third-party dependencies are maintained and up-to-date, with security relevant updates having a severity score of "medium" or higher applied in line with your application patching schedule
+  * Upon becoming aware of a Known Exploited Vulnerability affecting a third-party dependency, patch the vulnerability as soon as possible, within seven days
   * Where dependency patching or upgrades are not possible, equivalent mitigations should be implemented for all components of the application stack
 
 | 2.7 Logging
@@ -111,7 +114,7 @@ h| Description
   * Application owner access to customer data (access transparency)
 
 Logs must include user ID, IP address, valid timestamp, type of action performed, and object of this action.
-Logs must be stored for at least 30 days, and should not contain sensitive data or payloads.
+Logs must be stored for at least 30 days, and should not contain sensitive data or payloads. Logs should be made available at no additional charge
 
 | 2.8 Encryption
 | Use modern, maintained, and industry standard means of encryption to protect sensitive data in transit between systems, and at rest in online data storages and backups
@@ -137,7 +140,9 @@ h| Description
   * Handling untrusted data. Example: Reusing data supplied by users within sensitive application contexts
 
 | 3.4 Time to fix vulnerabilities
-| Produce and deploy patches to address application vulnerabilities that materially impact security within 90 days of discovery
+| * Produce and deploy patches to address application vulnerabilities that materially impact security within 90 days of discovery.
+  * For vulnerabilities with evidence of active exploitation, produce and deploy patches within 14 days of discovery.
+  * For vulnerabilities that require actions by customers, after patching publish a CVE record containing details of the vulnerability. The CVE should include the common weakness enumeration (CWE) field to identify the root cause.
 
 | 3.5 Build and release process
 | * Must use a version control system and consistent build process that generates provenance describing how the artifact was built (https://slsa.dev/spec/v1.0/levels#build-l1[SLSA Build Level 1])
