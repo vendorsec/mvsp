@@ -20,7 +20,7 @@ h| Description
 
 | 1.1 Vulnerability reports
 | * Publish a vulnerability disclosure policy on your website, defining the method and/or point of contact for security reports. The policy should list the scope for testing and include legal safe harbor authorizing testing
-  ** Example: Using template language from https://disclose.io[disclose.io] for a vulnerability disclosure policy, and the https://securitytxt.org[security.txt] standard to refer researchers to your policy.
+  ** Example: Using template language from https://disclose.io[disclose.io] for a vulnerability disclosure policy, and the https://securitytxt.org[security.txt] standard to refer researchers to your policy
 * Develop and document procedures for triaging reported vulnerabilities, including a plan to and aim to eliminate identified classes of vulnerabilities in the long term
 * Respond to reports within a reasonable time frame
 * Patch vulnerabilities consistent with Control 3.4
@@ -140,9 +140,9 @@ h| Description
   * Handling untrusted data. Example: Reusing data supplied by users within sensitive application contexts
 
 | 3.4 Time to fix vulnerabilities
-| * Produce and deploy patches to address application vulnerabilities that materially impact security within 90 days of discovery.
-  * For vulnerabilities with evidence of active exploitation, produce and deploy patches within 14 days of discovery.
-  * For vulnerabilities that require actions by customers, after patching publish a CVE record containing details of the vulnerability. The CVE should include the common weakness enumeration (CWE) field to identify the root cause.
+| * Produce and deploy patches to address application vulnerabilities that materially impact security within 90 days of discovery
+  * For vulnerabilities with evidence of active exploitation, produce and deploy patches within 14 days of discovery
+  * For vulnerabilities that require actions by customers, after patching publish a CVE record containing details of the vulnerability. The CVE should include the common weakness enumeration (CWE) field to identify the root cause
 
 | 3.5 Build and release process
 | * Must use a version control system and consistent build process that generates provenance describing how the artifact was built (https://slsa.dev/spec/v1.0/levels#build-l1[SLSA Build Level 1])
