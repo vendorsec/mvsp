@@ -21,7 +21,7 @@ h| Description
 | 1.1 Vulnerability reports
 | * Publish a vulnerability disclosure policy on your website that outlines the testing scope, provides a legal safe harbor, and gives contact details for security reports
   ** Example: Using template language from https://disclose.io[disclose.io] for a vulnerability disclosure policy, and the https://securitytxt.org[security.txt] standard to refer researchers to your policy
-* Develop and document procedures for triaging reported vulnerabilities, including a plan to and aim to eliminate identified classes of vulnerabilities in the long term
+* Develop and document procedures for triaging and remediating reported vulnerabilities
 * Respond to reports within a reasonable time frame
 * Patch vulnerabilities consistent with Control 3.4
 
