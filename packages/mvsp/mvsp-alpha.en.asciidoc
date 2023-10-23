@@ -142,7 +142,7 @@ h| Description
 | 3.4 Time to fix vulnerabilities
 | * Produce and deploy patches to address application vulnerabilities that materially impact security within 90 days of discovery
   * For vulnerabilities with evidence of active exploitation, production and deployment of patches should be prioritized
-  * For vulnerabilities that require actions by customers, after patching publish a CVE record containing details of the vulnerability. The CVE should include the common weakness enumeration (CWE) field to identify the root cause
+  * Publish a security bulletin that details the vulnerability and its root cause if the remedy requires action from customers
 
 | 3.5 Build and release process
 | * Must use a version control system and consistent build process that generates provenance describing how the artifact was built (https://slsa.dev/spec/v1.0/levels#build-l1[SLSA Build Level 1])
