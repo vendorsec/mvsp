@@ -18,9 +18,9 @@ We recommend that all companies building enterprise software and servics, or oth
 h| Control
 h| Description
 
-| 1.1 Vulnerability reports
+| 1.1 External vulnerability reports
 | * Publish a vulnerability disclosure policy on your website that outlines the testing scope, provides a legal safe harbor, and gives contact details for security reports
-  ** Example: Using template language from https://disclose.io[disclose.io] for a vulnerability disclosure policy, and the https://securitytxt.org[security.txt] standard to refer researchers to your policy
+  ** Example: Publish a policy generated with https://disclose.io[disclose.io] and refer to it using https://securitytxt.org[security.txt (RFC 9116)].
 * Develop and document procedures for triaging and remediating reported vulnerabilities
 * Respond to reports within a reasonable time frame
 * Patch vulnerabilities consistent with Control 3.4
@@ -32,7 +32,7 @@ h| Description
 * Reasonable restrictions on testing can be defined
 
 | 1.3 Self-assessment
-| Perform and publish security self-assessments using the latest MVSP release at least annually
+| Perform and make available security self-assessments for each qualifying product/service, using the latest MVSP release, at least annually
 
 | 1.4 External testing
 | Contract a security vendor to perform comprehensive penetration tests of your products, services, and dependent systems at least annually
@@ -96,7 +96,7 @@ h| Description
   * Do not provide default passwords for users or administrators
 
 | 2.5 Security libraries
-| Use modern, maintained, and industry standard frameworks, template languages, or libraries that systemically address implementation weaknesses by escaping the outputs and sanitizing the inputs
+| Use modern, maintained, and industry-standard frameworks, template languages, or libraries that systemically address implementation weaknesses by escaping the outputs and sanitizing the inputs
 
   Example: ORM for database access, UI framework for rendering DOM
 
@@ -117,7 +117,7 @@ Logs must include user ID, IP address, valid timestamp, type of action performed
 Logs must be stored for at least 30 days at no additional charge, and should not contain sensitive data or payloads.
 
 | 2.8 Encryption
-| Use modern, maintained, and industry standard means of encryption to protect sensitive data in transit between systems, and at rest in online data storages and backups
+| Use modern, maintained, and industry-standard means of encryption to protect sensitive data in transit between systems, and at rest in online data storages and backups
 
 2+<h| 3 Application implementation controls
 h| Control
