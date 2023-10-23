@@ -102,7 +102,7 @@ h| Description
 
 | 2.6 Dependency Patching
 | * Ensure third-party dependencies are maintained and up-to-date, with security relevant updates having a severity score of "medium" or higher applied in line with your application patching schedule
-  * Upon becoming aware of a https://www.cisa.gov/known-exploited-vulnerabilities-catalog[Known Exploited Vulnerability] affecting a third-party dependency, patch the vulnerability as soon as possible, within seven days
+  * Upon becoming aware of a https://www.cisa.gov/known-exploited-vulnerabilities-catalog[Known Exploited Vulnerability] affecting a third-party dependency, the patch should be prioritized
   * Where dependency patching or upgrades are not possible, equivalent mitigations should be implemented for all components of the application stack
 
 | 2.7 Logging
