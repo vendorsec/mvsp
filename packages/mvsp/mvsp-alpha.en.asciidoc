@@ -1,6 +1,5 @@
 :!last-update-label:
 :compat-mode!:
-:tip-caption: Example
 
 Minimum Viable Secure Product
 =============================
@@ -22,8 +21,10 @@ h| Description
 | 1.1 Vulnerability reports
 | * Publish the method and/or point of contact for security reports on your website
 
-[TIP]
-Example: Using the https://securitytxt.org[security.txt] standard
+====
+*Example*
+Using the https://securitytxt.org[security.txt] standard
+====
 
 * Develop and document procedures for triaging reported vulnerabilities
 * Respond to reports within a reasonable time frame
@@ -100,8 +101,10 @@ h| Description
 | 2.5 Security libraries
 | Use modern, maintained, and industry standard frameworks, template languages, or libraries that systemically address implementation weaknesses by escaping the outputs and sanitizing the inputs
 
-[TIP]
-Example: ORM for database access, UI framework for rendering DOM
+====
+*Example*
+ORM for database access, UI framework for rendering DOM
+====
 
 | 2.6 Dependency Patching
 | * Ensure third-party dependencies are maintained and up-to-date, with security relevant updates having a severity score of "medium" or higher applied in line with your application patching schedule
