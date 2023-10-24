@@ -67,7 +67,7 @@ function shuffle() {
 	var imgs = ticker.getElementsByTagName('img');
 	var tmpdiv = document.createElement('div');
 	tmpdiv.id = 'ticker_images';
-	tmpdiv.className = 'flex -mx-8 img-ticker grayscale hover:grayscale-0">';
+	tmpdiv.className = 'flex -mx-8 img-ticker p-4 md:p-8 bg-gray-50 grayscale hover:grayscale-0">';
 	// Add initial spacer to ensure initial logo appears on screen
 	tmpdiv.innerHTML += '<img class="max-h-16 w-96 mx-12 self-start flex m-auto">'
 	var order = shuffleArray(Array.from({length: imgs.length}, (v, i) => i+1));
