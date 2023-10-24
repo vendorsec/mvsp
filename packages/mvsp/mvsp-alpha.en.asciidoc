@@ -46,7 +46,8 @@ h| Description
 * Ensure data localization requirements are implemented in line with local regulations and contractual obligations
 
 | 1.7 Incident handling
-| * Notify relevant parties about any security breach that affects sensitive information no later than 72 hours upon discovery, and upon learning any additional details of the breach. Consider reporting the breach to relevant national cybersecurity agencies
+| * Notify relevant parties about any security breach that affects sensitive information no later than 72 hours upon discovery, and upon learning any additional details of the breach
+* Consider reporting the breach to relevant national cybersecurity agencies in line with local guidance and regulations
 
 Include the following information in the notification:
 
