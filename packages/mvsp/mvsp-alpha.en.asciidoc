@@ -10,7 +10,7 @@ Minimum Viable Secure Product (MVSP) is a list of essential application security
 
 The controls are designed to be simple to implement and provide a good foundation for building secure and resilient systems and services.
 
-We recommend that all companies building enterprise software and servics, or otherwise handling sensitive information, implement the MVSP controls and, where possible, go well beyond them in their application security programs.
+We recommend that all companies building enterprise software and services, or otherwise handling sensitive information, implement the MVSP controls and, where possible, go well beyond them in their application security programs.
 
 [cols="2,6a",stripes=none]
 |===
