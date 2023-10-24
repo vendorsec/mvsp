@@ -22,7 +22,7 @@ h| Description
 | * Publish the method and/or point of contact for security reports on your website
 
 ====
-*Example*
+*Example:*
 Using the https://securitytxt.org[security.txt] standard
 ====
 
@@ -72,7 +72,9 @@ h| Description
 | 2.2 HTTPS-only
 | * Redirect traffic from HTTP protocol (port 80) to HTTPS (port 443)
 
-  This does not apply to secure protocols designed to run on top of unencrypted connections, such as OCSP
+====
+This does not apply to secure protocols designed to run on top of unencrypted connections, such as OCSP
+====
 
   * Scan and address issues using freely available modern TLS scanning tools
   * Include the Strict-Transport-Security header with a long `max-age` value
@@ -102,7 +104,7 @@ h| Description
 | Use modern, maintained, and industry standard frameworks, template languages, or libraries that systemically address implementation weaknesses by escaping the outputs and sanitizing the inputs
 
 ====
-*Example*
+*Example:*
 ORM for database access, UI framework for rendering DOM
 ====
 
