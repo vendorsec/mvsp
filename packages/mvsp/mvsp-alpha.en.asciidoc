@@ -19,7 +19,7 @@ h| Control
 h| Description
 
 | 1.1 External vulnerability reports
-| * Publish a vulnerability disclosure policy on your website that outlines the testing scope, provides a legal safe harbor, and gives contact details for security reports
+| * Publish a vulnerability disclosure policy that outlines the testing scope, provides a legal safe harbor, and gives contact details for security reports
   ** Example: Publish a policy generated with https://disclose.io[disclose.io] and refer to it using https://securitytxt.org[security.txt (RFC 9116)].
 * Develop and document procedures for triaging and remediating reported vulnerabilities
 * Respond to reports within a reasonable time frame
