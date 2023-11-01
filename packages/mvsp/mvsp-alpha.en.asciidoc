@@ -6,11 +6,11 @@ Minimum Viable Secure Product
 MVSP Working Group <mvsp@groups.io>
 Alpha - work in progress
 
-Minimum Viable Secure Product (MVSP) is a list of essential application security controls that should be implemented in enterprise-ready products and services.
+Minimum Viable Secure Product is a minimalistic security checklist for B2B software and business process outsourcing suppliers.
 
-The controls are designed to be simple to implement and provide a good foundation for building secure and resilient systems and services.
+Designed with simplicity in mind, the checklist contains only those controls that must be implemented to ensure minimally viable security posture of a product.
 
-We recommend that all companies building enterprise software and services, or otherwise handling sensitive information, implement the MVSP controls and, where possible, go well beyond them in their application security programs.
+We recommend that all companies building B2B software or otherwise handling sensitive information under its broadest definition implement at least the following controls, and are strongly encouraged to go well beyond them in their security programs.
 
 [cols="2,6a",stripes=none]
 |===
@@ -18,12 +18,11 @@ We recommend that all companies building enterprise software and services, or ot
 h| Control
 h| Description
 
-| 1.1 External vulnerability reports
-| * Publish a vulnerability disclosure policy that outlines the testing scope, provides a legal safe harbor, and gives contact details for security reports
-  ** Example: Publish a policy generated with https://disclose.io[disclose.io] and refer to it using https://securitytxt.org[security.txt (RFC 9116)].
-* Develop and document procedures for triaging and remediating reported vulnerabilities
+| 1.1 Vulnerability reports
+| * Publish the method and/or point of contact for security reports on your website
+  ** Example: Using the https://securitytxt.org[security.txt] standard
+* Develop and document procedures for triaging reported vulnerabilities
 * Respond to reports within a reasonable time frame
-* Patch vulnerabilities consistent with Control 3.4
 
 | 1.2 Customer testing
 | * On request, enable your customers or their delegates to test the security of your application
@@ -32,10 +31,10 @@ h| Description
 * Reasonable restrictions on testing can be defined
 
 | 1.3 Self-assessment
-| Perform and make available security self-assessments for each qualifying product/service, using the latest MVSP release, at least annually
+| Perform annual (at a minimum) security self-assessments using the latest MVSP release
 
 | 1.4 External testing
-| Contract a security vendor to perform comprehensive penetration tests of your products, services, and dependent systems at least annually
+| Contract a security vendor to perform annual, comprehensive penetration tests of your products/services and systems they depend on
 
 | 1.5 Training
 | Implement role-specific security training for your personnel that is relevant to their business function
@@ -46,8 +45,7 @@ h| Description
 * Ensure data localization requirements are implemented in line with local regulations and contractual obligations
 
 | 1.7 Incident handling
-| * Notify relevant parties about any security breach that affects sensitive information no later than 72 hours upon discovery, and upon learning any additional details of the breach
-* Consider reporting the breach to relevant national cybersecurity agencies in line with local guidance and regulations
+| * Notify relevant parties about any security breach that affects personal data without undue delay, no later than 72 hours upon discovery
 
 Include the following information in the notification:
 
@@ -64,7 +62,7 @@ h| Control
 h| Description
 
 | 2.1 Single Sign-On
-| Implement single sign-on using modern, maintained, and industry-standard protocols for all customers at no additional cost
+| Implement single sign-on using modern, maintained, and industry standard protocols
 
 | 2.2 HTTPS-only
 | * Redirect traffic from HTTP protocol (port 80) to HTTPS (port 443)
@@ -94,16 +92,14 @@ h| Description
   * Require the current password in addition to the new password during password change
   * Store passwords in a hashed and salted format using a memory-hard or CPU-hard one-way hash function
   * Enforce appropriate account lockout and brute-force protection on account access
-  * Do not provide default passwords for users or administrators
 
 | 2.5 Security libraries
-| Use modern, maintained, and industry-standard frameworks, template languages, or libraries that systemically address implementation weaknesses by escaping the outputs and sanitizing the inputs
+| Use modern, maintained, and industry standard frameworks, template languages, or libraries that systemically address implementation weaknesses by escaping the outputs and sanitizing the inputs
 
   Example: ORM for database access, UI framework for rendering DOM
 
 | 2.6 Dependency Patching
 | * Ensure third-party dependencies are maintained and up-to-date, with security relevant updates having a severity score of "medium" or higher applied in line with your application patching schedule
-  * Upon becoming aware of a https://www.cisa.gov/known-exploited-vulnerabilities-catalog[Known Exploited Vulnerability] affecting a third-party dependency, the patch should be prioritized
   * Where dependency patching or upgrades are not possible, equivalent mitigations should be implemented for all components of the application stack
 
 | 2.7 Logging
@@ -115,10 +111,10 @@ h| Description
   * Application owner access to customer data (access transparency)
 
 Logs must include user ID, IP address, valid timestamp, type of action performed, and object of this action.
-Logs must be stored for at least 30 days at no additional charge, and should not contain sensitive data or payloads.
+Logs must be stored for at least 30 days, and should not contain sensitive data or payloads.
 
 | 2.8 Encryption
-| Use modern, maintained, and industry-standard means of encryption to protect sensitive data in transit between systems, and at rest in online data storages and backups
+| Use modern, maintained, and industry standard means of encryption to protect sensitive data in transit between systems, and at rest in online data storages and backups
 
 2+<h| 3 Application implementation controls
 h| Control
@@ -141,9 +137,7 @@ h| Description
   * Handling untrusted data. Example: Reusing data supplied by users within sensitive application contexts
 
 | 3.4 Time to fix vulnerabilities
-| * Produce and deploy patches to address application vulnerabilities that materially impact security within 90 days of discovery
-  * For vulnerabilities with evidence of active exploitation, production and deployment of patches should be prioritized
-  * Publish a security bulletin that details the vulnerability and its root cause if the remedy requires action from customers
+| Produce and deploy patches to address application vulnerabilities that materially impact security within 90 days of discovery
 
 | 3.5 Build and release process
 | * Must use a version control system and consistent build process that generates provenance describing how the artifact was built (https://slsa.dev/spec/v1.0/levels#build-l1[SLSA Build Level 1])
