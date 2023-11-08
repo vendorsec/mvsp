@@ -22,8 +22,8 @@ h| Description
 | * Publish a vulnerability disclosure policy that outlines the testing scope, provides a legal safe harbor, and gives contact details for security reports
 
 ====
-*Example:*
-Publish a policy generated with https://disclose.io[disclose.io] and refer to it using https://securitytxt.org[security.txt (RFC 9116)].
+*Example:* +
+Publish a policy generated with https://disclose.io[disclose.io] and refer to it using https://securitytxt.org[security.txt] [.small]#(RFC 9116)#.
 ====
 
 * Develop and document procedures for triaging and remediating reported vulnerabilities
@@ -40,7 +40,7 @@ Publish a policy generated with https://disclose.io[disclose.io] and refer to it
 | Perform and make available security self-assessments for each qualifying product/service, using the latest MVSP release, at least annually
 
 | 1.4 External testing
-| Contract a security vendor to perform comprehensive penetration tests of your products, services, and dependent systems at least annually
+| Contract a security vendor to perform comprehensive penetration tests of your products, services, and dependent systems, at least annually
 
 | 1.5 Training
 | Implement role-specific security training for your personnel that is relevant to their business function
@@ -54,12 +54,14 @@ Publish a policy generated with https://disclose.io[disclose.io] and refer to it
 | * Notify relevant parties about any security breach that affects sensitive information no later than 72 hours upon discovery, and upon learning any additional details of the breach
 * Consider reporting the breach to relevant national cybersecurity agencies in line with local guidance and regulations
 
+====
 Include the following information in the notification:
 
-  ** Nature of the breach
-  ** Relevant contact information
-  ** Consequences of the breach
-  ** Measures taken, or needing to be taken, to remediate the issue
+  * Nature of the breach
+  * Relevant contact information
+  * Consequences of the breach
+  * Measures taken, or needing to be taken, to remediate the issue
+====
 
 | 1.8 Data handling
 | Ensure media sanitization processes based on NIST SP 800-88 (or equivalent) are implemented for storage media holding unencrypted production data
@@ -75,7 +77,7 @@ h| Description
 | * Redirect traffic from HTTP protocol (port 80) to HTTPS (port 443)
 
 ====
-This does not apply to secure protocols designed to run on top of unencrypted connections, such as OCSP
+[.small]#This does not apply to secure protocols designed to run on top of unencrypted connections, such as OCSP#
 ====
 
   * Scan and address issues using freely available modern TLS scanning tools
@@ -143,12 +145,12 @@ h| Description
 | 3.3 Vulnerability prevention
 | Train your developers and implement development guidelines to prevent at least the following vulnerabilities:
 
-  * Authorization bypass. Example: Accessing other customers' data or admin features from a regular account
-  * Insecure session management. Examples: Guessable token; a token stored in an insecure location (e.g. cookie without Secure and HttpOnly flags set)
-  * Injections. Examples: (No)SQL injection, LLM / Prompt injection, XXE, OS command injection
-  * Cross-site scripting. Examples: Calling insecure JavaScript functions, performing insecure DOM manipulations, echoing back user input into HTML without escaping
-  * Cross-site request forgery. Example: Accepting requests with an Origin header from a different domain
-  * Handling untrusted data. Example: Reusing data supplied by users within sensitive application contexts
+  * Authorization bypass — [.small]#**Example**: Accessing other customers' data or admin features from a regular account#
+  * Insecure session management — [.small]#**Examples**: Guessable token; a token stored in an insecure location (e.g. cookie without Secure and HttpOnly flags set)# 
+  * Injections — [.small]#**Examples**: (No)SQL injection, LLM / Prompt injection, XXE, OS command injection#
+  * Cross-site scripting — [.small]#**Examples**: Calling insecure JavaScript functions, performing insecure DOM manipulations, echoing back user input into HTML without escaping#
+  * Cross-site request forgery — [.small]#**Example**: Accepting requests with an Origin header from a different domain#
+  * Handling untrusted data — [.small]#**Example**: Reusing data supplied by users within sensitive application contexts#
 
 | 3.4 Time to fix vulnerabilities
 | * Produce and deploy patches to address application vulnerabilities that materially impact security within 90 days of discovery
