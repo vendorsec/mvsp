@@ -4,7 +4,7 @@
 Minimum Viable Secure Product
 =============================
 MVSP Working Group <mvsp@groups.io>
-Alpha - work in progress
+v3.0, 2023-11-09
 
 Minimum Viable Secure Product (MVSP) is a list of essential application security controls that should be implemented in enterprise-ready products and services.
 
@@ -179,7 +179,7 @@ h| Description
   * Perform regular reviews of access to validate need to know
   * Ensure remote access to customer data or production systems requires the use of Multi-Factor Authentication
 
-| 4.3 Subprocessors
+| 4.3 Sub-processors
 | * Maintain a list of third-party companies with access to customer data, and make it available to clients and business partners upon request
   * Assess third-party companies annually against the latest MVSP release
 
