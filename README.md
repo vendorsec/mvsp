@@ -2,13 +2,13 @@
 
 <img height=120px align="right" src="https://github.com/vendorsec/mvsp/blob/master/packages/website/src/images/logo.svg">
 
-MVSP is a minimum security baseline for enterprise-ready products and services. The baseline checklist is focused on application security controls, and can be used at various stages of the sales cycle, from RFP through to contractual controls.
+MVSP is a minimum application security baseline for enterprise-ready products and services. The baseline checklist is focused on application security controls, and can be used at various stages of the sales cycle, from RFP through to contractual controls.
 
 The best way to read about MVSP is to visit [mvsp.dev](https://mvsp.dev).
 
 ## How to use it
 
-### Requests for proposals
+### Procurement / Requests for proposals
 
 Universal baseline for vendor selection simplifies the jobs of the sourcing teams. MVSP is short and concise to be included into RFP documents without bloating them.
 
@@ -32,7 +32,7 @@ As a vendor you may be asked if you are able to comply with the MVSP baseline. A
 
 MVSP is designed to be simple, understandable and minimalistic. It must be considered that the goal is **not** to become another complex standard. Before sending a PULL request contributors should always ask themselves the question: _Could I consider a vendor secure if they did not comply with the control I am adding?_ If the answer is yes, then the control should not be there.
 
-For more information, see [Contributing](src/contributing.md)
+For more information, see [Contributing](https://mvsp.dev/contributing/)
 
 ## License
 
