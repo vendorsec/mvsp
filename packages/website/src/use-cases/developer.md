@@ -5,7 +5,8 @@ layout: page
 
 ## Use-Case: MVSP in the Software Development Lifecycle (SDLC)
 
-Meet , the product owner for a software team that builds and maintains components for a financial institution’s mobile application. She’s responsible for ensuring the team develops features that meet both customer and regulatory requirements for security and data protection.
+<img style="float: right; margin: 5px;" align="right" width=200 src="../images/avatars/avataaars_4.png">
+Meet Aliyah, the product owner for a software team that builds and maintains components for a financial institution’s mobile application. She’s responsible for ensuring the team develops features that meet both customer and regulatory requirements for security and data protection. 
 
 ### Opportunity
 
@@ -19,7 +20,7 @@ Security teams often have a great number of requirements pertinent to providing 
 
 ### How MVSP can help
 
-MVSP addresses these issues by providing a **simple set of minimum controls** that are both easy for product teams to understand and integrate into multiple phases of the product life cycle, while being easy to verify by the security and compliance team. While MVSP controls are designed to be a baseline, they are built from the ground up to represent the building blocks and industry best practices expected to be present in secure and mature products. 
+<img style="float: left; margin: 10px;" align="left" width=100 src="../images/checklist.png"> MVSP addresses these issues by providing a **simple set of minimum controls** that are both easy for product teams to understand and integrate into multiple phases of the product life cycle, while being easy to verify by the security and compliance team. While MVSP controls are designed to be a baseline, they are built from the ground up to represent the building blocks and industry best practices expected to be present in secure and mature products. 
 
 In detail, using MVSP means:
 
