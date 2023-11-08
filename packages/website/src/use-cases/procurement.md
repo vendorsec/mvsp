@@ -31,7 +31,7 @@ In detail, using MVSP means:
 *   **Industry influence** –  As the ubiquity of MVSP increases within the industry, these controls become table stakes for software and services, driving the broader industry to improve and adapt to the ever growing security and privacy requirements of modern systems.
 
 
-### Useful links
+## Useful links
 
 *   [Minimum Viable Secure Product website](https://mvsp.dev)
 </div>
