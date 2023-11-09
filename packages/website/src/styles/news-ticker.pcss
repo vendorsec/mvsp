@@ -1,0 +1,77 @@
+* { box-sizing: border-box; }
+$lapse: 50s;
+body { 
+  padding-bottom: 4.5rem; 
+  background:#fefefe;
+  color:#14181c;
+  margin:0;
+}
+
+@-webkit-keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.ticker-wrap {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  height: 4rem;
+  background-color: rgba(#14181c, 0.9); 
+  padding-left: 100%;
+
+  .ticker {
+    display: inline-flex;
+    height: 4rem;
+    white-space: nowrap;
+    padding-right: 100%;
+    box-sizing: content-box;
+    
+    -moz-animation-duration: $lapse;
+    -webkit-animation-duration: $lapse;
+            animation-duration: $lapse;
+    -moz-animation-timing-function: linear;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite; 
+            animation-iteration-count: infinite;
+    -moz-animation-name: ticker;
+    -webkit-animation-name: ticker;
+            animation-name: ticker;
+    
+
+    &__headline {
+      display: inline-flex;
+      align-items:center;
+      padding: 0 2rem;
+      font-size: 2rem;
+      color: white;   
+
+    }
+
+  }
+
+}
