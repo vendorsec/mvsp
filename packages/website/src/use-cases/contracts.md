@@ -31,13 +31,13 @@ In detail, using MVSP means:
 *   **Clarity** – Using MVSP as a baseline provides a clear basis to flag issues and push for remediation requirements as part of contractual commitments.
 *   **Industry influence** – As the ubiquity of MVSP increases within the industry, these controls become table stakes for software and services, driving the broader industry to improve and adapt to the ever growing security and privacy requirements of modern systems.
 
-> _"Aligning the Information Protection Addendum’s safeguards with the MVSP has significantly improved our third party privacy and security risk posture and streamlined relevant third-party risk management processes."_
+> _"Aligning the Information Protection Addendum’s safeguards with the MVSP has significantly improved our third-party privacy and security risk management processes."_
 > <p style="text-align: right"><em>Google Privacy Legal</em></p>
 
 ## Useful links
 
 *   [Minimum Viable Secure Product website](https://mvsp.dev)
-*   _Example_: Google [Information Protection Addendum’s safeguards](http://business.safety.google/ipa)
+*   _Example_: Google [Information Protection Addendum](http://business.safety.google/ipa)
 *   _Example_: Salesforce [Supplier Security Exhibit](https://www.salesforce.com/content/dam/web/en_us/www/documents/legal/supplier/salesforce-supplier-security-exhibit.pdf)
 
 </div>
