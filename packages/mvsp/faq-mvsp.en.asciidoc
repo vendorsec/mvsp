@@ -3,7 +3,7 @@
 Minimum Viable Secure Product Control Descriptions
 ==================================================
 MVSP Working Group <mvsp@groups.io>
-v2.0, 2022-10-12
+v3.0, 2023-11-09
 
 This document is designed to provide additional context on the controls listed in the Minimum Viable Secure Product.
 
@@ -13,12 +13,12 @@ This document is designed to provide additional context on the controls listed i
 h| Control
 h| Detailed Description
 
-| 1.1 Vulnerability reports
-| **What this control measures:** Appropriate processes are in place to accept and process reports of security issues in your products and/or services.
+| 1.1 External vulnerability reports
+| **What this control measures:** Appropriate processes are in place to accept and process external reports of security issues in your products and/or services.
 
 ---
 
-**Why this control is important:** The ability for external parties to report possible vulnerabilities in your product or services is key to ensuring you can maintain an effective security and privacy posture. Sharing information on how users can directly report possible security or privacy issues to you ensures a clear and direct line of communication is available for users to report issues.
+**Why this control is important:** The ability for external parties to report possible vulnerabilities in your product or services is key to ensuring you can maintain an effective security and privacy posture. Ensuring that you share information on how external parties can appropriately and safely report possible security or privacy issues to you, ensures a clear and direct line of communication is available for issues to be reported.
 
 | 1.2 Customer testing
 | **What this control measures:** Appropriate processes are in place to allow customers to safely and effectively perform testing against your products and/or services.
@@ -29,12 +29,14 @@ h| Detailed Description
 
 As the goal of testing is to ensure the security of the application under test, and not the efficacy of any WAF or IDS rulesets, it is important the testing is performed without a Web Application Firewall, or other blocking technology deployed.
 
+It is important to consider that someone will likely carry out testing on accessible services regardless of your internal policies. Making sure that there is a safe and clearly communicated way to perform testing, with optionally reasonable restrictions, is also helpful to protect your production environments.
+
 | 1.3 Self-assessment
-| **What this control measures:** Annual reviews of your security program are performed to identify corrective actions or areas of continued improvement.
+| **What this control measures:** Annual reviews of your application security controls are performed for each qualifying product or service in order to identify corrective actions or areas of continued improvement.
 
 ---
 
-**Why this control is important:** Running through the MVSP baseline once per year ensures that any changes to the product or offering are measured against the latest version of the baseline. Where gaps exist, highlighting these early on and taking corrective action ensures you maintain the baseline requirements.
+**Why this control is important:** Running through the MVSP baseline once per year for qualifying products and services helps to ensure that any changes are measured against the latest version of the baseline. Where gaps exist, highlighting these early on and taking corrective action ensures you maintain the baseline requirements and can mature the security of the application under review.
 
 | 1.4 External testing
 | **What this control measures:** Processes are in place to schedule and perform regular third-party penetration testing against your products and/or services.
@@ -59,11 +61,11 @@ Using an independent company for annual third party testing is important as they
 **Why this control is important:** Providing your employees with appropriate ongoing training specific to their roles is key to ensuring they are up to date with the latest advancements in their field, and are well equipped to deal with evolving threats and requirements. This training should include information on how to react to phishing, and awareness of processes in place to report phishing attempts.
 
 | 1.6 Compliance
-| **What this control measures:** Relevant compliance obligations are identified and completed.
+| **What this control measures:** Relevant compliance obligations are identified and completed based on your companies industry and regulatory requirements.
 
 ---
 
-**Why this control is important:** Compliance to standards and requirements relevant to your industry is a key element of a mature security and privacy program. The specifics depend on the area within which you operate. Compliance to a specific standard shouldn't replace the baseline requirements set out in the MVSP.
+**Why this control is important:** Compliance to standards and requirements relevant to your industry is a key element of a mature security and privacy program. The specifics depend on the area within which you operate. Compliance to a specific standard shouldn't replace the baseline requirements set out in the MVSP, as the goals and specific controls may vary.
 
 | 1.7 Incident handling
 | **What this control measures:** Processes are in place to ensure the smooth handling of security and privacy incidents.
@@ -88,11 +90,11 @@ h| Detailed Description
 
 ---
 
-**Why this control is important:** Single sign-on using federated identity providers is important for organizations wishing to maintain control over their accounts in a more centralized manner. Offering the ability to use a federated identity allows users to rely on an established identity, with appropriate controls (e.g. two-factor authentication) implemented and enforced at the organization level.
+**Why this control is important:** Providing the ability for your customers to opt for single sign-on using federated identity providers is important for organizations wishing to maintain control over their accounts in a more centralized manner. Offering the ability to use a federated identity, without additional cost, allows users to rely on an established identity, with appropriate controls (e.g. two-factor authentication) implemented and enforced at the organization level.
 
 Centralized control over these federated accounts also ensures the organization can control access to applications and services via a centralized authority, with the ability to deactivate access as required.
 
-Single sign-on also ensures users are not required to remember, or store credentials for each individual service. This reduces the chance of account compromise.
+Single sign-on also ensures users are not required to remember, or store credentials for each individual service. This reduces the chance of account compromise, and allowing or organizations to respond holistically to credential breaches using a central service.
 
 | 2.2 HTTPS-only
 | **What this control measures:** Sensitive data is encrypted in transit between the end-user and your product and/or service.
@@ -135,7 +137,7 @@ Additional guidance on Memorized Secrets (password/pin) can be found in NIST 800
 **Why this control is important:** Enforcing the use of established, tried, and tested security libraries and frameworks ensures developers are able to rely on existing solutions and are not expected to reinvent the wheel. By standardizing on libraries and frameworks that systemically address various implementation weaknesses, you can reduce or eliminate entire classes of bugs from your platform, and ensure new code does not include regressions that reintroduce these vulnerabilities.
 
 | 2.6 Dependency Patching
-| **What this control measures:** Processes are in place to identify, and maintain up-to-date components within your product and/or service.
+| **What this control measures:** Processes are in place to identify, and maintain up-to-date components within your product and/or service. Vulnerabilities that are known to be exploited are appropriately prioritized.
 
 ---
 
@@ -172,14 +174,14 @@ h| Control
 h| Detailed Description
 
 | 3.1 List of data
-| **What this control measures:** Information on the type and amount of data handled by your product and/or service is available for threat modelling or incident response purposes.
+| **What this control measures:** Information on the type and amount of data handled by your product and/or service is available for threat modeling or incident response purposes.
 
 ---
 
-**Why this control is important:** A list of sensitive data types processed by the application should be available. This allows for easier threat modelling and risk analysis of the platform as functionality changes over time. This data also helps you quickly understand the exposure in the event of an incident.
+**Why this control is important:** A list of sensitive data types processed by the application should be available. This allows for easier threat modeling and risk analysis of the platform as functionality changes over time. This data also helps you quickly understand the exposure in the event of an incident.
 
 | 3.2 Data flow diagram
-| **What this control measures:** Information on the flow of data through systems is available for threat modelling or incident response purposes.
+| **What this control measures:** Information on the flow of data through systems is available for threat modeling or incident response purposes.
 
 ---
 
@@ -190,14 +192,18 @@ h| Detailed Description
 
 ---
 
-**Why this control is important:** Training your development and quality assurance teams on commonly seen security issues ensures they are well equipped to reduce the occurrences of these vulnerabilities within your systems. The examples provided in MVSP are a good starting point, however they should be reviewed based on your application's specifics and the environments used to ensure you are addressing language- and infrastructure-specific vulnerabilities affecting your applications.
+**Why this control is important:** Training your development and quality assurance teams on commonly seen security issues ensures they are well equipped to reduce the occurrences of these vulnerabilities within your systems.
+
+The examples provided in MVSP are a good starting point, however they should be reviewed based on your application's specifics and the environments used to ensure you are addressing language- and infrastructure-specific vulnerabilities affecting your applications.
 
 | 3.4 Time to fix vulnerabilities
-| **What this control measures:** Identified vulnerabilities are patched within a reasonable time frame.
+| **What this control measures:** Identified vulnerabilities are patched within a reasonable time frame, and customers are informed where appropriate.
 
 ---
 
 **Why this control is important:** Acting in a timely manner to address vulnerabilities detected within your platform ensures you are effectively protecting sensitive data. In cases where addressing a vulnerability requires a longer period of time, or users to alter the way they interact with your application, care should be taken to inform users in a timely manner.
+
+Vulnerabilities that are actively being exploited should be suitably prioritized to reduce the impact and risk to customer data and environments. In cases where customers need to take action to protect themselves, a security bulletin should be published to ensure customers are made aware.
 
 | 3.5 Build process
 | **What this control measures:** Build processes are fully scripted/automated and generate provenance.
@@ -206,7 +212,9 @@ h| Detailed Description
 
 **Why this control is important:** Hardening and automation of build processes is an essential first step to prevent tampering and provide the ability to auditability. Automation of build processes furthermore enables teams to react quickly to threats and incidents by ensuring a new version can be released with a vulnerability or bug fix or by upgrading a compromised dependency. Provenance is metadata about how an artifact was built, including the build process, top-level source, and dependencies. Knowing the provenance allows software consumers to make risk-based security decisions.
 
-Provenance at SLSA level 1 does not protect against tampering, but it offers a basic level of code source identification and can aid in vulnerability management. For applications and services that process particularly sensitive data, higher [SLSA levels](https://slsa.dev/spec/v0.1/levels#detailed-explanation) can provide additional guarantees.
+Provenance at SLSA Build level 1 does not protect against tampering, but it offers a basic level of code source identification and can aid in vulnerability management. For applications and services that process particularly sensitive data, higher [SLSA levels](https://slsa.dev/spec/v1.0/levels#build-l1) can provide additional guarantees.
+
+Additional checks should be made to ensure that sensitive application credentials or tokens are not stored alongside application code (e.g. in a GIT repository).
 
 2+<h| 4 Operational controls
 h| Control
@@ -226,12 +234,12 @@ h| Detailed Description
 
 **Why this control is important:** Where your staff have legitimate access to sensitive data as part of their day-to-day work, this access should be regularly reviewed to ensure access is limited. The principle of least privilege should be applied to ensure only authorized users with a valid business need can access sensitive data. By adding Multi-Factor Authorization the risk of a compromise through phishing, or other attacks targeting employee systems or credentials is significantly reduced.
 
-| 4.3 Subprocessors
-| **What this control measures:** Processes are in place to validate the security posture of third-party subprocessors.
+| 4.3 Sub-processors
+| **What this control measures:** Understand where you may be sharing data with third-party sub-processors, and that suitable processes are in place to validate their security posture.
 
 ---
 
-**Why this control is important:** Where you may use third-party subprocessors, it is important to ensure that they are appropriately measured against the MVSP baseline to ensure that data and integrations do not lower the overall security of the platform or service.
+**Why this control is important:** Where you may use third-party sub-processors, it is important to ensure that you are aware of the data that they have access to. These sub-processors should be appropriately measured against the MVSP baseline to ensure that data and integrations do not lower the overall security of the platform or service.
 
 | 4.4 Backup and Disaster Recovery
 | **What this control measures:** Processes are in place to ensure backup and recovery of your product and/or service in the event of a disaster.

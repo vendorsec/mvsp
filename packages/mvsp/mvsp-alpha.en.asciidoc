@@ -4,7 +4,7 @@
 Minimum Viable Secure Product
 =============================
 MVSP Working Group <mvsp@groups.io>
-v3.0, 2023-11-09
+Alpha - work in progress
 
 Minimum Viable Secure Product (MVSP) is a list of essential application security controls that should be implemented in enterprise-ready products and services.
 
@@ -146,7 +146,7 @@ h| Description
 | Train your developers and implement development guidelines to prevent at least the following vulnerabilities:
 
   * Authorization bypass — [.small]#**Example**: Accessing other customers' data or admin features from a regular account#
-  * Insecure session management — [.small]#**Examples**: Guessable token; a token stored in an insecure location (e.g. cookie without Secure and HttpOnly flags set)# 
+  * Insecure session management — [.small]#**Examples**: Guessable token; a token stored in an insecure location (e.g. cookie without Secure and HttpOnly flags set)#
   * Injections — [.small]#**Examples**: (No)SQL injection, LLM / Prompt injection, XXE, OS command injection#
   * Cross-site scripting — [.small]#**Examples**: Calling insecure JavaScript functions, performing insecure DOM manipulations, echoing back user input into HTML without escaping#
   * Cross-site request forgery — [.small]#**Example**: Accepting requests with an Origin header from a different domain#
