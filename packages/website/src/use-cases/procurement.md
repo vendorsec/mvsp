@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: page-narrow
 ---
+<div class="container mx-auto max-w-4xl">
 <div class="adoc">
 
 # Procurement and Request for Proposal (RFP)
@@ -34,4 +35,5 @@ In detail, using MVSP means:
 ## Useful links
 
 *   [Minimum Viable Secure Product website](https://mvsp.dev)
+</div>
 </div>
