@@ -29,7 +29,7 @@ In detail, using MVSP means:
 *   **Standardization** – Product teams can share the MVSP controls with internal and external consumers of their products to demonstrate that they are meeting security and regulatory controls, reducing the time involved with manual reviews.
 *   **Industry influence** – As the ubiquity of MVSP increases within the industry, these controls become table stakes for software organizations, driving the broader industry to improve and adapt to the ever growing security and privacy requirements of modern applications.
 
-> _According to the DORA State of DevOps 2022 [report](https://services.google.com/fh/files/misc/2022_state_of_devops_report.pdf), which focused on security, elite performers who met or exceeded their reliability targets were twice as likely to have security integrated into their software development process. Teams who integrate security practices throughout their development process are 1.6 times more likely to exceed organizational goals._
+> _According to the DORA State of DevOps 2022 [report](https://dora.dev/research/2022/dora-report/), which focused on security, elite performers who met or exceeded their reliability targets were twice as likely to have security integrated into their software development process. Teams who integrate security practices throughout their development process are 1.6 times more likely to exceed organizational goals._
 
 ## Useful links
 
