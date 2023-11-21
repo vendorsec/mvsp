@@ -41,6 +41,7 @@ layout: base
               </a>
               <div class="-mr-2 flex items-center md:hidden">
                 <button type="button"
+                  onClick="javascript:getElementById('mobile-menu').classList.toggle('hidden')"
                   class="bg-gray-50 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cadillac-500"
                   aria-expanded="false">
                   <span class="sr-only">Open main menu</span>
@@ -54,8 +55,6 @@ layout: base
             </div>
           </div>
           <div class="hidden md:flex md:space-x-10">
-            <!-- <a href="#intro" class="font-medium text-gray-500 hover:text-gray-900">Introduction</a> -->
-
             <a href="/mvsp.en/index.html" class="font-medium text-gray-500 hover:text-gray-900">Controls</a>
 
             <a href="/faq-mvsp.en/index.html" class="font-medium text-gray-500 hover:text-gray-900">Controls FAQ</a>
@@ -63,8 +62,6 @@ layout: base
             <a href="/contributing/index.html" class="font-medium text-gray-500 hover:text-gray-900">Contribute</a>
 
             <a href="/questions/index.html" class="font-medium text-gray-500 hover:text-gray-900">FAQ</a>
-
-            <!-- <a href="#license" class="font-medium text-gray-500 hover:text-gray-900">License</a> -->
           </div>
         </nav>
       </div>
@@ -79,7 +76,7 @@ layout: base
           From: "opacity-100 scale-100"
           To: "opacity-0 scale-95"
       -->
-      <div class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right hidden">
+      <div class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right hidden" id="mobile-menu">
         <div class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
           <div class="px-5 pt-4 flex items-center justify-between">
             <div>
@@ -87,6 +84,7 @@ layout: base
             </div>
             <div class="-mr-2">
               <button type="button"
+                onClick="javascript:getElementById('mobile-menu').classList.toggle('hidden')"
                 class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cadillac-500">
                 <span class="sr-only">Close menu</span>
                 <!-- Heroicon name: outline/x -->
@@ -98,9 +96,6 @@ layout: base
             </div>
           </div>
           <div class="px-2 pt-2 pb-3">
-            <!-- <a href="#" 
-              class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Introduction</a> -->
-
             <a href="/mvsp.en/index.html"
               class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Controls</a>
 
