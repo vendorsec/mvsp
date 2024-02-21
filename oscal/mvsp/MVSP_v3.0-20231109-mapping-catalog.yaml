@@ -2,7 +2,7 @@
 catalog:
   uuid: 7176d180-9ca6-4522-b494-77fe3196b8b7
   metadata:
-    title: MVSP mapped to multiple standards
+    title: MVSP v3.0-20231109 mapped to multiple standards
     published: 2024-02-14T10:00:00Z
     last-modified: 2024-02-14T10:00:00Z
     version: 0.0.1
@@ -28,7 +28,7 @@ catalog:
     - role-id: contact
       party-uuids:
       - 700b5bb8-209a-4f1f-9229-6e4b9ef40f4c
-    remarks: "This control catalog represents the [MVSP](https://mvsp.dev) controls as its base, and maps the controls to the following standards: ISO 27001:2013, ISO 27001:2022, ISO 27017:2015, ISO 27018:2019, NIST CSF 1.1, NIST CSF 2.0 (draft), and CSA CCM 4.0.7"
+    remarks: "This control catalog represents the [MVSP](https://mvsp.dev) v3.0-20231109 controls as its base, and maps the controls to the following standards: ISO 27001:2013, ISO 27001:2022, ISO 27017:2015, ISO 27018:2019, NIST CSF 1.1, NIST CSF 2.0 (draft), and CSA CCM 4.0.7"
   groups:
   - id: grp_1
     class: control-group
