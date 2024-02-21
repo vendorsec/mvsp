@@ -2,12 +2,12 @@
 	"catalog": {
 		"uuid": "7176d180-9ca6-4522-b494-77fe3196b8b7",
 		"metadata": {
-			"title": "MVSP mapped to multiple standards",
+			"title": "MVSP v3.0-20231109 mapped to multiple standards",
 			"published": "2024-02-14T10:00:00.000000-00:00",
 			"last-modified": "2024-02-14T10:00:00.000000-00:00",
 			"version": "0.0.1",
 			"oscal-version": "1.1.1",
-			"remarks": "This control catalog represents the [MVSP](https:\/\/mvsp.dev) controls as its base, and maps the controls to the following standards: ISO 27001:2013, ISO 27001:2022, ISO 27017:2015, ISO 27018:2019, NIST CSF 1.1, NIST CSF 2.0 (draft), and CSA CCM 4.0.7",
+			"remarks": "This control catalog represents the [MVSP](https:\/\/mvsp.dev) v3.0-20231109 controls as its base, and maps the controls to the following standards: ISO 27001:2013, ISO 27001:2022, ISO 27017:2015, ISO 27018:2019, NIST CSF 1.1, NIST CSF 2.0 (draft), and CSA CCM 4.0.7",
 			"props": [{
 				"name": "keywords",
 				"value": "MVSP, Minimum Viable Secure Product, ISO 27001:2013, ISO 27001:2022, ISO 27017:2015, ISO 27018:2019, NIST CSF 1.1, NIST CSF 2.0 (draft), CSA CCM 4.0.07, ISO, International Organization for Standardization, NIST, National Institute for Standards and Technology, CSA, CCM, CSA CCM, Cloud Security Alliance, Cloud Controls Matrix"
