@@ -1,0 +1,1397 @@
+---
+catalog:
+  uuid: 9a82bc0e-9936-4942-985d-d951f7830ec3
+  metadata:
+    title: "ISO/IEC 27001:2022 - Information security, cybersecurity and privacy protection — Information security management systems — Requirements"
+    published: 2005-10-31T10:01:00Z
+    last-modified: 2022-10-31T10:01:00Z
+    version: "2022"
+    oscal-version: 1.1.1
+    props:
+    - name: keywords
+      value: "Access management, Asset management, Audit and compliance, Business continuity management, Capacity management, Change management, Cryptography, Environmental security, Human resource security, Information classification, Information handling, Information security, Logging and monitoring, Mobile devices, Password management, Physical security, Roles and responsibilities, Security incident response, Security organization, Security policy, Vulnerability management"
+    roles:
+    - id: creator
+      title: Document creator
+    - id: contact
+      title: Contact
+    parties:
+    - uuid: 0327339e-87cc-41d3-829b-7131da3b5d20
+      type: organization
+      name: International Organization for Standardization
+      email-addresses:
+      - central@iso.org
+      addresses:
+      - addr-lines:
+        - International Organization for Standardization
+        - ISO Central Secretariat
+        - Chemin de Blandonnet 8
+        - CP 401
+        - 1214 Vernier
+        city: "Geneva, Switzerland"
+    responsible-parties:
+    - role-id: creator
+      party-uuids:
+      - 0327339e-87cc-41d3-829b-7131da3b5d20
+    - role-id: contact
+      party-uuids:
+      - 0327339e-87cc-41d3-829b-7131da3b5d20
+    remarks: "The following standard contains the [ISO/IEC 27001:2022](https://www.iso.org/contents/data/standard/05/45/54534.html), *Information technology — Security techniques — Information security management systems — Requirements*. This standard has been redacted and limited under ISO copyright licensing \"fair use\". Copyrights for this work are held by the publisher, the International Organization for Standardization (ISO)."
+  groups:
+  - id: req_4-27001_22
+    class: requirements
+    title: Context of the organization
+    props:
+    - name: label
+      value: "4"
+    controls:
+    - id: req_4.1-27001_22
+      class: requirement
+      title: Understanding the organization and its context
+      props:
+      - name: label
+        value: "4.1"
+      parts:
+      - id: req_4.1-stmt-27001_22
+        name: statement
+        prose: "Understanding the organization and its context  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this requirement)."
+    - id: req_4.2-27001_22
+      class: requirement
+      title: Understanding the needs and expectations of interested parties
+      props:
+      - name: label
+        value: "4.2"
+      parts:
+      - id: req_4.2-stmt-27001_22
+        name: statement
+        prose: "Understanding the needs and expectations of interested parties  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this requirement)."
+    - id: req_4.3-27001_22
+      class: requirement
+      title: Determining the scope of the information security management system
+      props:
+      - name: label
+        value: "4.3"
+      parts:
+      - id: req_4.3-stmt-27001_22
+        name: statement
+        prose: "Determining the scope of the information security management system  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this requirement)."
+    - id: req_4.4-27001_22
+      class: requirement
+      title: Information security management system
+      props:
+      - name: label
+        value: "4.4"
+      parts:
+      - id: req_4.4-stmt-27001_22
+        name: statement
+        prose: "Information security management system  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this requirement)."
+  - id: req_5-27001_22
+    class: requirements
+    title: Leadership
+    props:
+    - name: label
+      value: "5"
+    controls:
+    - id: req_5.1-27001_22
+      class: requirement
+      title: Leadership and commitment
+      props:
+      - name: label
+        value: "5.1"
+      parts:
+      - id: req_5.1-stmt-27001_22
+        name: statement
+        prose: "Leadership and commitment  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this requirement)."
+    - id: req_5.2-27001_22
+      class: requirement
+      title: Policy
+      props:
+      - name: label
+        value: "5.2"
+      parts:
+      - id: req_5.2-stmt-27001_22
+        name: statement
+        prose: "Policy  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this requirement)."
+    - id: req_5.3-27001_22
+      class: requirement
+      title: "Organizational roles, responsibilities and authorities"
+      props:
+      - name: label
+        value: "5.3"
+      parts:
+      - id: req_5.3-stmt-27001_22
+        name: statement
+        prose: "Organizational roles, responsibilities and authorities  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this requirement)."
+  - id: req_6-27001_22
+    class: requirements
+    title: Planning
+    props:
+    - name: label
+      value: "6"
+    controls:
+    - id: req_6.1-27001_22
+      class: requirement
+      title: Actions to address risks and opportunities
+      props:
+      - name: label
+        value: "6.1"
+      parts:
+      - id: req_6.1-stmt-27001_22
+        name: statement
+        prose: Actions to address risks and opportunities
+      controls:
+      - id: req_6.1.1-27001_22
+        class: requirement-detail
+        title: General
+        props:
+        - name: label
+          value: 6.1.1
+        parts:
+        - id: req_6.1.1-stmt-27001_22
+          name: statement
+          prose: "General  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the text of this requirement)."
+      - id: req_6.1.2-27001_22
+        class: requirement-detail
+        title: Information security risk assessment
+        props:
+        - name: label
+          value: 6.1.2
+        parts:
+        - id: req_6.1.2-stmt-27001_22
+          name: statement
+          prose: "Information security risk assessment  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the text of this requirement)."
+      - id: req_6.1.3-27001_22
+        class: requirement-detail
+        title: Information security risk treatment
+        props:
+        - name: label
+          value: 6.1.3
+        parts:
+        - id: req_6.1.3-stmt-27001_22
+          name: statement
+          prose: "Information security risk treatment  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the text of this requirement)."
+    - id: req_6.2-27001_22
+      class: requirement
+      title: Information security objectives and planning to achieve them
+      props:
+      - name: label
+        value: "6.2"
+      parts:
+      - id: req_6.2-stmt-27001_22
+        name: statement
+        prose: "Information security objectives and planning to achieve them  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this requirement)."
+  - id: req_7-27001_22
+    class: requirements
+    title: Support
+    props:
+    - name: label
+      value: "7"
+    controls:
+    - id: req_7.1-27001_22
+      class: requirement
+      title: Resources
+      props:
+      - name: label
+        value: "7.1"
+      parts:
+      - id: req_7.1-stmt-27001_22
+        name: statement
+        prose: "Resources  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this requirement)."
+    - id: req_7.2-27001_22
+      class: requirement
+      title: Competence
+      props:
+      - name: label
+        value: "7.2"
+      parts:
+      - id: req_7.2-stmt-27001_22
+        name: statement
+        prose: "Competence  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this requirement)."
+    - id: req_7.3-27001_22
+      class: requirement
+      title: Awareness
+      props:
+      - name: label
+        value: "7.3"
+      parts:
+      - id: req_7.3-stmt-27001_22
+        name: statement
+        prose: "Awareness  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this requirement)."
+    - id: req_7.4-27001_22
+      class: requirement
+      title: Communication
+      props:
+      - name: label
+        value: "7.4"
+      parts:
+      - id: req_7.4-stmt-27001_22
+        name: statement
+        prose: "Communication  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this requirement)."
+    - id: req_7.5-27001_22
+      class: requirement
+      title: Documented information
+      props:
+      - name: label
+        value: "7.5"
+      parts:
+      - id: req_7.5-stmt-27001_22
+        name: statement
+        prose: "Documented information  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-2:v1:en) for the full text of this requirement)."
+      controls:
+      - id: req_7.5.1-27001_22
+        class: requirement-detail
+        title: General
+        props:
+        - name: label
+          value: 7.5.1
+        parts:
+        - id: req_7.5.1-stmt-27001_22
+          name: statement
+          prose: "General  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the text of this requirement)."
+      - id: req_7.5.2-27001_22
+        class: requirement-detail
+        title: Creating and updating
+        props:
+        - name: label
+          value: 7.5.2
+        parts:
+        - id: req_7.5.2-stmt-27001_22
+          name: statement
+          prose: "Creating and updating  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the text of this requirement)."
+      - id: req_7.5.3-27001_22
+        class: requirement-detail
+        title: Control of documented information
+        props:
+        - name: label
+          value: 7.5.3
+        parts:
+        - id: req_7.5.3-stmt-27001_22
+          name: statement
+          prose: "Control of documented information  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the text of this requirement)."
+  - id: req_8-27001_22
+    class: requirements
+    title: Operation
+    props:
+    - name: label
+      value: "8"
+    controls:
+    - id: req_8.1-27001_22
+      class: requirement
+      title: Operational planning and control
+      props:
+      - name: label
+        value: "8.1"
+      parts:
+      - id: req_8.1-stmt-27001_22
+        name: statement
+        prose: "Operational planning and control  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this requirement)."
+    - id: req_8.2-27001_22
+      class: requirement
+      title: Information security risk assessment
+      props:
+      - name: label
+        value: "8.2"
+      parts:
+      - id: req_8.2-stmt-27001_22
+        name: statement
+        prose: "Information security risk assessment  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this requirement)."
+    - id: req_8.3-27001_22
+      class: requirement
+      title: Information security risk treatment
+      props:
+      - name: label
+        value: "8.3"
+      parts:
+      - id: req_8.3-stmt-27001_22
+        name: statement
+        prose: "Information security risk treatment  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this requirement)."
+  - id: req_9-27001_22
+    class: requirements
+    title: Performance evaluation
+    props:
+    - name: label
+      value: "9"
+    controls:
+    - id: req_9.1-27001_22
+      class: requirement
+      title: "Monitoring, measurement, analysis and evaluation"
+      props:
+      - name: label
+        value: "9.1"
+      parts:
+      - id: req_9.1-stmt-27001_22
+        name: statement
+        prose: "Monitoring, measurement, analysis and evaluation  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this requirement)."
+    - id: req_9.2-27001_22
+      class: requirement
+      title: Internal audit
+      props:
+      - name: label
+        value: "9.2"
+      parts:
+      - id: req_9.2-stmt-27001_22
+        name: statement
+        title: Internal audit
+      controls:
+      - id: req_9.2.1-27001_22
+        class: requirement-detail
+        title: General
+        props:
+        - name: label
+          value: 9.2.1
+        parts:
+        - id: req_9.2.1-stmt-27001_22
+          name: statement
+          prose: "General  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the text of this requirement)."
+      - id: req_9.2.2-27001_22
+        class: requirement-detail
+        title: Internal audit programme
+        props:
+        - name: label
+          value: 9.2.2
+        parts:
+        - id: req_9.2.2-stmt-27001_22
+          name: statement
+          prose: "Internal audit programme  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the text of this requirement)."
+    - id: req_9.3-27001_22
+      class: requirement
+      title: Management review
+      props:
+      - name: label
+        value: "9.3"
+      parts:
+      - id: req_9.3-stmt-27001_22
+        name: statement
+        title: Management review
+      controls:
+      - id: req_9.3.1-27001_22
+        class: requirement-detail
+        title: General
+        props:
+        - name: label
+          value: 9.3.1
+        parts:
+        - id: req_9.3.1-stmt-27001_22
+          name: statement
+          prose: "General  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the text of this requirement)."
+      - id: req_9.3.2-27001_22
+        class: requirement-detail
+        title: Manage review inputs
+        props:
+        - name: label
+          value: 9.3.2
+        parts:
+        - id: req_9.3.2-stmt-27001_22
+          name: statement
+          prose: "Management review inputs  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the text of this requirement)."
+      - id: req_9.3.3-27001_22
+        class: requirement-detail
+        title: Management review results
+        props:
+        - name: label
+          value: 9.3.3
+        parts:
+        - id: req_9.3.3-stmt-27001_22
+          name: statement
+          prose: "Management review results  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the text of this requirement)."
+  - id: req_10-27001_22
+    class: requirements
+    title: Improvement
+    props:
+    - name: label
+      value: "10"
+    controls:
+    - id: req_10.1-27001_22
+      class: requirement
+      title: Nonconformity and corrective action
+      props:
+      - name: label
+        value: "10.1"
+      parts:
+      - id: req_10.1-stmt-27001_22
+        name: statement
+        prose: "Nonconformity and corrective action  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this requirement)."
+    - id: req_10.2-27001_22
+      class: requirement
+      title: Continual improvement
+      props:
+      - name: label
+        value: "10.2"
+      parts:
+      - id: req_10.2-stmt-27001_22
+        name: statement
+        prose: "Continual improvement  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this requirement)."
+  - id: cat_A.5-27001_22
+    class: category
+    title: Organizational controls
+    props:
+    - name: label
+      value: A.5
+    controls:
+    - id: ctl_A.5.1-27001_22
+      class: control
+      title: Policies for information security
+      props:
+      - name: label
+        value: A.5.1
+      parts:
+      - id: ctl_A.5.1-stmt-27001_22
+        name: statement
+        prose: "Policies for information security  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.5.2-27001_22
+      class: control
+      title: Information security roles and responsibilities
+      props:
+      - name: label
+        value: A.5.2
+      parts:
+      - id: ctl_A.5.2-stmt-27001_22
+        name: statement
+        prose: "Information security roles and responsibilities  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.5.3-27001_22
+      class: control
+      title: Segregation of duties
+      props:
+      - name: label
+        value: A.5.3
+      parts:
+      - id: ctl_A.5.3-stmt-27001_22
+        name: statement
+        prose: "Segregation of duties  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.5.4-27001_22
+      class: control
+      title: Management responsibilities
+      props:
+      - name: label
+        value: A.5.4
+      parts:
+      - id: ctl_A.5.4-stmt-27001_22
+        name: statement
+        prose: "Policies for information security  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.5.5-27001_22
+      class: control
+      title: Contact with authorities
+      props:
+      - name: label
+        value: A.5.5
+      parts:
+      - id: ctl_A.5.5-stmt-27001_22
+        name: statement
+        prose: "Contact with authorities  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.5.6-27001_22
+      class: control
+      title: Contact with special interest groups
+      props:
+      - name: label
+        value: A.5.6
+      parts:
+      - id: ctl_A.5.6-stmt-27001_22
+        name: statement
+        prose: "Contact with special interest groups  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.5.7-27001_22
+      class: control
+      title: Threat intelligence
+      props:
+      - name: label
+        value: A.5.7
+      parts:
+      - id: ctl_A.5.7-stmt-27001_22
+        name: statement
+        prose: "Threat intelligence  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.5.8-27001_22
+      class: control
+      title: Information security in project management
+      props:
+      - name: label
+        value: A.5.8
+      parts:
+      - id: ctl_A.5.8-stmt-27001_22
+        name: statement
+        prose: "Information security in project management  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.5.9-27001_22
+      class: control
+      title: Inventory of information and other associated assets
+      props:
+      - name: label
+        value: A.5.9
+      parts:
+      - id: ctl_A.5.9-stmt-27001_22
+        name: statement
+        prose: "Inventory of information and associated assets  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.5.10-27001_22
+      class: control
+      title: Acceptable use of information and other associated assets
+      props:
+      - name: label
+        value: A.5.10
+      parts:
+      - id: ctl_A.5.10-stmt-27001_22
+        name: statement
+        prose: "Acceptable use of information and other associated assets  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.5.11-27001_22
+      class: control
+      title: Return of assets
+      props:
+      - name: label
+        value: A.5.11
+      parts:
+      - id: ctl_A.5.11-stmt-27001_22
+        name: statement
+        prose: "Return of assets  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.5.12-27001_22
+      class: control
+      title: Classification of information
+      props:
+      - name: label
+        value: A.5.12
+      parts:
+      - id: ctl_A.5.12-stmt-27001_22
+        name: statement
+        prose: "Classification of information  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.5.13-27001_22
+      class: control
+      title: Labelling of information
+      props:
+      - name: label
+        value: A.5.13
+      parts:
+      - id: ctl_A.5.13-stmt-27001_22
+        name: statement
+        prose: "Labelling of information  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.5.14-27001_22
+      class: control
+      title: Information transfer
+      props:
+      - name: label
+        value: A.5.14
+      parts:
+      - id: ctl_A.5.14-stmt-27001_22
+        name: statement
+        prose: "Information transfer  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.5.15-27001_22
+      class: control
+      title: Access control
+      props:
+      - name: label
+        value: A.5.15
+      parts:
+      - id: ctl_A.5.15-stmt-27001_22
+        name: statement
+        prose: "Access control  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.5.16-27001_22
+      class: control
+      title: Identity management
+      props:
+      - name: label
+        value: A.5.16
+      parts:
+      - id: ctl_A.5.16-stmt-27001_22
+        name: statement
+        prose: "Identity management  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.5.17-27001_22
+      class: control
+      title: Authentication information
+      props:
+      - name: label
+        value: A.5.17
+      parts:
+      - id: ctl_A.5.17-stmt-27001_22
+        name: statement
+        prose: "Authentication information  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.5.18-27001_22
+      class: control
+      title: Access rights
+      props:
+      - name: label
+        value: A.5.18
+      parts:
+      - id: ctl_A.5.18-stmt-27001_22
+        name: statement
+        prose: "Access rights  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.5.19-27001_22
+      class: control
+      title: Information security in supplier relationships
+      props:
+      - name: label
+        value: A.5.19
+      parts:
+      - id: ctl_A.5.19-stmt-27001_22
+        name: statement
+        prose: "Information security in supplier relationships  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.5.20-27001_22
+      class: control
+      title: Addressing information security within supplier agreements
+      props:
+      - name: label
+        value: A.5.20
+      parts:
+      - id: ctl_A.5.20-stmt-27001_22
+        name: statement
+        prose: "Addressing information security within supplier agreements  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.5.21-27001_22
+      class: control
+      title: Managing information security in the information and communication technology (ICT) supply chain
+      props:
+      - name: label
+        value: A.5.21
+      parts:
+      - id: ctl_A.5.21-stmt-27001_22
+        name: statement
+        prose: "Managing information security in the information and communication technology (ICT) supply chain  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.5.22-27001_22
+      class: control
+      title: "Monitoring, review and change management of supplier services"
+      props:
+      - name: label
+        value: A.5.22
+      parts:
+      - id: ctl_A.5.22-stmt-27001_22
+        name: statement
+        prose: "Monitoring, review and change management  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.5.23-27001_22
+      class: control
+      title: Information security in supplier relationships
+      props:
+      - name: label
+        value: A.5.23
+      parts:
+      - id: ctl_A.5.23-stmt-27001_22
+        name: statement
+        prose: "Information security in supplier relationships  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.5.24-27001_22
+      class: control
+      title: Information security incident management planning and preparation
+      props:
+      - name: label
+        value: A.5.24
+      parts:
+      - id: ctl_A.5.24-stmt-27001_22
+        name: statement
+        prose: "Information security incident management planning and preparation  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.5.25-27001_22
+      class: control
+      title: Assessment and decision on information security events
+      props:
+      - name: label
+        value: A.5.25
+      parts:
+      - id: ctl_A.5.25-stmt-27001_22
+        name: statement
+        prose: "Assessment and decision on information security events  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.5.26-27001_22
+      class: control
+      title: Response to information security incidents
+      props:
+      - name: label
+        value: A.5.26
+      parts:
+      - id: ctl_A.5.26-stmt-27001_22
+        name: statement
+        prose: "Response to information security incidents  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.5.27-27001_22
+      class: control
+      title: Learning from information security incidents
+      props:
+      - name: label
+        value: A.5.27
+      parts:
+      - id: ctl_A.5.27-stmt-27001_22
+        name: statement
+        prose: "Learning from information security incidents  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.5.28-27001_22
+      class: control
+      title: Collection of evidence
+      props:
+      - name: label
+        value: A.5.28
+      parts:
+      - id: ctl_A.5.28-stmt-27001_22
+        name: statement
+        prose: "Collection of evidence  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.5.29-27001_22
+      class: control
+      title: Information security during disruption
+      props:
+      - name: label
+        value: A.5.29
+      parts:
+      - id: ctl_A.5.29-stmt-27001_22
+        name: statement
+        prose: "Information security during disruption  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.5.30-27001_22
+      class: control
+      title: ICT readiness for business continuity
+      props:
+      - name: label
+        value: A.5.30
+      parts:
+      - id: ctl_A.5.30-stmt-27001_22
+        name: statement
+        prose: "ICT readiness for business continuity  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.5.31-27001_22
+      class: control
+      title: "Legal, statutory, regulatory and contractual requirements"
+      props:
+      - name: label
+        value: A.5.31
+      parts:
+      - id: ctl_A.5.31-stmt-27001_22
+        name: statement
+        prose: "Legal, statutory, regulatory and contractual requirements  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.5.32-27001_22
+      class: control
+      title: Intellectual property rights
+      props:
+      - name: label
+        value: A.5.32
+      parts:
+      - id: ctl_A.5.32-stmt-27001_22
+        name: statement
+        prose: "Intellectual property rights  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.5.33-27001_22
+      class: control
+      title: Protection of records
+      props:
+      - name: label
+        value: A.5.33
+      parts:
+      - id: ctl_A.5.33-stmt-27001_22
+        name: statement
+        prose: "Protection of records  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.5.34-27001_22
+      class: control
+      title: Privacy and protection of personal identifiable information (PII)
+      props:
+      - name: label
+        value: A.5.34
+      parts:
+      - id: ctl_A.5.34-stmt-27001_22
+        name: statement
+        prose: "Privacy and protection of personal identifiable information (PII)  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.5.35-27001_22
+      class: control
+      title: Independent review of information security
+      props:
+      - name: label
+        value: A.5.35
+      parts:
+      - id: ctl_A.5.35-stmt-27001_22
+        name: statement
+        prose: "Independent review of information security  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.5.36-27001_22
+      class: control
+      title: "Compliance with policies, rules and standards for information security"
+      props:
+      - name: label
+        value: A.5.36
+      parts:
+      - id: ctl_A.5.36-stmt-27001_22
+        name: statement
+        prose: "Compliance with policies, rules, and standards for information security  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.5.37-27001_22
+      class: control
+      title: Documented operating procedures
+      props:
+      - name: label
+        value: A.5.37
+      parts:
+      - id: ctl_A.5.37-stmt-27001_22
+        name: statement
+        prose: "Documented operating procedures  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+  - id: cat_A.6-27001_22
+    class: category
+    title: People controls
+    props:
+    - name: label
+      value: A.6
+    controls:
+    - id: ctl_A.6.1-27001_22
+      class: control
+      title: Screening
+      props:
+      - name: label
+        value: A.6.1
+      parts:
+      - id: ctl_A.6.1-stmt-27001_22
+        name: statement
+        prose: "Screening  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.6.2-27001_22
+      class: control
+      title: Terms and conditions of employment
+      props:
+      - name: label
+        value: A.6.2
+      parts:
+      - id: ctl_A.6.2-stmt-27001_22
+        name: statement
+        prose: "Terms and conditions of employment  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.6.3-27001_22
+      class: control
+      title: "Information security awareness, education and training"
+      props:
+      - name: label
+        value: A.6.3
+      parts:
+      - id: ctl_A.6.3-stmt-27001_22
+        name: statement
+        prose: "Information security awareness, education and training  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.6.4-27001_22
+      class: control
+      title: Disciplinary process
+      props:
+      - name: label
+        value: A.6.4
+      parts:
+      - id: ctl_A.6.4-stmt-27001_22
+        name: statement
+        prose: "Disciplinary process  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.6.5-27001_22
+      class: control
+      title: Responsibilities after termination or change of employment
+      props:
+      - name: label
+        value: A.6.5
+      parts:
+      - id: ctl_A.6.5-stmt-27001_22
+        name: statement
+        prose: "Responsibilities after termination or change of employment  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.6.6-27001_22
+      class: control
+      title: Confidentiality or non-disclosure agreements
+      props:
+      - name: label
+        value: A.6.6
+      parts:
+      - id: ctl_A.6.6-stmt-27001_22
+        name: statement
+        prose: "Confidentiality or non-disclosure agreements  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.6.7-27001_22
+      class: control
+      title: Remote working
+      props:
+      - name: label
+        value: A.6.7
+      parts:
+      - id: ctl_A.6.7-stmt-27001_22
+        name: statement
+        prose: "Remote working  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.6.8-27001_22
+      class: control
+      title: Information security event reporting
+      props:
+      - name: label
+        value: A.6.8
+      parts:
+      - id: ctl_A.6.8-stmt-27001_22
+        name: statement
+        prose: "Information security event reporting  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+  - id: cat_A.7-27001_22
+    class: category
+    title: Physical controls
+    props:
+    - name: label
+      value: A.7
+    controls:
+    - id: ctl_A.7.1-27001_22
+      class: control
+      title: Physical security perimeters
+      props:
+      - name: label
+        value: A.7.1
+      parts:
+      - id: ctl_A.7.1-stmt-27001_22
+        name: statement
+        prose: "Physical security perimeters  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.7.2-27001_22
+      class: control
+      title: Physical entry
+      props:
+      - name: label
+        value: A.7.2
+      parts:
+      - id: ctl_A.7.2-stmt-27001_22
+        name: statement
+        prose: "Physical entry  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.7.3-27001_22
+      class: control
+      title: "Securing offices, rooms and facilities"
+      props:
+      - name: label
+        value: A.7.3
+      parts:
+      - id: ctl_A.7.3-stmt-27001_22
+        name: statement
+        prose: "Securing offices, rooms and facilities  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.7.4-27001_22
+      class: control
+      title: Physical security monitoring
+      props:
+      - name: label
+        value: A.7.4
+      parts:
+      - id: ctl_A.7.4-stmt-27001_22
+        name: statement
+        prose: "Physical security monitoring  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.7.5-27001_22
+      class: control
+      title: Protecting against physical and environmental threats
+      props:
+      - name: label
+        value: A.7.5
+      parts:
+      - id: ctl_A.7.5-stmt-27001_22
+        name: statement
+        prose: "Protecting against physical and environmental threats  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.7.6-27001_22
+      class: control
+      title: Working in secure areas
+      props:
+      - name: label
+        value: A.7.6
+      parts:
+      - id: ctl_A.7.6-stmt-27001_22
+        name: statement
+        prose: "Working in secure areas  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.7.7-27001_22
+      class: control
+      title: Clear desk and clear screen
+      props:
+      - name: label
+        value: A.7.7
+      parts:
+      - id: ctl_A.7.7-stmt-27001_22
+        name: statement
+        prose: "Clear desk and clear screen  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.7.8-27001_22
+      class: control
+      title: Equipment siting and protection
+      props:
+      - name: label
+        value: A.7.8
+      parts:
+      - id: ctl_A.7.8-stmt-27001_22
+        name: statement
+        prose: "Equipment siting and protection  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.7.9-27001_22
+      class: control
+      title: Security of assets off-premises
+      props:
+      - name: label
+        value: A.7.9
+      parts:
+      - id: ctl_A.7.9-stmt-27001_22
+        name: statement
+        prose: "Security of assets off-premises  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.7.10-27001_22
+      class: control
+      title: Storage media
+      props:
+      - name: label
+        value: A.7.10
+      parts:
+      - id: ctl_A.7.10-stmt-27001_22
+        name: statement
+        prose: "Storage media  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.7.11-27001_22
+      class: control
+      title: Supporting utilities
+      props:
+      - name: label
+        value: A.7.11
+      parts:
+      - id: ctl_A.7.11-stmt-27001_22
+        name: statement
+        prose: "Supporting utilities  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.7.12-27001_22
+      class: control
+      title: Cabling security
+      props:
+      - name: label
+        value: A.7.12
+      parts:
+      - id: ctl_A.7.12-stmt-27001_22
+        name: statement
+        prose: "Cabling security  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.7.13-27001_22
+      class: control
+      title: Equipment maintenance
+      props:
+      - name: label
+        value: A.7.13
+      parts:
+      - id: ctl_A.7.13-stmt-27001_22
+        name: statement
+        prose: "Equipment maintenance  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.7.14-27001_22
+      class: control
+      title: Secure disposal or re-use of equipment
+      props:
+      - name: label
+        value: A.7.14
+      parts:
+      - id: ctl_A.7.14-stmt-27001_22
+        name: statement
+        prose: "Secure disposal or re-use of equipment  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+  - id: cat_A.8-27001_22
+    class: category
+    title: Technological controls
+    props:
+    - name: label
+      value: A.8
+    controls:
+    - id: ctl_A.8.1-27001_22
+      class: control
+      title: User end point devices
+      props:
+      - name: label
+        value: A.8.1
+      parts:
+      - id: ctl_A.8.1-stmt-27001_22
+        name: statement
+        prose: "User end point devices  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.8.2-27001_22
+      class: control
+      title: Privileged access rights
+      props:
+      - name: label
+        value: A.8.2
+      parts:
+      - id: ctl_A.8.2-stmt-27001_22
+        name: statement
+        prose: "Privileged access rights  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.8.3-27001_22
+      class: control
+      title: Information access restriction
+      props:
+      - name: label
+        value: A.8.3
+      parts:
+      - id: ctl_A.8.3-stmt-27001_22
+        name: statement
+        prose: "Information access restriction  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.8.4-27001_22
+      class: control
+      title: Access to source code
+      props:
+      - name: label
+        value: A.8.4
+      parts:
+      - id: ctl_A.8.4-stmt-27001_22
+        name: statement
+        prose: "Access to source code  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.8.5-27001_22
+      class: control
+      title: Secure authentication
+      props:
+      - name: label
+        value: A.8.5
+      parts:
+      - id: ctl_A.8.5-stmt-27001_22
+        name: statement
+        prose: "Secure authentication  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.8.6-27001_22
+      class: control
+      title: Capacity management
+      props:
+      - name: label
+        value: A.8.6
+      parts:
+      - id: ctl_A.8.6-stmt-27001_22
+        name: statement
+        prose: "Capacity management  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.8.7-27001_22
+      class: control
+      title: Protection against malware
+      props:
+      - name: label
+        value: A.8.7
+      parts:
+      - id: ctl_A.8.7-stmt-27001_22
+        name: statement
+        prose: "Protection against malware  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.8.8-27001_22
+      class: control
+      title: Management of technical vulnerabilities
+      props:
+      - name: label
+        value: A.8.8
+      parts:
+      - id: ctl_A.8.8-stmt-27001_22
+        name: statement
+        prose: "Management of technical vulnerabilities  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.8.9-27001_22
+      class: control
+      title: Configuration management
+      props:
+      - name: label
+        value: A.8.9
+      parts:
+      - id: ctl_A.8.9-stmt-27001_22
+        name: statement
+        prose: "Configuration management  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.8.10-27001_22
+      class: control
+      title: Information deletion
+      props:
+      - name: label
+        value: A.8.10
+      parts:
+      - id: ctl_A.8.10-stmt-27001_22
+        name: statement
+        prose: "Information deletion  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.8.11-27001_22
+      class: control
+      title: Data masking
+      props:
+      - name: label
+        value: A.8.11
+      parts:
+      - id: ctl_A.8.11-stmt-27001_22
+        name: statement
+        prose: "Data masking  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.8.12-27001_22
+      class: control
+      title: Data leakage prevention
+      props:
+      - name: label
+        value: A.8.12
+      parts:
+      - id: ctl_A.8.12-stmt-27001_22
+        name: statement
+        prose: "Data leakage prevention  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.8.13-27001_22
+      class: control
+      title: Information backup
+      props:
+      - name: label
+        value: A.8.13
+      parts:
+      - id: ctl_A.8.13-stmt-27001_22
+        name: statement
+        prose: "information backup  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.8.14-27001_22
+      class: control
+      title: Redundancy of information processing facilities
+      props:
+      - name: label
+        value: A.8.14
+      parts:
+      - id: ctl_A.8.14-stmt-27001_22
+        name: statement
+        prose: "Redundancy of information processing facilities  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.8.15-27001_22
+      class: control
+      title: Logging
+      props:
+      - name: label
+        value: A.8.15
+      parts:
+      - id: ctl_A.8.15-stmt-27001_22
+        name: statement
+        prose: "Logging  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.8.16-27001_22
+      class: control
+      title: Monitoring activities
+      props:
+      - name: label
+        value: A.8.16
+      parts:
+      - id: ctl_A.8.16-stmt-27001_22
+        name: statement
+        prose: "Monitoring activities  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.8.17-27001_22
+      class: control
+      title: Clock synchronization
+      props:
+      - name: label
+        value: A.8.17
+      parts:
+      - id: ctl_A.8.17-stmt-27001_22
+        name: statement
+        prose: "Clock synchronization  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.8.18-27001_22
+      class: control
+      title: Use of privileged utility programs
+      props:
+      - name: label
+        value: A.8.18
+      parts:
+      - id: ctl_A.8.18-stmt-27001_22
+        name: statement
+        prose: "Use of privileged utility programs  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.8.19-27001_22
+      class: control
+      title: Installation of software on operational systems
+      props:
+      - name: label
+        value: A.8.19
+      parts:
+      - id: ctl_A.8.19-stmt-27001_22
+        name: statement
+        prose: "Installation of software on operational systems  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.8.20-27001_22
+      class: control
+      title: Networks security
+      props:
+      - name: label
+        value: A.8.20
+      parts:
+      - id: ctl_A.8.20-stmt-27001_22
+        name: statement
+        prose: "Network security  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.8.21-27001_22
+      class: control
+      title: Security of network services
+      props:
+      - name: label
+        value: A.8.21
+      parts:
+      - id: ctl_A.8.21-stmt-27001_22
+        name: statement
+        prose: "Security of network services  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.8.22-27001_22
+      class: control
+      title: Segregation of networks
+      props:
+      - name: label
+        value: A.8.22
+      parts:
+      - id: ctl_A.8.22-stmt-27001_22
+        name: statement
+        prose: "Segregation of networks  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.8.23-27001_22
+      class: control
+      title: Web filtering
+      props:
+      - name: label
+        value: A.8.23
+      parts:
+      - id: ctl_A.8.23-stmt-27001_22
+        name: statement
+        prose: "Web filtering  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.8.24-27001_22
+      class: control
+      title: Use of cryptography
+      props:
+      - name: label
+        value: A.8.24
+      parts:
+      - id: ctl_A.8.24-stmt-27001_22
+        name: statement
+        prose: "Use of cryptography  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.8.25-27001_22
+      class: control
+      title: Secure development life cycle
+      props:
+      - name: label
+        value: A.8.25
+      parts:
+      - id: ctl_A.8.25-stmt-27001_22
+        name: statement
+        prose: "Secure development life cycle  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.8.26-27001_22
+      class: control
+      title: Application security requirements
+      props:
+      - name: label
+        value: A.8.26
+      parts:
+      - id: ctl_A.8.26-stmt-27001_22
+        name: statement
+        prose: "Application security requirements  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.8.27-27001_22
+      class: control
+      title: Secure system architecture and engineering principles
+      props:
+      - name: label
+        value: A.8.27
+      parts:
+      - id: ctl_A.8.27-stmt-27001_22
+        name: statement
+        prose: "Secure system architecture and engineering principles  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.8.28-27001_22
+      class: control
+      title: Secure coding
+      props:
+      - name: label
+        value: A.8.28
+      parts:
+      - id: ctl_A.8.28-stmt-27001_22
+        name: statement
+        prose: "Secure coding  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.8.29-27001_22
+      class: control
+      title: Security testing in development and acceptance
+      props:
+      - name: label
+        value: A.8.29
+      parts:
+      - id: ctl_A.8.29-stmt-27001_22
+        name: statement
+        prose: "Security testing in development and acceptance  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.8.30-27001_22
+      class: control
+      title: Outsourced development
+      props:
+      - name: label
+        value: A.8.30
+      parts:
+      - id: ctl_A.8.30-stmt-27001_22
+        name: statement
+        prose: "Outsourced development  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.8.31-27001_22
+      class: control
+      title: "Separation of development, test and production environments"
+      props:
+      - name: label
+        value: A.8.31
+      parts:
+      - id: ctl_A.8.31-stmt-27001_22
+        name: statement
+        prose: "Separation of development, test and production environments  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.8.32-27001_22
+      class: control
+      title: Change management
+      props:
+      - name: label
+        value: A.8.32
+      parts:
+      - id: ctl_A.8.32-stmt-27001_22
+        name: statement
+        prose: "Change management  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.8.33-27001_22
+      class: control
+      title: Test information
+      props:
+      - name: label
+        value: A.8.33
+      parts:
+      - id: ctl_A.8.33-stmt-27001_22
+        name: statement
+        prose: "Test information  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+    - id: ctl_A.8.34-27001_22
+      class: control
+      title: Protection of information systems during audit testing
+      props:
+      - name: label
+        value: A.8.34
+      parts:
+      - id: A.8.34-stmt-27001_22
+        name: statement
+        prose: "Protection of information systems during testing  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en) for the full text of this control.)"
+  back-matter:
+    resources:
+    - uuid: 816ca2f6-b133-4e52-97b5-a8602cafd028
+      description: "ISO 27001:2022 - Information security, cybersecurity and privacy protection — Information security management systems — Requirements"
+      rlinks:
+      - href: https://raw.githubusercontent.com/vendorsec/mvsp/oscal/iso-27001_2022/iso-27001_2022-catalog.xml
+        media-type: application/oscal.catalog+xml
+      - href: https://raw.githubusercontent.com/vendorsec/mvsp/oscal/iso-27001_2022/iso-27001_2022-catalog.json
+        media-type: application/oscal.catalog+json
+      - href: https://raw.githubusercontent.com/vendorsec/mvsp/oscal/iso-27001_2022/iso-27001_2022-catalog.yaml
+        media-type: application/oscal.catalog+yaml
+    - uuid: a91c008e-b3a5-4d58-8eea-ca1b936c8f5b
+      description: "ISO/IEC 27001:2022 - Information security, cybersecurity and privacy protection — Information security management systems — Requirements"
+      rlinks:
+      - href: https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-3:v1:en
+        media-type: text/html

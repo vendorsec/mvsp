@@ -1,0 +1,1765 @@
+---
+catalog:
+  uuid: 7a3b00b9-eead-45ab-b75c-eb91164ebde1
+  metadata:
+    title: ISO 27017:2015 - Information technology – Security techniques – Code of practice for information security controls based on ISO/IEC 27002 for cloud services
+    published: 2015-07-31T10:00:00Z
+    last-modified: 2015-07-31T10:00:00Z
+    version: "2015"
+    oscal-version: 1.1.1
+    props:
+    - name: keywords
+      value: "Access management, Asset management, Audit and compliance, Business continuity management, Capacity management, Change management, Cryptography, Environmental security, Human resource security, Information classification, Information handling, Information security, Logging and monitoring, Mobile devices, Password management, Physical security, Roles and responsibilities, Security incident response, Security organization, Security policy, Vulnerability management"
+    roles:
+    - id: creator
+      title: Document creator
+    - id: contact
+      title: Contact
+    parties:
+    - uuid: 0327339e-87cc-41d3-829b-7131da3b5d20
+      type: organization
+      name: International Organization for Standardization
+      email-addresses:
+      - central@iso.org
+      addresses:
+      - addr-lines:
+        - International Organization for Standardization
+        - ISO Central Secretariat
+        - Chemin de Blandonnet 8
+        - CP 401
+        - 1214 Vernier
+        city: "Geneva, Switzerland"
+    responsible-parties:
+    - role-id: creator
+      party-uuids:
+      - 0327339e-87cc-41d3-829b-7131da3b5d20
+    - role-id: contact
+      party-uuids:
+      - 0327339e-87cc-41d3-829b-7131da3b5d20
+    remarks: "The following standard contains the [ISO/IEC 27017:2015](https://www.iso.org/standard/43757.html), *Information technology – Security techniques – Code of practice for information security controls based on ISO/IEC 27002 for cloud services*. This standard has been redacted and limited under ISO copyright licensing \"fair use\". Copyrights for this work are held by the publisher, the International Organization for Standardization (ISO)."
+  groups:
+  - id: dmn_5-27017
+    class: domain
+    title: Information security policies
+    props:
+    - name: label
+      value: "5"
+    controls:
+    - id: obj_5.1-27017
+      class: objective
+      title: Management direction for information security
+      props:
+      - name: label
+        value: "5.1"
+      parts:
+      - id: obj_5.1_stmt-27017
+        name: statement
+        prose: "Objective: Management direction for information security (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this objective)."
+      controls:
+      - id: ctl_5.1.1
+        class: control
+        title: Policies for information security
+        props:
+        - name: label
+          value: 5.1.1
+        parts:
+        - id: ctl_5.1.1_stmt-27017
+          name: statement
+          prose: "Policies for information security  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_5.1.2
+        class: control
+        title: Information security policies
+        props:
+        - name: label
+          value: 5.1.2
+        parts:
+        - id: ctl_5.1.2_stmt-27017
+          name: statement
+          prose: "Information security policies  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+  - id: dmn_6-27017
+    class: domain
+    title: Organization of Information Security
+    props:
+    - name: label
+      value: "6"
+    controls:
+    - id: obj_6.1-27017
+      class: objective
+      title: Internal organization
+      props:
+      - name: label
+        value: "6.1"
+      parts:
+      - id: obj_6.1_stmt-27017
+        name: statement
+        prose: "Objective: Internal organization (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this objective)."
+      controls:
+      - id: ctl_6.1.1-27017
+        class: control
+        title: Information security roles and responsibilities
+        props:
+        - name: label
+          value: 6.1.1
+        parts:
+        - id: ctl_6.1.1_stmt-27017
+          name: statement
+          prose: "Information security roles and responsibilities  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_6.1.2-27017
+        class: control
+        title: Segregation of duties
+        props:
+        - name: label
+          value: 6.1.2
+        parts:
+        - id: ctl_6.1.2_stmt-27017
+          name: statement
+          prose: "Segregation of duties  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_6.1.3-27017
+        class: control
+        title: Contact with authorities
+        props:
+        - name: label
+          value: 6.1.3
+        parts:
+        - id: ctl_6.1.3_stmt-27017
+          name: statement
+          prose: "Contact with authorities  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_6.1.4-27017
+        class: control
+        title: Contact with special interest groups
+        props:
+        - name: label
+          value: 6.1.4
+        parts:
+        - id: ctl_6.1.4_stmt-27017
+          name: statement
+          prose: "Contact with special interest groups  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_6.1.5-27017
+        class: control
+        title: Information security in project management
+        props:
+        - name: label
+          value: 6.1.5
+        parts:
+        - id: ctl_6.1.5_stmt-27017
+          name: statement
+          prose: "Information security in project management  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+    - id: obj_6.2-27017
+      class: objective
+      title: Mobile devices and teleworking
+      props:
+      - name: label
+        value: "6.2"
+      parts:
+      - id: obj_6.2_stmt-27017
+        name: statement
+        prose: "Objective: Mobile devices and teleworking (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this objective)."
+      controls:
+      - id: ctl_6.2.1-27017
+        class: control
+        title: Mobile device policy
+        props:
+        - name: label
+          value: 6.2.1
+        parts:
+        - id: ctl_6.2.1_stmt-27017
+          name: statement
+          prose: "Mobile device policy  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_6.2.2-27017
+        class: control
+        title: Teleworking
+        props:
+        - name: label
+          value: 6.2.2
+        parts:
+        - id: ctl_6.2.2_stmt-27017
+          name: statement
+          prose: "Teleworking  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+    - id: obj_CLD_6.3-27017
+      class: objective
+      title: Relationship between cloud service customer and cloud service provider
+      props:
+      - name: label
+        value: CLD 6.3
+      parts:
+      - id: obj_CLD_6.3_stmt-27017
+        name: statement
+        prose: "Objective: Relationship between cloud service customer and cloud service provider (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this objective)."
+      controls:
+      - id: ctl_CLD_6.3.1-27017
+        class: control
+        title: Shared roles and responsibilities within a cloud computing environment
+        props:
+        - name: label
+          value: 6.2.1
+        parts:
+        - id: ctl_CLD_6.2.1_stmt-27017
+          name: statement
+          prose: "Shared roles and responsibilities within a cloud computing environment  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+  - id: dmn_7-27017
+    class: domain
+    title: Human resource security
+    props:
+    - name: label
+      value: "7"
+    controls:
+    - id: obj_7.1-27017
+      class: objective
+      title: Prior to employment
+      props:
+      - name: label
+        value: "7.1"
+      parts:
+      - id: obj_7.1_stmt-27017
+        name: statement
+        prose: "Objective: Prior to employment (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this objective)."
+      controls:
+      - id: ctl_7.1.1-27017
+        class: control
+        title: Screening
+        props:
+        - name: label
+          value: 7.1.1
+        parts:
+        - id: ctl_7.1.1_stmt-27017
+          name: statement
+          prose: "Screening  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_7.1.2-27017
+        class: control
+        title: Terms and conditions of employment
+        props:
+        - name: label
+          value: 7.1.2
+        parts:
+        - id: ctl_7.1.2_stmt-27017
+          name: statement
+          prose: "Terms and conditions of employment  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+    - id: obj_7.2-27017
+      class: objective
+      title: During employment
+      props:
+      - name: label
+        value: "7.2"
+      parts:
+      - id: obj_7.2_stmt-27017
+        name: statement
+        prose: "Objective: During employment (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this objective)."
+      controls:
+      - id: ctl_7.2.1-27017
+        class: control
+        title: Management responsibilities
+        props:
+        - name: label
+          value: 7.2.1
+        parts:
+        - id: ctl_7.2.1_stmt-27017
+          name: statement
+          prose: "Management responsibilities  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_7.2.2-27017
+        class: control
+        title: "Information security awareness, education and training"
+        props:
+        - name: label
+          value: 7.2.2
+        parts:
+        - id: ctl_7.2.2_stmt-27017
+          name: statement
+          prose: "Information security awareness, education and training  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_7.2.3-27017
+        class: control
+        title: Disciplinary process
+        props:
+        - name: label
+          value: 7.2.3
+        parts:
+        - id: ctl_7.2.3_stmt-27017
+          name: statement
+          prose: "Disciplinary process  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+    - id: obj_7.3-27017-27017
+      class: objective
+      title: Termination and change of employment
+      props:
+      - name: label
+        value: "7.3"
+      parts:
+      - id: obj_7.3_stmt-27017
+        name: statement
+        prose: "Objective: Termination and change of employment (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this objective)."
+      controls:
+      - id: ctl_7.3.1-27017
+        class: control
+        title: Termination or change of employment responsibilities
+        props:
+        - name: label
+          value: 7.3.1
+        parts:
+        - id: ctl_7.3.1_stmt-27017
+          name: statement
+          prose: "Termination or change of employment responsibilities  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+  - id: dmn_8-27017
+    class: domain
+    title: Asset management
+    props:
+    - name: label
+      value: "8"
+    controls:
+    - id: obj_8.1-27017
+      class: objective
+      title: Responsibility for assets
+      props:
+      - name: label
+        value: "8.1"
+      parts:
+      - id: obj_8.1_stmt-27017
+        name: statement
+        prose: "Objective: Responsibility for assets (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this objective)."
+      controls:
+      - id: ctl_8.1.1-27017
+        class: control
+        title: Inventory of assets
+        props:
+        - name: label
+          value: 8.1.1
+        parts:
+        - id: ctl_8.1.1_stmt-27017
+          name: statement
+          prose: "Inventory of assets  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_8.1.2-27017
+        class: control
+        title: Ownership of assets
+        props:
+        - name: label
+          value: 8.1.1
+        parts:
+        - id: ctl_8.1.2_stmt-27017
+          name: statement
+          prose: "Ownership of assets  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_8.1.3-27017
+        class: control
+        title: Acceptable use of assets
+        props:
+        - name: label
+          value: 8.1.3
+        parts:
+        - id: ctl_8.1.3_stmt-27017
+          name: statement
+          prose: "Acceptable use of assets  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_8.1.4-27017
+        class: control
+        title: Return of assets
+        props:
+        - name: label
+          value: 8.1.4
+        parts:
+        - id: ctl_8.1.4_stmt-27017
+          name: statement
+          prose: "Return of assets  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_CLD_8.1.5-27017
+        class: control
+        title: Removal of cloud service customer assets
+        props:
+        - name: label
+          value: CLD 8.1.5
+        parts:
+        - id: ctl_CLD_8.1.5_stmt-27017
+          name: statement
+          prose: "Removal of cloud service customer assets  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+    - id: obj_8.2-27017
+      class: objective
+      title: Information classification
+      props:
+      - name: label
+        value: "8.2"
+      parts:
+      - id: obj_8.2_stmt-27017
+        name: statement
+        prose: "Objective: Information classification (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this objective)."
+      controls:
+      - id: ctl_8.2.1-27017
+        class: control
+        title: Classification of information
+        parts:
+        - id: ctl_8.2.1_stmt-27017
+          name: statement
+          prose: "Classification of information  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_8.2.2-27017
+        class: control
+        title: Labelling of information
+        props:
+        - name: label
+          value: 8.2.2
+        parts:
+        - id: ctl_8.2.2_stmt-27017
+          name: statement
+          prose: "Labelling of information  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_8.2.3-27017
+        class: control
+        title: Handling of assets
+        props:
+        - name: label
+          value: 8.2.3
+        parts:
+        - id: ctl_8.2.3_stmt-27017
+          name: statement
+          prose: "Handling of assets  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+    - id: obj_8.3-27017
+      class: objective
+      title: Media handling
+      props:
+      - name: label
+        value: "8.3"
+      parts:
+      - id: obj_8.3_stmt-27017
+        name: statement
+        prose: "Objective: Media handling (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this objective)."
+      controls:
+      - id: ctl_8.3.1-27017
+        class: control
+        title: Management of removable media
+        props:
+        - name: label
+          value: 8.3.1
+        parts:
+        - id: ctl_8.3.1_stmt-27017
+          name: statement
+          prose: "Management of removable media  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_8.3.2-27017
+        class: control
+        title: Disposal of media
+        props:
+        - name: label
+          value: 8.3.2
+        parts:
+        - id: ctl_8.3.2_stmt-27017
+          name: statement
+          prose: "Disposal of media  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_8.3.3-27017
+        class: control
+        title: Physical media transfer
+        props:
+        - name: label
+          value: 8.3.3
+        parts:
+        - id: ctl_8.3.3_stmt-27017
+          name: statement
+          prose: "Physical media transfer  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+  - id: dmn_9-27017
+    class: domain
+    title: Access Control
+    props:
+    - name: label
+      value: "9"
+    controls:
+    - id: obj_9.1-27017
+      class: objective
+      title: Business requirements of access control
+      props:
+      - name: label
+        value: "9.1"
+      parts:
+      - id: obj_9.1_stmt-27017
+        name: statement
+        prose: "Objective: Business requirements of access control  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this objective.)"
+      controls:
+      - id: ctl_9.1.1-27017
+        class: control
+        title: Access control policy
+        props:
+        - name: label
+          value: 9.1.1
+        parts:
+        - id: ctl_9.1.1_stmt-27017
+          name: statement
+          prose: "Access control policy  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_9.1.2-27017
+        class: control
+        title: Access to networks and network services
+        props:
+        - name: label
+          value: 9.1.2
+        parts:
+        - id: ctl_9.1.2_stmt-27017
+          name: statement
+          prose: "Access to networks and network services  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+    - id: obj_9.2-27017
+      class: objective
+      title: User access management
+      props:
+      - name: label
+        value: "9.2"
+      parts:
+      - id: obj_9.2_stmt-27017
+        name: statement
+        prose: "Objective: User access management  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this objective.)"
+      controls:
+      - id: ctl_9.2.1-27017
+        class: control
+        title: User registration and de-registration
+        parts:
+        - id: ctl_9.2.1_stmt-27017
+          name: statement
+          prose: "User registration and de-registration  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_9.2.2-27017
+        class: control
+        title: User access provisioning
+        props:
+        - name: label
+          value: 9.2.2
+        parts:
+        - id: ctl_9.2.2_stmt-27017
+          name: statement
+          prose: "User access provisioning  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_9.2.3-27017
+        class: control
+        title: Management of privileged access rights
+        props:
+        - name: label
+          value: 9.2.3
+        parts:
+        - id: ctl_9.2.3_stmt-27017
+          name: statement
+          prose: "Management of privileged access rights  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_9.2.4-27017
+        class: control
+        title: Management of secret authentication information of users
+        props:
+        - name: label
+          value: 9.2.4
+        parts:
+        - id: ctl_9.2.4_stmt-27017
+          name: statement
+          prose: "Management of secret authentication information of users  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_9.2.5-27017
+        class: control
+        title: Review of user access rights
+        props:
+        - name: label
+          value: 9.2.5
+        parts:
+        - id: ctl_9.2.5_stmt-27017
+          name: statement
+          prose: "Review of user access rights  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_9.2.6-27017
+        class: control
+        title: Removal or adjustment of access rights
+        props:
+        - name: label
+          value: 9.2.6
+        parts:
+        - id: ctl_9.2.6_stmt-27017
+          name: statement
+          prose: "Removal or adjustment of access rights  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+    - id: obj_9.3-27017
+      class: objective
+      title: User responsibilities
+      props:
+      - name: label
+        value: "9.3"
+      parts:
+      - id: obj_9.3_stmt-27017
+        name: statement
+        prose: "Objective: User responsibilities  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this objective.)"
+      controls:
+      - id: ctl_9.3.1-27017
+        class: control
+        title: Use of secret authentication information
+        props:
+        - name: label
+          value: 9.3.1
+        parts:
+        - id: ctl_9.3.1_stmt-27017
+          name: statement
+          prose: "Use of secret authentication information  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+    - id: obj_9.4-27017
+      class: objective
+      title: System and application access control
+      props:
+      - name: label
+        value: "9.4"
+      parts:
+      - id: obj_9.4_stmt-27017
+        name: statement
+        prose: "Objective: System and application access control  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this objective.)"
+      controls:
+      - id: ctl_9.4.1-27017
+        class: control
+        title: Information access restriction
+        props:
+        - name: label
+          value: 9.4.1
+        parts:
+        - id: ctl_9.4.1_stmt-27017
+          name: statement
+          prose: "Information access restriction  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_9.4.2-27017
+        class: control
+        title: Secure log-on procedures
+        props:
+        - name: label
+          value: 9.4.2
+        parts:
+        - id: ctl_9.4.2_stmt-27017
+          name: statement
+          prose: "Secure log-on procedures  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_9.4.3-27017
+        class: control
+        title: Password management system
+        props:
+        - name: label
+          value: 9.4.3
+        parts:
+        - id: ctl_9.4.3_stmt-27017
+          name: statement
+          prose: "Password management system  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_9.4.4-27017
+        class: control
+        title: Use of privileged utility programs
+        props:
+        - name: label
+          value: 9.4.4
+        parts:
+        - id: ctl_9.4.4_stmt-27017
+          name: statement
+          prose: "Use of privileged utility programs  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_9.4.5-27017
+        class: control
+        title: Access control to program source code
+        props:
+        - name: label
+          value: 9.4.5
+        parts:
+        - id: ctl_9.4.5_stmt-27017
+          name: statement
+          prose: "Access control to program source code  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+    - id: obj_CLD_9.5-27017
+      class: objective
+      title: Access control of cloud service customer data in shared virtual environment
+      props:
+      - name: label
+        value: CLD 9.4
+      parts:
+      - id: obj_CLD_9.5_stmt-27017
+        name: statement
+        prose: "Objective: Access control of cloud service customer data in shared virtual environment  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this objective.)"
+      controls:
+      - id: ctl_CLD_9.5.1-27017
+        class: control
+        title: Segregation in virtual computing environments
+        props:
+        - name: label
+          value: CLD 9.5.1
+        parts:
+        - id: ctl_CLD_9.5.1_stmt-27017
+          name: statement
+          prose: "Segregation in virtual computing environments  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_CLD_9.5.2-27017
+        class: control
+        title: Virtual machine hardening
+        props:
+        - name: label
+          value: CLD 9.5.2
+        parts:
+        - id: ctl_CLD_9.5.2_stmt-27017
+          name: statement
+          prose: "Virtual machine hardening  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+  - id: dmn_10-27017
+    class: domain
+    title: Cryptography
+    props:
+    - name: label
+      value: "10"
+    controls:
+    - id: obj_10.1-27017
+      class: objective
+      title: Cryptographic controls
+      props:
+      - name: label
+        value: "10.1"
+      parts:
+      - id: obj_10.1_stmt-27017
+        name: statement
+        prose: "Objective: Cryptographic controls  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this objective.)"
+      controls:
+      - id: ctl_10.1.1-27017
+        class: control
+        title: Policy on the use of cryptographic controls
+        props:
+        - name: label
+          value: 10.1.1
+        parts:
+        - id: ctl_10.1.1_stmt-27017
+          name: statement
+          prose: "Policy on the use of cryptographic controls  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_10.1.2-27017
+        class: control
+        title: Key management
+        props:
+        - name: label
+          value: 10.1.2
+        parts:
+        - id: ctl_10.1.2_stmt-27017
+          name: statement
+          prose: "Key management  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+  - id: dmn_11-27017
+    class: domain
+    title: Physical and environmental security
+    props:
+    - name: label
+      value: "11"
+    controls:
+    - id: obj_11.1-27017
+      class: objective
+      title: Secure areas
+      props:
+      - name: label
+        value: "11.1"
+      parts:
+      - id: obj_11.1_stmt-27017
+        name: statement
+        prose: "Objective: Secure areas  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this objective.)"
+      controls:
+      - id: ctl_11.1.1-27017
+        class: control
+        title: Physical security perimeter
+        props:
+        - name: label
+          value: 11.1.1
+        parts:
+        - id: ctl_11.1.1_stmt-27017
+          name: statement
+          prose: "Physical security perimeter  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_11.1.2-27017
+        class: control
+        title: Physical entry controls
+        props:
+        - name: label
+          value: 11.1.2
+        parts:
+        - id: ctl_11.1.2_stmt-27017
+          name: statement
+          prose: "Physical entry controls  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_11.1.3-27017
+        class: control
+        title: "Securing offices, rooms and facilities"
+        props:
+        - name: label
+          value: 11.1.3
+        parts:
+        - id: ctl_11.1.3_stmt-27017
+          name: statement
+          prose: "Securing offices, rooms and facilities  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_11.1.4-27017
+        class: control
+        title: Protecting against external and environmental threats
+        props:
+        - name: label
+          value: 11.1.4
+        parts:
+        - id: ctl_11.1.4_stmt-27017
+          name: statement
+          prose: "Protecting against external and environmental threats  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_11.1.5-27017
+        class: control
+        title: Working in secure areas
+        props:
+        - name: label
+          value: 11.1.5
+        parts:
+        - id: ctl_11.1.5_stmt-27017
+          name: statement
+          prose: "Working in secure areas  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_11.1.6-27017
+        class: control
+        title: Delivery and loading areas
+        props:
+        - name: label
+          value: 11.1.6
+        parts:
+        - id: ctl_11.1.6_stmt-27017
+          name: statement
+          prose: "Delivery and loading areas  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+    - id: obj_11.2-27017
+      class: objective
+      title: Equipment
+      props:
+      - name: label
+        value: "11.2"
+      parts:
+      - id: obj_11.2_stmt-27017
+        name: statement
+        prose: "Objective: Equipment  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this objective.)"
+      controls:
+      - id: ctl_11.2.1-27017
+        class: control
+        title: Equipment siting and protection
+        props:
+        - name: label
+          value: 11.2.1
+        parts:
+        - id: ctl_11.2.1_stmt-27017
+          name: statement
+          prose: "Equipment siting and protection  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_11.2.2-27017
+        class: control
+        title: Supporting utilities
+        props:
+        - name: label
+          value: 11.2.2
+        parts:
+        - id: ctl_11.2.2_stmt-27017
+          name: statement
+          prose: "Supporting utilities  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_11.2.3-27017
+        class: control
+        title: Cabling security
+        props:
+        - name: label
+          value: 11.2.3
+        parts:
+        - id: ctl_11.2.3_stmt-27017
+          name: statement
+          prose: "Cabling security  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_11.2.4-27017
+        class: control
+        title: Equipment maintenance
+        props:
+        - name: label
+          value: 11.2.4
+        parts:
+        - id: ctl_11.2.4_stmt-27017
+          name: statement
+          prose: "Equipment maintenance  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_11.2.5-27017
+        class: control
+        title: Removal of assets
+        props:
+        - name: label
+          value: 11.2.5
+        parts:
+        - id: ctl_11.2.5_stmt-27017
+          name: statement
+          prose: "Removal of assets  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_11.2.6-27017
+        class: control
+        title: Security of equipment and assets off-premises
+        props:
+        - name: label
+          value: 11.2.6
+        parts:
+        - id: ctl_11.2.6_stmt-27017
+          name: statement
+          prose: "Security of equipment and assets off-premises  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_11.2.7-27017
+        class: control
+        title: Secure disposal or reuse of equipment
+        props:
+        - name: label
+          value: 11.2.7
+        parts:
+        - id: ctl_11.2.7_stmt-27017
+          name: statement
+          prose: "Secure disposal or reuse of equipment  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_11.2.8-27017
+        class: control
+        title: Unattended user systems
+        props:
+        - name: label
+          value: 11.2.8
+        parts:
+        - id: ctl_11.2.8_stmt-27017
+          name: statement
+          prose: "Unattended user systems  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_11.2.9-27017
+        class: control
+        title: Clear desk and clear screen policy
+        props:
+        - name: label
+          value: 11.2.9
+        parts:
+        - id: ctl_11.2.9_stmt-27017
+          name: statement
+          prose: "Clear desk and clear screen policy  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+  - id: dmn_12-27017
+    class: domain
+    title: Operations security
+    props:
+    - name: label
+      value: "12"
+    controls:
+    - id: obj_12.1-27017
+      class: objective
+      title: Operational procedures and responsibilities
+      props:
+      - name: label
+        value: "12.1"
+      parts:
+      - id: obj_12.1_stmt-27017
+        name: statement
+        prose: "Objective: Operational procedures and responsibilities  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this objective.)"
+      controls:
+      - id: ctl_12.1.1-27017
+        class: control
+        title: Documented operating procedures
+        props:
+        - name: label
+          value: 12.1.1
+        parts:
+        - id: ctl_12.1.1_stmt-27017
+          name: statement
+          prose: "Documented operating procedures  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_12.1.2-27017
+        class: control
+        title: Change management
+        props:
+        - name: label
+          value: 12.1.2
+        parts:
+        - id: ctl_12.1.2_stmt-27017
+          name: statement
+          prose: "Change management  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_12.1.3-27017
+        class: control
+        title: Capacity management
+        props:
+        - name: label
+          value: 12.1.3
+        parts:
+        - id: ctl_12.1.3_stmt-27017
+          name: statement
+          prose: "Capacity management  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_12.1.4-27017
+        class: control
+        title: "Separation of development, testing and operational environments"
+        props:
+        - name: label
+          value: 12.1.4
+        parts:
+        - id: ctl_12.1.4_stmt-27017
+          name: statement
+          prose: "Separation of development, testing and operational environments  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_CLD_12.1.5-27017
+        class: control
+        title: Administrator's operational security
+        props:
+        - name: label
+          value: CLD 12.1.5
+        parts:
+        - id: ctl_CLD_12.1.5_stmt-27017
+          name: statement
+          prose: "Administrator's operational security  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+    - id: obj_12.2-27017
+      class: objective
+      title: Protection from malware
+      props:
+      - name: label
+        value: "12.2"
+      parts:
+      - id: obj_12.2_stmt-27017
+        name: statement
+        prose: "Objective: Protection from malware  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this objective.)"
+      controls:
+      - id: ctl_12.2.1-27017
+        class: control
+        title: Controls against malware
+        props:
+        - name: label
+          value: 12.2.1
+        parts:
+        - id: ctl_12.2.1_stmt-27017
+          name: statement
+          prose: "Controls against malware  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+    - id: obj_12.3-27017
+      class: objective
+      title: Backup
+      props:
+      - name: label
+        value: "12.3"
+      parts:
+      - id: obj_12.3_stmt-27017
+        name: statement
+        prose: "Objective: Backup  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this objective.)"
+      controls:
+      - id: ctl_12.3.1-27017
+        class: control
+        title: Information backup
+        props:
+        - name: label
+          value: 12.3.1
+        parts:
+        - id: ctl_12.3.1_stmt-27017
+          name: statement
+          prose: "Information backup  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+    - id: obj_12.4-27017
+      class: objective
+      title: Logging and monitoring
+      props:
+      - name: label
+        value: "12.4"
+      parts:
+      - id: obj_12.4_stmt-27017
+        name: statement
+        prose: "Objective: Logging and monitoring  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this objective.)"
+      controls:
+      - id: ctl_12.4.1-27017
+        class: control
+        title: Event logging
+        props:
+        - name: label
+          value: 12.4.1
+        parts:
+        - id: ctl_12.4.1_stmt-27017
+          name: statement
+          prose: "Event logging  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_12.4.2-27017
+        class: control
+        title: Protection of log information
+        props:
+        - name: label
+          value: 12.4.2
+        parts:
+        - id: ctl_12.4.2_stmt-27017
+          name: statement
+          prose: "Protection of log information  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_12.4.3
+        class: control
+        title: Administrator and operator logs
+        props:
+        - name: label
+          value: 12.4.3
+        parts:
+        - id: ctl_12.4.3_stmt-27017
+          name: statement
+          prose: "Administrator and operator logs  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_12.4.4-27017
+        class: control
+        title: Clock synchronization
+        props:
+        - name: label
+          value: 12.4.4
+        parts:
+        - id: ctl_12.4.4_stmt-27017
+          name: statement
+          prose: "Clock synchronization  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_CLD_12.4.5-27017
+        class: control
+        title: Monitoring of Cloud Services
+        props:
+        - name: label
+          value: CLD 12.4.5
+        parts:
+        - id: ctl_CLD_12.4.5_stmt-27017
+          name: statement
+          prose: "Monitoring of Cloud Services  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+    - id: obj_12.5-27017
+      class: objective
+      title: Control of operational software
+      props:
+      - name: label
+        value: "12.5"
+      parts:
+      - id: obj_12.5_stmt-27017
+        name: statement
+        prose: "Objective: Control of operational software  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this objective.)"
+      controls:
+      - id: ctl_12.5.1-27017
+        class: control
+        title: Installation of software on operational systems
+        props:
+        - name: label
+          value: 12.5.1
+        parts:
+        - id: ctl_12.5.1_stmt-27017
+          name: statement
+          prose: "Installation of software on operational systems  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+    - id: obj_12.6-27017
+      class: objective
+      title: Technical vulnerability management
+      props:
+      - name: label
+        value: "12.6"
+      parts:
+      - id: obj_12.6_stmt-27017
+        name: statement
+        prose: "Objective: Technical vulnerability management  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this objective.)"
+      controls:
+      - id: ctl_12.6.1-27017
+        class: control
+        title: Management of technical vulnerabilities
+        props:
+        - name: label
+          value: 12.6.1
+        parts:
+        - id: ctl_12.6.1_stmt-27017
+          name: statement
+          prose: "Management of technical vulnerabilities  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_12.6.2-27017
+        class: control
+        title: Restrictions on software installation
+        props:
+        - name: label
+          value: 12.6.2
+        parts:
+        - id: ctl_12.6.2_stmt-27017
+          name: statement
+          prose: "Restrictions on software installation  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+    - id: obj_12.7-27017
+      class: objective
+      title: Information systems audit considerations
+      props:
+      - name: label
+        value: "12.7"
+      parts:
+      - id: obj_12.7_stmt-27017
+        name: statement
+        prose: "Objective: Information systems audit considerations  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this objective.)"
+      controls:
+      - id: ctl_12.7.1-27017
+        class: control
+        title: Information systems audit controls
+        props:
+        - name: label
+          value: 12.7.1
+        parts:
+        - id: ctl_12.7.1_stmt-27017
+          name: statement
+          prose: "Information systems audit controls  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+  - id: dmn_13-27017
+    class: domain
+    title: Communications security
+    props:
+    - name: label
+      value: "13"
+    controls:
+    - id: obj_13.1-27017
+      class: objective
+      title: Network security management
+      props:
+      - name: label
+        value: "13.1"
+      parts:
+      - id: obj_13.1_stmt-27017
+        name: statement
+        prose: "Objective: Network security management  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this objective.)"
+      controls:
+      - id: ctl_13.1.1-27017
+        class: control
+        title: Network controls
+        props:
+        - name: label
+          value: 13.1.1
+        parts:
+        - id: ctl_13.1.1_stmt-27017
+          name: statement
+          prose: "Network controls  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_13.1.2-27017
+        class: control
+        title: Security of network services
+        props:
+        - name: label
+          value: 13.1.2
+        parts:
+        - id: ctl_13.1.2_stmt-27017
+          name: statement
+          prose: "Security of network services  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_13.1.3-27017
+        class: control
+        title: Segregation in networks
+        props:
+        - name: label
+          value: 13.1.3
+        parts:
+        - id: ctl_13.1.3_stmt-27017
+          name: statement
+          prose: "Segregation in networks  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_CLD_13.1.4-27017
+        class: control
+        title: Alignment of security management for virtual and physical networks
+        props:
+        - name: label
+          value: CLD 13.1.4
+        parts:
+        - id: ctl_CLD_13.1.4_stmt-27017
+          name: statement
+          prose: "Alignment of security management for virtual and physical networks  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+    - id: obj_13.2-27017
+      class: objective
+      title: Information transfer
+      props:
+      - name: label
+        value: "13.2"
+      parts:
+      - id: obj_13.2_stmt-27017
+        name: statement
+        prose: "Objective: Information transfer  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this objective.)"
+      controls:
+      - id: ctl_13.2.1-27017
+        class: control
+        title: Information transfer policies and procedures
+        props:
+        - name: label
+          value: 13.2.1
+        parts:
+        - id: ctl_13.2.1_stmt-27017
+          name: statement
+          prose: "Information transfer policies and procedures  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_13.2.2-27017
+        class: control
+        title: Agreements on information transfer
+        props:
+        - name: label
+          value: 13.2.2
+        parts:
+        - id: ctl_13.2.2_stmt-27017
+          name: statement
+          prose: "Agreements on information transfer  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_13.2.3-27017
+        class: control
+        title: Electronic messaging
+        props:
+        - name: label
+          value: 13.2.3
+        parts:
+        - id: ctl_13.2.3_stmt-27017
+          name: statement
+          prose: "Electronic messaging  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_13.2.4-27017
+        class: control
+        title: Confidentiality or nondisclosure agreements
+        props:
+        - name: label
+          value: 13.2.4
+        parts:
+        - id: ctl_13.2.4_stmt-27017
+          name: statement
+          prose: "Confidentiality or nondisclosure agreements  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+  - id: dmn_14-27017
+    class: domain
+    title: "System acquisition, development and maintenance"
+    props:
+    - name: label
+      value: "14"
+    controls:
+    - id: obj_14.1-27017
+      class: objective
+      title: Security requirements of information systems
+      props:
+      - name: label
+        value: "14.1"
+      parts:
+      - id: obj_14.1_stmt-27017
+        name: statement
+        prose: "Objective: System acquisition, development and maintenance  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this objective.)"
+      controls:
+      - id: ctl_14.1.1-27017
+        class: control
+        title: Information security requirements analysis and specification
+        props:
+        - name: label
+          value: 14.1.1
+        parts:
+        - id: ctl_14.1.1_stmt-27017
+          name: statement
+          prose: "Information security requirements analysis and specification  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_14.1.2-27017
+        class: control
+        title: Securing application services on public networks
+        props:
+        - name: label
+          value: 14.1.2
+        parts:
+        - id: ctl_14.1.2_stmt-27017
+          name: statement
+          prose: "Securing application services on public networks  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_14.1.3-27017
+        class: control
+        title: Protecting application services transactions
+        props:
+        - name: label
+          value: 14.1.3
+        parts:
+        - id: ctl_14.1.3_stmt-27017
+          name: statement
+          prose: "Protecting application services transactions  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+    - id: obj_14.2-27017
+      class: objective
+      title: Security in development and support processes
+      props:
+      - name: label
+        value: "14.2"
+      parts:
+      - id: obj_14.2_stmt-27017
+        name: statement
+        prose: "Objective: Security in development and support processes  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this objective.)"
+      controls:
+      - id: ctl_14.2.1-27017
+        class: control
+        title: Secure development policy
+        props:
+        - name: label
+          value: 14.2.1
+        parts:
+        - id: ctl_14.2.1_stmt-27017
+          name: statement
+          prose: "Secure development policy  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_14.2.2-27017
+        class: control
+        title: System change control procedures
+        props:
+        - name: label
+          value: 14.2.2
+        parts:
+        - id: ctl_14.2.2_stmt-27017
+          name: statement
+          prose: "System change control procedures  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_14.2.3-27017
+        class: control
+        title: Technical review of applications after operating platform changes
+        props:
+        - name: label
+          value: 14.2.3
+        parts:
+        - id: ctl_14.2.3_stmt-27017
+          name: statement
+          prose: "Technical review of applications after operating platform changes  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_14.2.4-27017
+        class: control
+        title: Restrictions on changes to software packages
+        props:
+        - name: label
+          value: 14.2.4
+        parts:
+        - id: ctl_14.2.4_stmt-27017
+          name: statement
+          prose: "Restrictions on changes to software packages  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_14.2.5-27017
+        class: control
+        title: Secure system engineering principles
+        props:
+        - name: label
+          value: 14.2.5
+        parts:
+        - id: ctl_14.2.5_stmt-27017
+          name: statement
+          prose: "Secure system engineering principles  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_14.2.6-27017
+        class: control
+        title: Secure development environment
+        props:
+        - name: label
+          value: 14.2.6
+        parts:
+        - id: ctl_14.2.6_stmt-27017
+          name: statement
+          prose: "Secure development environment (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_14.2.7-27017
+        class: control
+        title: Outsourced development
+        props:
+        - name: label
+          value: 14.2.7
+        parts:
+        - id: ctl_14.2.7_stmt-27017
+          name: statement
+          prose: "Outsourced development  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_14.2.8-27017
+        class: control
+        title: System security testing
+        props:
+        - name: label
+          value: 14.2.8
+        parts:
+        - id: ctl_14.2.8_stmt-27017
+          name: statement
+          prose: "System security testing  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_14.2.9-27017
+        class: control
+        title: System acceptance testing
+        props:
+        - name: label
+          value: 14.2.9
+        parts:
+        - id: ctl_14.2.9_stmt-27017
+          name: statement
+          prose: "System acceptance testing  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+    - id: obj_14.3-27017
+      class: objective
+      title: Test data
+      props:
+      - name: label
+        value: "14.3"
+      parts:
+      - id: obj_14.3_stmt-27017
+        name: statement
+        prose: "Objective: Test data  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this objective.)"
+      controls:
+      - id: ctl_14.3.1-27017
+        class: control
+        title: Protection of test data
+        props:
+        - name: label
+          value: 14.3.1
+        parts:
+        - id: ctl_14.3.1_stmt-27017
+          name: statement
+          prose: "Protection of test data  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+  - id: dmn_15-27017
+    class: domain
+    title: Supplier relationships
+    props:
+    - name: label
+      value: "15"
+    controls:
+    - id: obj_15.1-27017
+      class: objective
+      title: Information security in supplier relationships
+      props:
+      - name: label
+        value: "15.1"
+      parts:
+      - id: obj_15.1_stmt-27017
+        name: statement
+        prose: "Objective: Information security in supplier relationships  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this objective.)"
+      controls:
+      - id: ctl_15.1.1-27017
+        class: control
+        title: Information security policy for supplier relationships
+        props:
+        - name: label
+          value: 15.1.1
+        parts:
+        - id: ctl_15.1.1_stmt-27017
+          name: statement
+          prose: "Information security policy for supplier relationships  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_15.1.2-27017
+        class: control
+        title: Addressing security within supplier agreements
+        props:
+        - name: label
+          value: 15.1.2
+        parts:
+        - id: ctl_15.1.2_stmt-27017
+          name: statement
+          prose: "Addressing security within supplier agreements  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_15.1.3-27017
+        class: control
+        title: Information and communication technology supply chain
+        props:
+        - name: label
+          value: 15.1.3
+        parts:
+        - id: ctl_15.1.3_stmt-27017
+          name: statement
+          prose: "Information and communication technology supply chain  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+    - id: obj_15.2-27017
+      class: objective
+      title: Supplier service delivery management
+      props:
+      - name: label
+        value: "15.2"
+      parts:
+      - id: obj_15.2_stmt-27017
+        name: statement
+        prose: "Objective: Supplier service delivery management  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this objective.)"
+      controls:
+      - id: ctl_15.2.1-27017
+        class: control
+        title: Monitoring and review of supplier services
+        props:
+        - name: label
+          value: 15.2.1
+        parts:
+        - id: ctl_15.2.1_stmt-27017
+          name: statement
+          prose: "Monitoring and review of supplier services  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_15.2.2-27017
+        class: control
+        title: Managing changes to supplier services
+        props:
+        - name: label
+          value: 15.2.2
+        parts:
+        - id: ctl_15.2.2_stmt-27017
+          name: statement
+          prose: "Managing changes to supplier services  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+  - id: dmn_16-27017
+    class: domain
+    title: Information security incident management
+    props:
+    - name: label
+      value: "16"
+    controls:
+    - id: obj_16.1-27017
+      class: objective
+      title: Management of information security incidents and improvements
+      props:
+      - name: label
+        value: "16.1"
+      parts:
+      - id: obj_16.1_stmt-27017
+        name: statement
+        prose: "Objective: Management of information security incidents and improvements  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this objective.)"
+      controls:
+      - id: ctl_16.1.1-27017
+        class: control
+        title: Responsibilities and procedures
+        props:
+        - name: label
+          value: 16.1.1
+        parts:
+        - id: ctl_16.1.1_stmt-27017
+          name: statement
+          prose: "Responsibilities and procedures  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_16.1.2-27017
+        class: control
+        title: Reporting information security events
+        props:
+        - name: label
+          value: 16.1.2
+        parts:
+        - id: ctl_16.1.2_stmt-27017
+          name: statement
+          prose: "Reporting information security events  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_16.1.3-27017
+        class: control
+        title: Reporting information security weaknesses
+        props:
+        - name: label
+          value: 16.1.3
+        parts:
+        - id: ctl_16.1.3_stmt-27017
+          name: statement
+          prose: "Reporting information security weaknesses  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_16.1.4-27017
+        class: control
+        title: Assessment of and decision on information security events
+        props:
+        - name: label
+          value: 16.1.4
+        parts:
+        - id: ctl_16.1.4_stmt-27017
+          name: statement
+          prose: "Assessment of and decision on information security events  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_16.1.5-27017
+        class: control
+        title: Response to information security incidents
+        props:
+        - name: label
+          value: 16.1.5
+        parts:
+        - id: ctl_16.1.5_stmt-27017
+          name: statement
+          prose: "Response to information security incidents  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_16.1.6-27017
+        class: control
+        title: Learning from information security incidents
+        props:
+        - name: label
+          value: 16.1.6
+        parts:
+        - id: ctl_16.1.6_stmt-27017
+          name: statement
+          prose: "Learning from information security incidents  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_16.1.7-27017
+        class: control
+        title: Collection of evidence
+        props:
+        - name: label
+          value: 16.1.7
+        parts:
+        - id: ctl_16.1.7_stmt-27017
+          name: statement
+          prose: "Collection of evidence  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+  - id: dmn_17-27017
+    class: domain
+    title: Information security aspects of business continuity management
+    props:
+    - name: label
+      value: "17"
+    controls:
+    - id: obj_17.1-27017
+      class: objective
+      title: Information security continuity
+      props:
+      - name: label
+        value: "17.1"
+      parts:
+      - id: obj_17.1_stmt-27017
+        name: statement
+        prose: "Objective: Information security continuity  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this objective.)"
+      controls:
+      - id: ctl_17.1.1-27017
+        class: control
+        title: Planning information security continuity
+        props:
+        - name: label
+          value: 17.1.1
+        parts:
+        - id: ctl_17.1.1_stmt-27017
+          name: statement
+          prose: "Planning information security continuity  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_17.1.2-27017
+        class: control
+        title: Implementing information security continuity
+        props:
+        - name: label
+          value: 17.1.2
+        parts:
+        - id: ctl_17.1.2_stmt-27017
+          name: statement
+          prose: "Implementing information security continuity  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_17.1.3-27017
+        class: control
+        title: "Verify, review and evaluate information security continuity"
+        props:
+        - name: label
+          value: 17.1.3
+        parts:
+        - id: ctl_17.1.3_stmt-27017
+          name: statement
+          prose: "Verify, review and evaluate information security continuity  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+    - id: obj_17.2-27017
+      class: objective
+      title: Redundancies
+      props:
+      - name: label
+        value: "17.2"
+      parts:
+      - id: obj_17.2_stmt-27017
+        name: statement
+        prose: "Objective: Redundancies  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this objective.)"
+      controls:
+      - id: ctl_17.2.1-27017
+        class: control
+        title: Availability of information processing facilities
+        props:
+        - name: label
+          value: 17.2.1
+        parts:
+        - id: ctl_17.2.1_stmt-27017
+          name: statement
+          prose: "(Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+  - id: dmn_18-27017
+    class: domain
+    title: Compliance
+    props:
+    - name: label
+      value: "18"
+    controls:
+    - id: obj_18.1-27017
+      class: objective
+      title: Compliance with legal and contractual requirements
+      props:
+      - name: label
+        value: "18.1"
+      parts:
+      - id: obj_18.1_stmt-27017
+        name: statement
+        prose: "Objective: Compliance with legal and contractual requirements  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this objective.)"
+      controls:
+      - id: ctl_18.1.1-27017
+        class: control
+        title: Identification of applicable legislation and contractual requirements
+        props:
+        - name: label
+          value: 18.1.1
+        parts:
+        - id: ctl_18.1.1_stmt-27017
+          name: statement
+          prose: "Identification of applicable legislation and contractual requirements  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_18.1.2-27017
+        class: control
+        title: Intellectual property rights
+        props:
+        - name: label
+          value: 18.1.2
+        parts:
+        - id: ctl_18.1.2_stmt-27017
+          name: statement
+          prose: "Intellectual property rights  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_18.1.3-27017
+        class: control
+        title: Protection of records
+        props:
+        - name: label
+          value: 18.1.3
+        parts:
+        - id: ctl_18.1.3_stmt-27017
+          name: statement
+          prose: "Protection of records  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_18.1.4-27017
+        class: control
+        title: Privacy and protection of personally identifiable information
+        props:
+        - name: label
+          value: 18.1.4
+        parts:
+        - id: ctl_18.1.4_stmt-27017
+          name: statement
+          prose: "Privacy and protection of personally identifiable information  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_18.1.5-27017
+        class: control
+        title: Regulation of cryptographic controls
+        props:
+        - name: label
+          value: 18.1.5
+        parts:
+        - id: ctl_18.1.5_stmt-27017
+          name: statement
+          prose: "Regulation of cryptographic controls  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+    - id: obj_18.2-27017
+      class: objective
+      title: Information security reviews
+      props:
+      - name: label
+        value: "18.2"
+      parts:
+      - id: obj_18.2_stmt-27017
+        name: statement
+        prose: "Objective: Information security reviews  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this objective.)"
+      controls:
+      - id: ctl_18.2.1-27017
+        class: control
+        title: Independent review of information security
+        props:
+        - name: label
+          value: 18.2.1
+        parts:
+        - id: ctl_18.2.1_stmt-27017
+          name: statement
+          prose: "Independent review of information security  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_18.2.2-27017
+        class: control
+        title: Compliance with security policies and standards
+        props:
+        - name: label
+          value: 18.2.2
+        parts:
+        - id: ctl_18.2.2_stmt-27017
+          name: statement
+          prose: "Compliance with security policies and standards  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+      - id: ctl_18.2.3-27017
+        class: control
+        title: Technical compliance review
+        props:
+        - name: label
+          value: 18.2.3
+        parts:
+        - id: ctl_18.2.3_stmt-27017
+          name: statement
+          prose: "Technical compliance review  (Please see the [ISO website](https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en) for the full text of this control.)"
+  back-matter:
+    resources:
+    - uuid: 3095f688-a2ed-4dc4-9784-398ebaaf35fd
+      description: ISO 27017:2015 - Information technology – Security techniques – Code of practice for information security controls based on ISO/IEC 27002 for cloud services
+      rlinks:
+      - href: https://raw.githubusercontent.com/vendorsec/mvsp/oscal/iso-27017_2015/iso-27017_2015-catalog.xml
+        media-type: application/oscal.catalog+xml
+      - href: https://raw.githubusercontent.com/vendorsec/mvsp/oscal/iso-27017_2015/iso-27017_2015-catalog.json
+        media-type: application/oscal.catalog+json
+      - href: https://raw.githubusercontent.com/vendorsec/mvsp/oscal/iso-27017_2015/iso-27017_2015-catalog.yaml
+        media-type: application/oscal.catalog+yaml
+    - uuid: 2ac9de15-a86d-4bf7-9a49-4d19e8816c4f
+      description: ISO 27017:2015 - Information technology – Security techniques – Code of practice for information security controls based on ISO/IEC 27002 for cloud services
+      rlinks:
+      - href: https://www.iso.org/obp/ui/#iso:std:iso-iec:27017:ed-1:v1:en
+        media-type: text/html
