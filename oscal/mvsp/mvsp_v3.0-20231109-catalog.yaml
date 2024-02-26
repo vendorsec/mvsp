@@ -1,0 +1,824 @@
+---
+catalog:
+  uuid: d0772336-a368-4335-947d-cdf8d86f4015
+  metadata:
+    title: MVSP - Minimum Viable Secure Product  - v3.0-20231109
+    published: 2021-10-07T10:00:00Z
+    last-modified: 2023-11-09T10:00:00Z
+    version: "v3.0-20231109"
+    oscal-version: 1.1.1
+    props:
+    - name: keywords
+      value: "MVSP, Minimum Viable Secure Product, Software development, Application security, AppSec, System procurement, Self-Assessment, Software Development Lifecycle, SDLC, Contractual controls"
+    links:
+    - href: https://mvsp.dev
+      rel: reference
+      media-type: text/html
+    roles:
+    - id: creator
+      title: Document creator
+    - id: contact
+      title: Contact
+    parties:
+    - uuid: 700b5bb8-209a-4f1f-9229-6e4b9ef40f4c
+      type: organization
+      name: Google
+      email-addresses:
+      - mvsp@groups.io
+    responsible-parties:
+    - role-id: creator
+      party-uuids:
+      - 700b5bb8-209a-4f1f-9229-6e4b9ef40f4c
+    - role-id: contact
+      party-uuids:
+      - 700b5bb8-209a-4f1f-9229-6e4b9ef40f4c
+    remarks: "[MVSP](https://mvsp.dev) and its translations are public domain under [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/) license."
+  groups:
+  - id: grp_1-mvsp
+    class: control-group
+    title: Business controls
+    props:
+    - name: label
+      value: "1"
+    controls:
+    - id: ctl_1.1-mvsp
+      class: control
+      title: External vulnerability reports
+      props:
+      - name: label
+        value: "1.1"
+      parts:
+      - id: stmt_1.1-mvsp
+        name: statement
+        prose: |-
+          - Publish a vulnerability disclosure policy that outlines the testing scope, provides a legal safe harbor, and gives contact details for security reports
+          - Develop and document procedures for triaging and remediating reported vulnerabilities
+          - Respond to reports within a reasonable time frame
+          - Patch vulnerabilities consistent with Control 3.4
+      - id: what_1.1-mvsp
+        name: guidance
+        title: What this control measures
+        props:
+        - name: label
+          value: What this control measures
+        prose: Appropriate processes are in place to accept and process external reports of security issues in your products and/or services.
+      - id: why_1.1-mvsp
+        name: guidance
+        title: Why this control matters
+        props:
+        - name: label
+          value: Why this control matters
+        prose: "The ability for external parties to report possible vulnerabilities in your product or services is key to ensuring you can maintain an effective security and privacy posture. Ensuring that you share information on how external parties can appropriately and safely report possible security or privacy issues to you, ensures a clear and direct line of communication is available for issues to be reported."
+    - id: ctl_1.2-mvsp
+      class: control
+      title: Customer testing
+      props:
+      - name: label
+        value: "1.2"
+      parts:
+      - id: stmt_1.2-mvsp
+        name: statement
+        prose: |-
+          - On request, enable your customers or their delegates to test the security of your application
+          - Test on a production or a non-production environment that closely resembles the production environment in functionality
+          - Ensure non-production environments do not contain production data
+          - Reasonable restrictions on testing can be defined
+      - id: what_1.2-mvsp
+        name: guidance
+        title: What this control measures
+        props:
+        - name: label
+          value: What this control measures
+        prose: Appropriate processes are in place to allow customers to safely and effectively perform testing against your products and/or services.
+      - id: why_1.2-mvsp
+        name: guidance
+        title: Why this control matters
+        props:
+        - name: label
+          value: Why this control matters
+        prose: |-
+          If your service provides internet-accessible endpoints (e.g. a website or API), it is important to provide your customers with a suitable way to arrange security testing against a designated test environment. By building this requirement into your release schedule, you ensure testing is performed against designated test systems which replicate production, and are populated with non-production data.
+
+          As the goal of testing is to ensure the security of the application under test, and not the efficacy of any WAF or IDS rulesets, it is important the testing is performed without a Web Application Firewall, or other blocking technology deployed.
+
+          It is important to consider that someone will likely carry out testing on accessible services regardless of your internal policies. Making sure that there is a safe and clearly communicated way to perform testing, with optionally reasonable restrictions, is also helpful to protect your production environments.
+    - id: ctl_1.3-mvsp
+      class: control
+      title: Self-assessment
+      props:
+      - name: label
+        value: "1.3"
+      parts:
+      - id: stmt_1.3-mvsp
+        name: statement
+        prose: "Perform and make available security self-assessments for each qualifying product/service, using the latest MVSP release, at least annually"
+      - id: what_1.3-mvsp
+        name: guidance
+        title: What this control measures
+        props:
+        - name: label
+          value: What this control measures
+        prose: Annual reviews of your application security controls are performed for each qualifying product or service in order to identify corrective actions or areas of continued improvement.
+      - id: why_1.3-mvsp
+        name: guidance
+        title: Why this control matters
+        props:
+        - name: label
+          value: Why this control matters
+        prose: "Running through the MVSP baseline once per year for qualifying products and services helps to ensure that any changes are measured against the latest version of the baseline. Where gaps exist, highlighting these early on and taking corrective action ensures you maintain the baseline requirements and can mature the security of the application under review."
+    - id: ctl_1.4-mvsp
+      class: control
+      title: External testing
+      props:
+      - name: label
+        value: "1.4"
+      parts:
+      - id: stmt_1.4-mvsp
+        name: statement
+        prose: "Contract a security vendor to perform comprehensive penetration tests of your products, services, and dependent systems, at least annually"
+      - id: what_1.4-mvsp
+        name: guidance
+        title: What this control measures
+        props:
+        - name: label
+          value: What this control measures
+        prose: Processes are in place to schedule and perform regular third-party penetration testing against your products and/or services.
+      - id: why_1.4-mvsp
+        name: guidance
+        title: Why this control matters
+        props:
+        - name: label
+          value: Why this control matters
+        prose: |-
+          Alongside any security testing performed by your customers, it is important to ensure a full scope penetration test of the service is performed at least once per year by an independent third-party testing company.
+
+          Although more tightly scoped release testing may take place throughout the year, ensuring a holistic annual review of the platform is key to detecting issues which appear due to interaction between systems and new functionality. These kinds of issues are hard to detect during tightly scoped release reviews or code reviews.
+
+          Using an independent company for annual third party testing is important as they approach the review without any pre-existing opinions on how the application should function. This greenfield viewpoint ensures no assumptions are made regarding the security of specific functions or areas of the service which could lead to a lack of coverage or depth of review.
+    - id: ctl_1.5-mvsp
+      class: control
+      title: Training
+      props:
+      - name: label
+        value: "1.5"
+      parts:
+      - id: stmt_1.5-mvsp
+        name: statement
+        prose: Implement role-specific security training for your personnel that is relevant to their business function
+      - id: what_1.5-mvsp
+        name: guidance
+        title: What this control measures
+        props:
+        - name: label
+          value: What this control measures
+        prose: |-
+          Processes are in place to provide regular and ongoing security awareness training. Example areas of training that should be considered are:
+
+          > - Applicable company policies
+          > - Proper data handling and protection of sensitive information
+          > - How to report suspicious activities
+      - id: why_1.5-mvsp
+        name: guidance
+        title: Why this control matters
+        props:
+        - name: label
+          value: Why this control matters
+        prose: "Providing your employees with appropriate ongoing training specific to their roles is key to ensuring they are up to date with the latest advancements in their field, and are well equipped to deal with evolving threats and requirements. This training should include information on how to react to phishing, and awareness of processes in place to report phishing attempts."
+    - id: ctl_1.6-mvsp
+      class: control
+      title: Compliance
+      props:
+      - name: label
+        value: "1.6"
+      parts:
+      - id: stmt_1.6-mvsp
+        name: statement
+        prose: |-
+          - Comply with industry security standards relevant to your business such as PCI DSS, HITRUST, ISO27001, and SSAE 18
+          - Comply with local laws and regulations in jurisdictions applicable to your company and your customers, such as GDPR, Binding Corporate Rules, and Standard Contractual Clauses
+          - Ensure data localization requirements are implemented in line with local regulations and contractual obligations
+      - id: what_1.6-mvsp
+        name: guidance
+        title: What this control measures
+        props:
+        - name: label
+          value: What this control measures
+        prose: Relevant compliance obligations are identified and completed based on your companies industry and regulatory requirements.
+      - id: why_1.6-mvsp
+        name: guidance
+        title: Why this control matters
+        props:
+        - name: label
+          value: Why this control matters
+        prose: "Compliance to standards and requirements relevant to your industry is a key element of a mature security and privacy program. The specifics depend on the area within which you operate. Compliance to a specific standard shouldn’t replace the baseline requirements set out in the MVSP, as the goals and specific controls may vary."
+    - id: ctl_1.7-mvsp
+      class: control
+      title: Incident handling
+      props:
+      - name: label
+        value: "1.7"
+      parts:
+      - id: stmt_1.7-mvsp
+        name: statement
+        prose: |-
+          - Notify relevant parties about any security breach that affects sensitive information no later than 72 hours upon discovery, and upon learning any additional details of the breach
+          - Consider reporting the breach to relevant national cybersecurity agencies in line with local guidance and regulations
+          - Include the following information in the notification:
+
+          > - Nature of the breach
+          > - Relevant contact information
+          > - Consequences of the breach
+          > - Measures taken, or needing to be taken, to remediate the issue
+      - id: what_1.7-mvsp
+        name: guidance
+        title: What this control measures
+        props:
+        - name: label
+          value: What this control measures
+        prose: Processes are in place to ensure the smooth handling of security and privacy incidents.
+      - id: why_1.7-mvsp
+        name: guidance
+        title: Why this control matters
+        props:
+        - name: label
+          value: Why this control matters
+        prose: "Clear and timely notification of incidents is important to ensure customers are able to understand how an incident may affect their data, and prepare for further actions required to mitigate the effects of a breach. The initial notification is expected within 72 hours of discovery, however it should be augmented and extended upon once a more detailed analysis has occurred and root causes are identified. Not all information will be available within 72 hours, however it is important to ensure processes are in place to provide initial information within this timeframe."
+    - id: ctl_1.8-mvsp
+      class: control
+      title: Data handling
+      props:
+      - name: label
+        value: "1.8"
+      parts:
+      - id: stmt_1.8-mvsp
+        name: statement
+        prose: Ensure media sanitization processes based on NIST SP 800-88 (or equivalent) are implemented for storage media holding unencrypted production data
+      - id: what_1.8-mvsp
+        name: guidance
+        title: What this control measures
+        props:
+        - name: label
+          value: What this control measures
+        prose: Data stored on removable or decommissioned hardware is appropriately handled.
+      - id: why_1.8-mvsp
+        name: guidance
+        title: Why this control matters
+        props:
+        - name: label
+          value: Why this control matters
+        prose: Data sanitization is an important step to ensure data is not left accessible on storage media during the decommissioning process. By following standard guidelines to sanitize media you protect against possible leaks of sensitive data.
+  - id: grp_2-mvsp
+    class: control-group
+    title: Application design controls
+    props:
+    - name: label
+      value: "2"
+    controls:
+    - id: ctl_2.1-mvsp
+      class: control
+      title: Single sign-on
+      props:
+      - name: label
+        value: "2.1"
+      parts:
+      - id: stmt_2.1-mvsp
+        name: statement
+        prose: |-
+          - Publish a vulnerability disclosure policy that outlines the testing scope, provides a legal safe harbor, and gives contact details for security reports
+          - Develop and document procedures for triaging and remediating reported vulnerabilities
+          - Respond to reports within a reasonable time frame
+          - Patch vulnerabilities consistent with Control 3.4
+      - id: what_2.1-mvsp
+        name: guidance
+        title: What this control measures
+        props:
+        - name: label
+          value: What this control measures
+        prose: Appropriate processes are in place to accept and process external reports of security issues in your products and/or services.
+      - id: why_2.1-mvsp
+        name: guidance
+        title: Why this control matters
+        props:
+        - name: label
+          value: Why this control matters
+        prose: |-
+          Providing the ability for your customers to opt for single sign-on using federated identity providers is important for organizations wishing to maintain control over their accounts in a more centralized manner. Offering the ability to use a federated identity, without additional cost, allows users to rely on an established identity, with appropriate controls (e.g. two-factor authentication) implemented and enforced at the organization level.
+
+          Centralized control over these federated accounts also ensures the organization can control access to applications and services via a centralized authority, with the ability to deactivate access as required.
+
+          Single sign-on also ensures users are not required to remember, or store credentials for each individual service. This reduces the chance of account compromise, and allowing or organizations to respond holistically to credential breaches using a central service.
+    - id: ctl_2.2-mvsp
+      class: control
+      title: HTTPS-only
+      props:
+      - name: label
+        value: "2.2"
+      parts:
+      - id: stmt_2.2-mvsp
+        name: statement
+        prose: |-
+          - Redirect traffic from HTTP protocol (port 80) to HTTPS (port 443) (This does not apply to secure protocols designed to run on top of unencrypted connections, such as OCSP)
+          - Scan and address issues using freely available modern TLS scanning tools
+          - Include the Strict-Transport-Security header with a long max-age value
+          - Set authentication cookies as Secure
+      - id: what_2.2-mvsp
+        name: guidance
+        title: What this control measures
+        props:
+        - name: label
+          value: What this control measures
+        prose: Sensitive data is encrypted in transit between the end-user and your product and/or service.
+      - id: why_2.2-mvsp
+        name: guidance
+        title: Why this control matters
+        props:
+        - name: label
+          value: Why this control matters
+        prose: |-
+          Applications or services passing sensitive data must ensure they encrypt data in transit. This should include any sites which allow for authentication, or links to sensitive data.
+
+          Implementation of strong encryption, and enforcement using Strict-Transport-Security ensures users are not exposed to unencrypted endpoints or attacks forcing them to leak sensitive data.
+
+          To ensure that cookies are also only transmitted via encrypted and integrity protected channels, cookies must use the Secure flag.
+    - id: ctl_2.3-mvsp
+      class: control
+      title: Security headers
+      props:
+      - name: label
+        value: "2.3"
+      parts:
+      - id: stmt_2.3-mvsp
+        name: statement
+        prose: |-
+          Apply appropriate security headers to reduce the application attack surface and limit post exploitation:
+
+          > - Set a minimally permissive Content Security Policy
+          > - Limit the ability to iframe the application by enabling framing controls with X-Frame-Options or CSP frame-ancestors
+          > - Disable caching for APIs and endpoints that return sensitive data
+      - id: what_2.3-mvsp
+        name: guidance
+        title: What this control measures
+        props:
+        - name: label
+          value: What this control measures
+        prose: Appropriate browser protections are in place within your product and/or service to protect against common web threats.
+      - id: why_2.3-mvsp
+        name: guidance
+        title: Why this control matters
+        props:
+        - name: label
+          value: Why this control matters
+        prose: |-
+          Content Security Policy is a mechanism designed to make applications more secure against common web vulnerabilities, particularly cross-site scripting while iframing websites could lead to unexpected vulnerabilities. By adopting strict policies, which prevents the loading of untrusted scripts or plugins and limiting being iframed an application can add important defense-in-depth layers against markup injection attacks.
+
+          Security headers can also assist in providing isolation and protection against common attacks beyond those discussed above. You can find more information at [securityheaders.com](https://securityheaders.com).
+    - id: ctl_2.4-mvsp
+      class: control
+      title: Password policy
+      props:
+      - name: label
+        value: "2.4"
+      parts:
+      - id: stmt_2.4-mvsp
+        name: statement
+        prose: |-
+          If password authentication is used in addition to single sign-on:
+
+          > - Do not limit the permitted characters that can be used
+          > - Do not limit the length of the password to anything below 64 characters
+          > - Do not use secret questions as a sole password reset requirement
+          > - Require email verification of a password change request
+          > - Require the current password in addition to the new password during password change
+          > - Store passwords in a hashed and salted format using a memory-hard or CPU-hard one-way hash function
+          > - Enforce appropriate account lockout and brute-force protection on account access
+          > - Do not provide default passwords for users or administrators
+      - id: what_2.4-mvsp
+        name: guidance
+        title: What this control measures
+        props:
+        - name: label
+          value: What this control measures
+        prose: Appropriate controls are in place to protect users who opt to use password-based authentication.
+      - id: why_2.4-mvsp
+        name: guidance
+        title: Why this control matters
+        props:
+        - name: label
+          value: Why this control matters
+        prose: |-
+          For applications to additionally implement password authentication alongside single sign-on, a strong password policy must be put in place. These controls are designed to ensure users set strong, hard-to-guess passwords without an artificial upper bound on length or limitations in allowed charset. Setting a lower bound on length is encouraged, however. Entering the password should not disable or dissuade the use of password managers and should not disable the possibility of copy-pasting the password into the password field.
+
+          Hardened processes for password change or password reset are critical to protecting access to accounts, and should be designed and implemented carefully. The password reset process should not depend solely on security questions, as that would provide a base for social engineering attacks.
+
+          Storing passwords should only ever be done in a hashed and salted format using a memory-hard or CPU-hard one-way hash function specifically designed for passwords.
+
+          Additional guidance on Memorized Secrets (password/pin) can be found in NIST 800-63r3 or later.
+    - id: ctl_2.5-mvsp
+      class: control
+      title: Security libraries
+      props:
+      - name: label
+        value: "2.5"
+      parts:
+      - id: stmt_2.5-mvsp
+        name: statement
+        prose: "Use modern, maintained, and industry-standard frameworks, template languages, or libraries that systemically address implementation weaknesses by escaping the outputs and sanitizing the inputs"
+      - id: what_2.5-mvsp
+        name: guidance
+        title: What this control measures
+        props:
+        - name: label
+          value: What this control measures
+        prose: Standardized libraries are used to improve the security of your product and/or service.
+      - id: why_2.5-mvsp
+        name: guidance
+        title: Why this control matters
+        props:
+        - name: label
+          value: Why this control matters
+        prose: "Enforcing the use of established, tried, and tested security libraries and frameworks ensures developers are able to rely on existing solutions and are not expected to reinvent the wheel. By standardizing on libraries and frameworks that systemically address various implementation weaknesses, you can reduce or eliminate entire classes of bugs from your platform, and ensure new code does not include regressions that reintroduce these vulnerabilities."
+    - id: ctl_2.6-mvsp
+      class: control
+      title: Dependency patching
+      props:
+      - name: label
+        value: "2.6"
+      parts:
+      - id: stmt_2.6-mvsp
+        name: statement
+        prose: |-
+          - Ensure third-party dependencies are maintained and up-to-date, with security relevant updates having a severity score of "medium" or higher applied in line with your application patching schedule
+          - Upon becoming aware of a Known Exploited Vulnerability affecting a third-party dependency, the patch should be prioritized
+          - Where dependency patching or upgrades are not possible, equivalent mitigations should be implemented for all components of the application stack
+      - id: what_2.6-mvsp
+        name: guidance
+        title: What this control measures
+        props:
+        - name: label
+          value: What this control measures
+        prose: "Processes are in place to identify, and maintain up-to-date components within your product and/or service. Vulnerabilities that are known to be exploited are appropriately prioritized."
+      - id: why_2.6-mvsp
+        name: guidance
+        title: Why this control matters
+        props:
+        - name: label
+          value: Why this control matters
+        prose: |-
+          Applying security patches in common applications and libraries is an important step to securing your infrastructure and application. Processes to deploy these fixes within a reasonable timeframe ensure targeted attacks exploiting these vulnerabilities do not affect the security of your product or data.
+
+          In cases where an application relies on a library with known vulnerabilities, ensuring the library is regularly patched also guarantees the application keeps pace with changes in the library. This reduces the chance of an urgent patch breaking application functionality due to a large jump in version.
+
+          Libraries or application versions marked as end-of-life should be considered as unpatched as they are no longer receiving security fixes.
+
+          Regular vulnerability scanning allows you to easily identify new vulnerabilities, as well as monitor where existing patches have not yet been fully implemented.
+    - id: ctl_2.7-mvsp
+      class: control
+      title: Logging
+      props:
+      - name: label
+        value: "2.7"
+      parts:
+      - id: stmt_2.7-mvsp
+        name: statement
+        prose: |-
+          Keep logs of:
+
+          > - Authentication events (success and failure)
+          > - Create, Read, Update, and Delete (CRUD) operations on application and system users and objects
+          > - Security relevant configuration changes (including disabling logging)
+          > - Application owner access to customer data (access transparency)
+
+          Logs must include user ID, IP address, valid timestamp, type of action performed, and object of this action. Logs must be stored for at least 30 days at no additional charge, and should not contain sensitive data or payloads.
+      - id: what_2.7-mvsp
+        name: guidance
+        title: What this control measures
+        props:
+        - name: label
+          value: What this control measures
+        prose: Appropriate logs are stored to assist with debugging and incident response activities.
+      - id: why_2.7-mvsp
+        name: guidance
+        title: Why this control matters
+        props:
+        - name: label
+          value: Why this control matters
+        prose: |-
+          Having detailed logs ensures you are able to perform a detailed analysis of actions taken in the event of a breach. Ensure you record not only failed login attempts, but also successful logins, as this puts you in a better position to track the movement of a malicious actor across multiple areas of the infrastructure.
+
+          Care should be taken to avoid logging sensitive information such as passwords or other credentials.
+
+          Ensuring logs are available for an extended period of time also ensures you are able to track back any intrusion to the source.
+    - id: ctl_2.8-mvsp
+      class: control
+      title: Encryption
+      props:
+      - name: label
+        value: "2.8"
+      parts:
+      - id: stmt_2.8-mvsp
+        name: statement
+        prose: "Use modern, maintained, and industry-standard means of encryption to protect sensitive data in transit between systems, and at rest in online data storages and backups"
+      - id: what_2.8-mvsp
+        name: guidance
+        title: What this control measures
+        props:
+        - name: label
+          value: What this control measures
+        prose: Sensitive data is encrypted at rest within your product and/or service.
+      - id: why_2.8-mvsp
+        name: guidance
+        title: Why this control matters
+        props:
+        - name: label
+          value: Why this control matters
+        prose: |-
+          Sensitive data transiting untrusted networks or shared connections always needs to be encrypted. Similarly, sensitive data at rest should be stored in an encrypted format to prevent unauthorized access.
+
+          Where cryptographic keys are used, they should be managed in a way that ensures they are generated, stored, and deleted in a secure manner. Access to keys should be limited physically, logically, and through user/role access controls. Secret keys should not be accessible in source code.
+  - id: grp_3-mvsp
+    class: control-group
+    title: Application implementation controls
+    props:
+    - name: label
+      value: "3"
+    controls:
+    - id: ctl_3.1-mvsp
+      class: control
+      title: List of data
+      props:
+      - name: label
+        value: "3.1"
+      parts:
+      - id: stmt_3.1-mvsp
+        name: statement
+        prose: Maintain a list of sensitive data types that the application is expected to process
+      - id: what_3.1-mvsp
+        name: guidance
+        title: What this control measures
+        props:
+        - name: label
+          value: What this control measures
+        prose: Information on the type and amount of data handled by your product and/or service is available for threat modeling or incident response purposes.
+      - id: why_3.1-mvsp
+        name: guidance
+        title: Why this control matters
+        props:
+        - name: label
+          value: Why this control matters
+        prose: A list of sensitive data types processed by the application should be available. This allows for easier threat modeling and risk analysis of the platform as functionality changes over time. This data also helps you quickly understand the exposure in the event of an incident.
+    - id: ctl_3.2-mvsp
+      class: control
+      title: Data flow diagram
+      props:
+      - name: label
+        value: "3.2"
+      parts:
+      - id: stmt_3.2-mvsp
+        name: statement
+        prose: Maintain an up-to-date diagram indicating how sensitive data reaches your systems and where it ends up being stored
+      - id: what_3.2-mvsp
+        name: guidance
+        title: What this control measures
+        props:
+        - name: label
+          value: What this control measures
+        prose: Information on the flow of data through systems is available for threat modeling or incident response purposes.
+      - id: why_3.2-mvsp
+        name: guidance
+        title: Why this control matters
+        props:
+        - name: label
+          value: Why this control matters
+        prose: "In complex systems it is often difficult to understand how data flows from the user through the platform, and where this data is stored. By ensuring a data flow diagram is available, it is easy to understand where weaknesses may exist within the system, and create an accurate threat model. This data also helps you quickly understand the exposure in the event of an incident."
+    - id: ctl_3.3-mvsp
+      class: control
+      title: Vulnerability prevention
+      props:
+      - name: label
+        value: "3.3"
+      parts:
+      - id: stmt_3.3-mvsp
+        name: statement
+        prose: |-
+          Train your developers and implement development guidelines to prevent at least the following vulnerabilities:
+
+          > - Authorization bypass — Example: Accessing other customers' data or admin features from a regular account
+          > - Insecure session management — Examples: Guessable token; a token stored in an insecure location (e.g. cookie without Secure and HttpOnly flags set)
+          > - Injections — Examples: (No)SQL injection, LLM / Prompt injection, XXE, OS command injection
+          > - Cross-site scripting — Examples: Calling insecure JavaScript functions, performing insecure DOM manipulations, echoing back user input into HTML without escaping
+          > - Cross-site request forgery — Example: Accepting requests with an Origin header from a different domain
+          > - Handling untrusted data — Example: Reusing data supplied by users within sensitive application contexts
+      - id: what_3.3-mvsp
+        name: guidance
+        title: What this control measures
+        props:
+        - name: label
+          value: What this control measures
+        prose: Appropriate developer training on common security issues is performed.
+      - id: why_3.3-mvsp
+        name: guidance
+        title: Why this control matters
+        props:
+        - name: label
+          value: Why this control matters
+        prose: |-
+          Training your development and quality assurance teams on commonly seen security issues ensures they are well equipped to reduce the occurrences of these vulnerabilities within your systems.
+
+          The examples provided in MVSP are a good starting point, however they should be reviewed based on your application’s specifics and the environments used to ensure you are addressing language- and infrastructure-specific vulnerabilities affecting your applications.
+    - id: ctl_3.4-mvsp
+      class: control
+      title: Time to fix vulnerabilities
+      props:
+      - name: label
+        value: "3.4"
+      parts:
+      - id: stmt_3.4-mvsp
+        name: statement
+        prose: |-
+          - Produce and deploy patches to address application vulnerabilities that materially impact security within 90 days of discovery
+          - For vulnerabilities with evidence of active exploitation, production and deployment of patches should be prioritized
+          - Publish a security bulletin that details the vulnerability and its root cause if the remedy requires action from customers
+      - id: what_3.4-mvsp
+        name: guidance
+        title: What this control measures
+        props:
+        - name: label
+          value: What this control measures
+        prose: "Identified vulnerabilities are patched within a reasonable time frame, and customers are informed where appropriate."
+      - id: why_3.4-mvsp
+        name: guidance
+        title: Why this control matters
+        props:
+        - name: label
+          value: Why this control matters
+        prose: |-
+          Acting in a timely manner to address vulnerabilities detected within your platform ensures you are effectively protecting sensitive data. In cases where addressing a vulnerability requires a longer period of time, or users to alter the way they interact with your application, care should be taken to inform users in a timely manner.
+
+          Vulnerabilities that are actively being exploited should be suitably prioritized to reduce the impact and risk to customer data and environments. In cases where customers need to take action to protect themselves, a security bulletin should be published to ensure customers are made aware.
+    - id: ctl_3.5-mvsp
+      class: control
+      title: Build and release process
+      props:
+      - name: label
+        value: "3.5"
+      parts:
+      - id: stmt_3.5-mvsp
+        name: statement
+        prose: |-
+          - Must use a version control system and consistent build process that generates provenance describing how the artifact was built (SLSA Build Level 1)
+          - Sensitive application credentials and tokens should be stored separately from the application’s source code
+      - id: what_3.5-mvsp
+        name: guidance
+        title: What this control measures
+        props:
+        - name: label
+          value: What this control measures
+        prose: Build processes are fully scripted/automated and generate provenance.
+      - id: why_3.5-mvsp
+        name: guidance
+        title: Why this control matters
+        props:
+        - name: label
+          value: Why this control matters
+        prose: |-
+          Hardening and automation of build processes is an essential first step to prevent tampering and provide the ability to auditability. Automation of build processes furthermore enables teams to react quickly to threats and incidents by ensuring a new version can be released with a vulnerability or bug fix or by upgrading a compromised dependency. Provenance is metadata about how an artifact was built, including the build process, top-level source, and dependencies. Knowing the provenance allows software consumers to make risk-based security decisions.
+
+          Provenance at SLSA Build level 1 does not protect against tampering, but it offers a basic level of code source identification and can aid in vulnerability management. For applications and services that process particularly sensitive data, higher [SLSA levels](https://slsa.dev/spec/v1.0/levels#build-l1) can provide additional guarantees.
+
+          Additional checks should be made to ensure that sensitive application credentials or tokens are not stored alongside application code (e.g. in a GIT repository).
+  - id: grp_4-mvsp
+    class: control-group
+    title: Operational controls
+    props:
+    - name: label
+      value: "4"
+    controls:
+    - id: ctl_4.1-mvsp
+      class: control
+      title: Physical access
+      props:
+      - name: label
+        value: "4.1"
+      parts:
+      - id: stmt_4.1-mvsp
+        name: statement
+        prose: |-
+          Validate the physical security of relevant facilities by ensuring the following controls are in place:
+
+          > - Layered perimeter controls and interior barriers
+          > - Managed access to keys
+          > - Entry and exit logs
+          > - Appropriate response plan for unauthorized access
+      - id: what_4.1-mvsp
+        name: guidance
+        title: What this control measures
+        props:
+        - name: label
+          value: What this control measures
+        prose: Sensitive data stored or accessible from trusted locations is secured effectively.
+      - id: why_4.1-mvsp
+        name: guidance
+        title: Why this control matters
+        props:
+        - name: label
+          value: Why this control matters
+        prose: "In instances where you use physical servers to house sensitive data, the physical security of these environments is crucial. Data center providers may implement these controls on your behalf."
+    - id: ctl_4.2-mvsp
+      class: control
+      title: Logical access
+      props:
+      - name: label
+        value: "4.2"
+      parts:
+      - id: stmt_4.2-mvsp
+        name: statement
+        prose: |-
+          - Limit sensitive data access exclusively to users with a legitimate need. The data owner must authorize such access
+          - Deactivate redundant accounts and expired access grants in a timely manner
+          - Perform regular reviews of access to validate need to know
+          - Ensure remote access to customer data or production systems requires the use of Multi-Factor Authentication
+      - id: what_4.2-mvsp
+        name: guidance
+        title: What this control measures
+        props:
+        - name: label
+          value: What this control measures
+        prose: Access to sensitive data is tightly controlled and regularly reviewed.
+      - id: why_4.2-mvsp
+        name: guidance
+        title: Why this control matters
+        props:
+        - name: label
+          value: Why this control matters
+        prose: "Where your staff have legitimate access to sensitive data as part of their day-to-day work, this access should be regularly reviewed to ensure access is limited. The principle of least privilege should be applied to ensure only authorized users with a valid business need can access sensitive data. By adding Multi-Factor Authorization the risk of a compromise through phishing, or other attacks targeting employee systems or credentials is significantly reduced."
+    - id: ctl_4.3-mvsp
+      class: control
+      title: Sub-processors
+      props:
+      - name: label
+        value: "4.3"
+      parts:
+      - id: stmt_4.3-mvsp
+        name: statement
+        prose: |-
+          - Maintain a list of third-party companies with access to customer data, and make it available to clients and business partners upon request
+          - Assess third-party companies annually against the latest MVSP release
+      - id: what_4.3-mvsp
+        name: guidance
+        title: What this control measures
+        props:
+        - name: label
+          value: What this control measures
+        prose: "Understand where you may be sharing data with third-party sub-processors, and that suitable processes are in place to validate their security posture."
+      - id: why_4.3-mvsp
+        name: guidance
+        title: Why this control matters
+        props:
+        - name: label
+          value: Why this control matters
+        prose: "Where you may use third-party sub-processors, it is important to ensure that you are aware of the data that they have access to. These sub-processors should be appropriately measured against the MVSP baseline to ensure that data and integrations do not lower the overall security of the platform or service."
+    - id: ctl_4.4-mvsp
+      class: control
+      title: Backup and disaster recovery
+      props:
+      - name: label
+        value: "4.4"
+      parts:
+      - id: stmt_4.4-mvsp
+        name: statement
+        prose: |-
+          - Securely backup all data to a different location than where the application is running
+          - Maintain and test disaster recovery plans in concert with your incident response planning, at least annually or after significant changes
+      - id: what_4.4-mvsp
+        name: guidance
+        title: What this control measures
+        props:
+        - name: label
+          value: What this control measures
+        prose: Processes are in place to ensure backup and recovery of your product and/or service in the event of a disaster.
+      - id: why_4.4-mvsp
+        name: guidance
+        title: Why this control matters
+        props:
+        - name: label
+          value: Why this control matters
+        prose: |-
+          Ensuring suitably tested backups are in place for disaster recovery is a critical step. This backup should be at a different location, and planned so it is possible to recover from a disaster scenario preventing access to any and all online data for an extended period of time.
+
+          Consideration should be given to planning how your disaster recovery processes would respond to commonly seen attacks (e.g ransomware, large-scale cloud service outages).
+  back-matter:
+    resources:
+    - uuid: c8cd4cae-88ab-44b8-9dbb-d239686a9ff5
+      description: MVSP-v3.0-20231109
+      rlinks:
+      - href: https://raw.githubusercontent.com/vendorsec/mvsp/oscal/mvsp/mvsp-v3.0-20231109-catalog.xml
+        media-type: application/oscal.catalog+xml
+      - href: https://raw.githubusercontent.com/vendorsec/mvsp/oscal/mvsp/mvsp-v3.0-20231109-catalog.json
+        media-type: application/oscal.catalog+json
+      - href: https://raw.githubusercontent.com/vendorsec/mvsp/oscal/mvsp/mvsp-v3.0-20231109-catalog.yaml
+        media-type: application/oscal.catalog+yaml
+    - uuid: 2c83d391-6b75-443f-88e3-d95fd9aa0802
+      description: MVSP-v3.0-20231109
+      rlinks:
+      - href: https://mvsp.dev
+        media-type: text/html
