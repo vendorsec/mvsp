@@ -20,7 +20,7 @@ In order to provide context on how the MVSP controls align to common security st
 
 ### MVSP Comparison
 
-<img style="margin: 15px;" width=250 src="/images/mvsp_comparison_image.png">
+<img style="margin: 15px;" width=500 src="/images/mvsp_comparison_image.png">
 
 Using viewer.oscal.io you can view the comparison between MVSP and the standards listed above - [click here](https://viewer.oscal.io/?url=https://raw.githubusercontent.com/vendorsec/mvsp/master/oscal/mvsp/MVSP_v3.0-20231109-mapping-catalog.json)
 
