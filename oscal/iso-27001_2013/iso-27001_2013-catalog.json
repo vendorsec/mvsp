@@ -3436,15 +3436,15 @@
 			"uuid": "7ef46ab3-2127-4985-b755-6158b91bf733",
 			"description": "ISO 27001:2013 - Information technology — Security techniques — Information security management systems — Requirements",
 			"rlinks": [{
-				"href": "https://raw.githubusercontent.com/vendorsec/mvsp/oscal/iso-27001_2013/iso-27001_2013-catalog.xml",
+				"href": "https://raw.githubusercontent.com/vendorsec/mvsp/master/oscal/iso-27001_2013/iso-27001_2013-catalog.xml",
 				"media-type": "application/oscal.catalog+xml"
 			},
             {
-				"href": "https://raw.githubusercontent.com/vendorsec/mvsp/oscal/iso-27001_2013/iso-27001_2013-catalog.json",
+				"href": "https://raw.githubusercontent.com/vendorsec/mvsp/master/oscal/iso-27001_2013/iso-27001_2013-catalog.json",
 				"media-type": "application/oscal.catalog+json"
             },
             {
-				"href": "https://raw.githubusercontent.com/vendorsec/mvsp/oscal/iso-27001_2013/iso-27001_2013-catalog.yaml",
+				"href": "https://raw.githubusercontent.com/vendorsec/mvsp/master/oscal/iso-27001_2013/iso-27001_2013-catalog.yaml",
 				"media-type": "application/oscal.catalog+yaml"
             }]
         },

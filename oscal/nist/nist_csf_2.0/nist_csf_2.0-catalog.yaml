@@ -2114,9 +2114,9 @@ catalog:
     - uuid: 8532091d-8c23-42ad-83f9-3baf6e529a88
       description: NIST Cybersecurity Framework 2.0
       rlinks:
-      - href: https://raw.githubusercontent.com/vendorsec/mvsp/oscal/nist/nist_csf_2.0/nist_csf_2.0-catalog.xml
+      - href: https://raw.githubusercontent.com/vendorsec/mvsp/master/oscal/nist/nist_csf_2.0/nist_csf_2.0-catalog.xml
         media-type: application/oscal.catalog+xml
-      - href: https://raw.githubusercontent.com/vendorsec/mvsp/oscal/nist/nist_csf_2.0/nist_csf_2.0-catalog.json
+      - href: https://raw.githubusercontent.com/vendorsec/mvsp/master/oscal/nist/nist_csf_2.0/nist_csf_2.0-catalog.json
         media-type: application/oscal.catalog+json
-      - href: https://raw.githubusercontent.com/vendorsec/mvsp/oscal/nist/nist_csf_2.0/nist_csf_2.0-catalog.yaml
+      - href: https://raw.githubusercontent.com/vendorsec/mvsp/master/oscal/nist/nist_csf_2.0/nist_csf_2.0-catalog.yaml
         media-type: application/oscal.catalog+yaml

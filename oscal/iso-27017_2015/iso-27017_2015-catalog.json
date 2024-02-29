@@ -2424,15 +2424,15 @@
 			"description": "ISO 27017:2015 - Information technology – Security techniques – Code of practice for information security controls based on ISO/IEC 27002 for cloud services",
 			"rlinks": [
 			{
-				"href": "https://raw.githubusercontent.com/vendorsec/mvsp/oscal/iso-27017_2015/iso-27017_2015-catalog.xml",
+				"href": "https://raw.githubusercontent.com/vendorsec/mvsp/master/oscal/iso-27017_2015/iso-27017_2015-catalog.xml",
 				"media-type": "application/oscal.catalog+xml"
 			},
 			{
-				"href": "https://raw.githubusercontent.com/vendorsec/mvsp/oscal/iso-27017_2015/iso-27017_2015-catalog.json",
+				"href": "https://raw.githubusercontent.com/vendorsec/mvsp/master/oscal/iso-27017_2015/iso-27017_2015-catalog.json",
 				"media-type": "application/oscal.catalog+json"
 			},
 			{
-				"href": "https://raw.githubusercontent.com/vendorsec/mvsp/oscal/iso-27017_2015/iso-27017_2015-catalog.yaml",
+				"href": "https://raw.githubusercontent.com/vendorsec/mvsp/master/oscal/iso-27017_2015/iso-27017_2015-catalog.yaml",
 				"media-type": "application/oscal.catalog+yaml"
 			}]
 		},

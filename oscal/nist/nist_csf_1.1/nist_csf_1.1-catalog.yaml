@@ -1052,9 +1052,9 @@ catalog:
     - uuid: 485b8945-ff96-4d86-a3e1-a2086441dffb
       description: ISO 27018:2019 - Information technology — Security techniques — Code of practice for protection of personally identifiable information (PII) in public clouds acting as PII processors
       rlinks:
-      - href: https://raw.githubusercontent.com/vendorsec/mvsp/oscal/nist/nist_csf_1.1/nist_csf_1.1-catalog.xml
+      - href: https://raw.githubusercontent.com/vendorsec/mvsp/master/oscal/nist/nist_csf_1.1/nist_csf_1.1-catalog.xml
         media-type: application/oscal.catalog+xml
-      - href: https://raw.githubusercontent.com/vendorsec/mvsp/oscal/nist/nist_csf_1.1/nist_csf_1.1-catalog.json
+      - href: https://raw.githubusercontent.com/vendorsec/mvsp/master/oscal/nist/nist_csf_1.1/nist_csf_1.1-catalog.json
         media-type: application/oscal.catalog+json
-      - href: https://raw.githubusercontent.com/vendorsec/mvsp/oscal/nist/nist_csf_1.1/nist_csf_1.1-catalog.yaml
+      - href: https://raw.githubusercontent.com/vendorsec/mvsp/master/oscal/nist/nist_csf_1.1/nist_csf_1.1-catalog.yaml
         media-type: application/oscal.catalog+yaml

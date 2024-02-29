@@ -2166,11 +2166,11 @@ catalog:
     - uuid: f7051676-72c3-4a5e-b00b-7d0018953228
       description: ISO 27018:2019 - Information technology — Security techniques — Code of practice for protection of personally identifiable information (PII) in public clouds acting as PII processors
       rlinks:
-      - href: https://raw.githubusercontent.com/vendorsec/mvsp/oscal/iso-27018_2019/iso-27018_2019-catalog.xml
+      - href: https://raw.githubusercontent.com/vendorsec/mvsp/master/oscal/iso-27018_2019/iso-27018_2019-catalog.xml
         media-type: application/oscal.catalog+xml
-      - href: https://raw.githubusercontent.com/vendorsec/mvsp/oscal/iso-27018_2019/iso-27018_2019-catalog.json
+      - href: https://raw.githubusercontent.com/vendorsec/mvsp/master/oscal/iso-27018_2019/iso-27018_2019-catalog.json
         media-type: application/oscal.catalog+json
-      - href: https://raw.githubusercontent.com/vendorsec/mvsp/oscal/iso-27018_2019/iso-27018_2019-catalog.yaml
+      - href: https://raw.githubusercontent.com/vendorsec/mvsp/master/oscal/iso-27018_2019/iso-27018_2019-catalog.yaml
         media-type: application/oscal.catalog+yaml
     - uuid: 38836e2f-9051-4bb5-9d79-05f2f2803f3a
       description: ISO 27018:2019 - Information technology — Security techniques — Code of practice for protection of personally identifiable information (PII) in public clouds acting as PII processors

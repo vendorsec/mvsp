@@ -1914,15 +1914,15 @@
 			"uuid": "816ca2f6-b133-4e52-97b5-a8602cafd028",
 			"description": "ISO 27001:2022 - Information security, cybersecurity and privacy protection — Information security management systems — Requirements",
 			"rlinks": [{
-				"href": "https://raw.githubusercontent.com/vendorsec/mvsp/oscal/iso-27001_2022/iso-27001_2022-catalog.xml",
+				"href": "https://raw.githubusercontent.com/vendorsec/mvsp/master/oscal/iso-27001_2022/iso-27001_2022-catalog.xml",
 				"media-type": "application/oscal.catalog+xml"
             },
             {
-				"href": "https://raw.githubusercontent.com/vendorsec/mvsp/oscal/iso-27001_2022/iso-27001_2022-catalog.json",
+				"href": "https://raw.githubusercontent.com/vendorsec/mvsp/master/oscal/iso-27001_2022/iso-27001_2022-catalog.json",
 				"media-type": "application/oscal.catalog+json"
             },
             {
-				"href": "https://raw.githubusercontent.com/vendorsec/mvsp/oscal/iso-27001_2022/iso-27001_2022-catalog.yaml",
+				"href": "https://raw.githubusercontent.com/vendorsec/mvsp/master/oscal/iso-27001_2022/iso-27001_2022-catalog.yaml",
 				"media-type": "application/oscal.catalog+yaml"
             }
           ]

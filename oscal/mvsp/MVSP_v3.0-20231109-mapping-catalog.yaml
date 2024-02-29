@@ -5410,72 +5410,72 @@ catalog:
     - uuid: 85ad9d44-9009-406c-917a-64e34fc9d143
       description: MVSP-v3.0-20231109
       rlinks:
-      - href: https://raw.githubusercontent.com/vendorsec/mvsp/oscal/mvsp/mvsp-v3.0-20231109-catalog.xml
+      - href: https://raw.githubusercontent.com/vendorsec/mvsp/master/oscal/mvsp/mvsp_v3.0-20231109-catalog.xml
         media-type: application/oscal.catalog+xml
-      - href: https://raw.githubusercontent.com/vendorsec/mvsp/oscal/mvsp/mvsp-v3.0-20231109-catalog.json
+      - href: https://raw.githubusercontent.com/vendorsec/mvsp/master/oscal/mvsp/mvsp_v3.0-20231109-catalog.json
         media-type: application/oscal.catalog+json
-      - href: https://raw.githubusercontent.com/vendorsec/mvsp/oscal/mvsp/mvsp-v3.0-20231109-catalog.yaml
+      - href: https://raw.githubusercontent.com/vendorsec/mvsp/master/oscal/mvsp/mvsp_v3.0-20231109-catalog.yaml
         media-type: application/oscal.catalog+yaml
     - uuid: 6851d07e-f26a-4452-a83e-4d8d0d465c93
       description: ISO 27001:2013 - Information technology — Security techniques — Information security management systems — Requirements
       rlinks:
-      - href: https://raw.githubusercontent.com/vendorsec/mvsp/oscal/iso-27001_2013/iso-27001_2013-catalog.xml
+      - href: https://raw.githubusercontent.com/vendorsec/mvsp/master/oscal/iso-27001_2013/iso-27001_2013-catalog.xml
         media-type: application/oscal.catalog+xml
-      - href: https://raw.githubusercontent.com/vendorsec/mvsp/oscal/iso-27001_2013/iso-27001_2013-catalog.json
+      - href: https://raw.githubusercontent.com/vendorsec/mvsp/master/oscal/iso-27001_2013/iso-27001_2013-catalog.json
         media-type: application/oscal.catalog+json
-      - href: https://raw.githubusercontent.com/vendorsec/mvsp/oscal/iso-27001_2013/iso-27001_2013-catalog.yaml
+      - href: https://raw.githubusercontent.com/vendorsec/mvsp/master/oscal/iso-27001_2013/iso-27001_2013-catalog.yaml
         media-type: application/oscal.catalog+yaml
     - uuid: e0581ef9-8e8c-480d-99a2-60ea244860e8
       description: "ISO 27001:2022 - Information security, cybersecurity and privacy protection — Information security management systems — Requirements"
       rlinks:
-      - href: https://raw.githubusercontent.com/vendorsec/mvsp/oscal/iso-27001_2022/iso-27001_2022-catalog.xml
+      - href: https://raw.githubusercontent.com/vendorsec/mvsp/master/oscal/iso-27001_2022/iso-27001_2022-catalog.xml
         media-type: application/oscal.catalog+xml
-      - href: https://raw.githubusercontent.com/vendorsec/mvsp/oscal/iso-27001_2022/iso-27001_2022-catalog.json
+      - href: https://raw.githubusercontent.com/vendorsec/mvsp/master/oscal/iso-27001_2022/iso-27001_2022-catalog.json
         media-type: application/oscal.catalog+json
-      - href: https://raw.githubusercontent.com/vendorsec/mvsp/oscal/iso-27001_2022/iso-27001_2022-catalog.yaml
+      - href: https://raw.githubusercontent.com/vendorsec/mvsp/master/oscal/iso-27001_2022/iso-27001_2022-catalog.yaml
         media-type: application/oscal.catalog+yaml
     - uuid: a6193848-5893-43ea-a46d-13a1f91d8b59
       description: ISO 27017:2015 - Information technology – Security techniques – Code of practice for information security controls based on ISO/IEC 27002 for cloud services
       rlinks:
-      - href: https://raw.githubusercontent.com/vendorsec/mvsp/oscal/iso-27017_2015/iso-27017_2015-catalog.xml
+      - href: https://raw.githubusercontent.com/vendorsec/mvsp/master/oscal/iso-27017_2015/iso-27017_2015-catalog.xml
         media-type: application/oscal.catalog+xml
-      - href: https://raw.githubusercontent.com/vendorsec/mvsp/oscal/iso-27017_2015/iso-27017_2015-catalog.json
+      - href: https://raw.githubusercontent.com/vendorsec/mvsp/master/oscal/iso-27017_2015/iso-27017_2015-catalog.json
         media-type: application/oscal.catalog+json
-      - href: https://raw.githubusercontent.com/vendorsec/mvsp/oscal/iso-27017_2015/iso-27017_2015-catalog.yaml
+      - href: https://raw.githubusercontent.com/vendorsec/mvsp/master/oscal/iso-27017_2015/iso-27017_2015-catalog.yaml
         media-type: application/oscal.catalog+yaml
     - uuid: 3e004ba8-db47-4dcf-ab66-c69e89bc2c44
       description: ISO 27018:2019 - Information technology — Security techniques — Code of practice for protection of personally identifiable information (PII) in public clouds acting as PII processors
       rlinks:
-      - href: https://raw.githubusercontent.com/vendorsec/mvsp/oscal/iso-27018_2019/iso-27018_2019-catalog.xml
+      - href: https://raw.githubusercontent.com/vendorsec/mvsp/master/oscal/iso-27018_2019/iso-27018_2019-catalog.xml
         media-type: application/oscal.catalog+xml
-      - href: https://raw.githubusercontent.com/vendorsec/mvsp/oscal/iso-27018_2019/iso-27018_2019-catalog.json
+      - href: https://raw.githubusercontent.com/vendorsec/mvsp/master/oscal/iso-27018_2019/iso-27018_2019-catalog.json
         media-type: application/oscal.catalog+json
-      - href: https://raw.githubusercontent.com/vendorsec/mvsp/oscal/iso-27018_2019/iso-27018_2019-catalog.yaml
+      - href: https://raw.githubusercontent.com/vendorsec/mvsp/master/oscal/iso-27018_2019/iso-27018_2019-catalog.yaml
         media-type: application/oscal.catalog+yaml
     - uuid: 0ca7a3af-e2a6-4ab5-9c88-306cab574ccc
       description: NIST Cybersecurity Framework 1.1
       rlinks:
-      - href: https://raw.githubusercontent.com/vendorsec/mvsp/oscal/nist/nist_csf_1.1/nist_csf_1.1-catalog.xml
+      - href: https://raw.githubusercontent.com/vendorsec/mvsp/master/oscal/nist/nist_csf_1.1/nist_csf_1.1-catalog.xml
         media-type: application/oscal.catalog+xml
-      - href: https://raw.githubusercontent.com/vendorsec/mvsp/oscal/nist/nist_csf_1.1/nist_csf_1.1-catalog.json
+      - href: https://raw.githubusercontent.com/vendorsec/mvsp/master/oscal/nist/nist_csf_1.1/nist_csf_1.1-catalog.json
         media-type: application/oscal.catalog+json
-      - href: https://raw.githubusercontent.com/vendorsec/mvsp/oscal/nist/nist_csf_1.1/nist_csf_1.1-catalog.yaml
+      - href: https://raw.githubusercontent.com/vendorsec/mvsp/master/oscal/nist/nist_csf_1.1/nist_csf_1.1-catalog.yaml
         media-type: application/oscal.catalog+yaml
     - uuid: 56910f41-0fca-45d4-a31c-34bff7ad1f99
       description: NIST Cybersecurity Framework 2.0
       rlinks:
-      - href: https://raw.githubusercontent.com/vendorsec/mvsp/oscal/nist/nist_csf_2.0/nist_csf_2.0-catalog.xml
+      - href: https://raw.githubusercontent.com/vendorsec/mvsp/master/oscal/nist/nist_csf_2.0/nist_csf_2.0-catalog.xml
         media-type: application/oscal.catalog+xml
-      - href: https://raw.githubusercontent.com/vendorsec/mvsp/oscal/nist/nist_csf_2.0/nist_csf_2.0-catalog.json
+      - href: https://raw.githubusercontent.com/vendorsec/mvsp/master/oscal/nist/nist_csf_2.0/nist_csf_2.0-catalog.json
         media-type: application/oscal.catalog+json
-      - href: https://raw.githubusercontent.com/vendorsec/mvsp/oscal/nist/nist_csf_2.0/nist_csf_2.0-catalog.yaml
+      - href: https://raw.githubusercontent.com/vendorsec/mvsp/master/oscal/nist/nist_csf_2.0/nist_csf_2.0-catalog.yaml
         media-type: application/oscal.catalog+yaml
     - uuid: d28cd03c-c7e0-4010-a8d6-7ff7998c3f2a
       description: Cloud Security Alliance - Cloud Controls Matrix v4.0.7
       rlinks:
-      - href: https://raw.githubusercontent.com/vendorsec/mvsp/oscal/csa-ccm/csa_ccm_4.0.7-catalog.xml
+      - href: https://raw.githubusercontent.com/vendorsec/mvsp/master/oscal/csa-ccm/csa_ccm_4.0.7-catalog.xml
         media-type: application/oscal.catalog+xml
-      - href: https://raw.githubusercontent.com/vendorsec/mvsp/oscal/csa-ccm/csa_ccm_4.0.7-catalog.json
+      - href: https://raw.githubusercontent.com/vendorsec/mvsp/master/oscal/csa-ccm/csa_ccm_4.0.7-catalog.json
         media-type: application/oscal.catalog+json
-      - href: https://raw.githubusercontent.com/vendorsec/mvsp/oscal/csa-ccm/csa_ccm_4.0.7-catalog.yaml
+      - href: https://raw.githubusercontent.com/vendorsec/mvsp/master/oscal/csa-ccm/csa_ccm_4.0.7-catalog.yaml
         media-type: application/oscal.catalog+yaml

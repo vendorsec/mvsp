@@ -811,11 +811,11 @@ catalog:
     - uuid: c8cd4cae-88ab-44b8-9dbb-d239686a9ff5
       description: MVSP-v3.0-20231109
       rlinks:
-      - href: https://raw.githubusercontent.com/vendorsec/mvsp/oscal/mvsp/mvsp-v3.0-20231109-catalog.xml
+      - href: https://raw.githubusercontent.com/vendorsec/mvsp/master/oscal/mvsp/mvsp_v3.0-20231109-catalog.xml
         media-type: application/oscal.catalog+xml
-      - href: https://raw.githubusercontent.com/vendorsec/mvsp/oscal/mvsp/mvsp-v3.0-20231109-catalog.json
+      - href: https://raw.githubusercontent.com/vendorsec/mvsp/master/oscal/mvsp/mvsp_v3.0-20231109-catalog.json
         media-type: application/oscal.catalog+json
-      - href: https://raw.githubusercontent.com/vendorsec/mvsp/oscal/mvsp/mvsp-v3.0-20231109-catalog.yaml
+      - href: https://raw.githubusercontent.com/vendorsec/mvsp/master/oscal/mvsp/mvsp_v3.0-20231109-catalog.yaml
         media-type: application/oscal.catalog+yaml
     - uuid: 2c83d391-6b75-443f-88e3-d95fd9aa0802
       description: MVSP-v3.0-20231109
