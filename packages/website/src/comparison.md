@@ -22,7 +22,14 @@ In order to provide context on how the MVSP controls align to common security st
 
 <img style="margin: 15px;" width=500 src="/images/mvsp_comparison_image.png">
 
-Using viewer.oscal.io you can view the comparison between MVSP and the standards listed above - [click here](https://viewer.oscal.io/?url=https://raw.githubusercontent.com/vendorsec/mvsp/master/oscal/mvsp/MVSP_v3.0-20231109-mapping-catalog.json)
+Using viewer.oscal.io you can view the comparison between MVSP and the standards listed above.
+
+<div class="mt-5 max-w-xs mx-auto sm:flex sm:justify-center md:mt-8">
+      <a href="[/mvsp.en/index.html](https://viewer.oscal.io/?url=https://raw.githubusercontent.com/vendorsec/mvsp/master/oscal/mvsp/MVSP_v3.0-20231109-mapping-catalog.json)"
+        class="w-full no-underline rounded-md shadow text-center py-3 border border-transparent text-base font-medium block text-white bg-cadillac-600 hover:bg-cadillac-700 md:py-4 md:text-lg md:px-4">
+        View Comparison
+      </a>
+</div>
 
 ### Contributions
 
