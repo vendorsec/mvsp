@@ -15,10 +15,13 @@ In order to provide context on how the MVSP controls align to common security st
 </div>
 
 <div style="text-align: right">
-      <sub></sub>The above viewer uses _viewer.oscal.io_ to display the comparison between MVSP and common standards.</sub>
+      <sub>The above viewer uses _viewer.oscal.io_ to display the comparison between MVSP and common standards.</sub>
 </div>
 
-<img align="center" style="margin: 15px;" width=500 src="/images/mvsp_comparison_image.png">
+<div>
+      <p><img style="float:right;margin:5px" align="right" width="500" src="/images/mvsp_comparison_image.png"></p>
+</div>
+
 
 ### Standards
 
