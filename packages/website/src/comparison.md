@@ -14,7 +14,9 @@ In order to provide context on how the MVSP controls align to common security st
       </a>
 </div>
 
-<p>The above viewer uses _viewer.oscal.io_ to display the comparison between MVSP and the standards listed below.</p>
+<div style="text-align: right">
+      <sub></sub>The above viewer uses _viewer.oscal.io_ to display the comparison between MVSP and common standards.</sub>
+</div>
 
 <img align="center" style="margin: 15px;" width=500 src="/images/mvsp_comparison_image.png">
 
