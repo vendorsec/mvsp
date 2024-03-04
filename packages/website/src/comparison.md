@@ -5,7 +5,20 @@ layout: page-narrow
 
 ## Comparison
 
-In order to provide context on how the MVSP controls align to common security standards, we have provided a comparison in OSCAL format between MVSP v3.0-20231109 <sup>(current)</sup> the following commonly used standards:
+In order to provide context on how the MVSP controls align to common security standards, we have provided a comparison in OSCAL format between MVSP v3.0-20231109 <sup>(current)</sup> the commonly used standards.
+
+<div class="mt-5 max-w-xs mx-auto sm:flex sm:justify-center md:mt-8">
+      <a href="https://viewer.oscal.io/?url=https%3A%2F%2Fraw.githubusercontent.com%2Fvendorsec%2Fmvsp%2Fmaster%2Foscal%2Fmvsp%2FMVSP_v3.0-20231109-mapping-catalog.json"
+        class="w-full no-underline rounded-md shadow text-center py-3 border border-transparent text-base font-medium block text-white bg-cadillac-600 hover:bg-cadillac-700 md:py-4 md:text-lg md:px-4">
+        View Comparison
+      </a>
+</div>
+
+The above viewer uses _viewer.oscal.io_ to display the comparison between MVSP and the standards listed below.
+
+<img style="margin: 15px;" width=500 src="/images/mvsp_comparison_image.png">
+
+### Standards
 
 *   ISO/IEC 27001:2013 [🔗](https://github.com/vendorsec/mvsp/tree/master/oscal/iso-27001_2013)
 *   ISO/IEC 27001:2022 [🔗](https://github.com/vendorsec/mvsp/tree/master/oscal/iso-27001_2022)
@@ -18,18 +31,6 @@ In order to provide context on how the MVSP controls align to common security st
 
 > All OSCAL catalogues and mapping files can be located [here](https://github.com/vendorsec/mvsp/tree/master/oscal)
 
-### MVSP Comparison
-
-<img style="margin: 15px;" width=500 src="/images/mvsp_comparison_image.png">
-
-Using viewer.oscal.io you can view the comparison between MVSP and the standards listed above.
-
-<div class="mt-5 max-w-xs mx-auto sm:flex sm:justify-center md:mt-8">
-      <a href="[/mvsp.en/index.html](https://viewer.oscal.io/?url=https://raw.githubusercontent.com/vendorsec/mvsp/master/oscal/mvsp/MVSP_v3.0-20231109-mapping-catalog.json)"
-        class="w-full no-underline rounded-md shadow text-center py-3 border border-transparent text-base font-medium block text-white bg-cadillac-600 hover:bg-cadillac-700 md:py-4 md:text-lg md:px-4">
-        View Comparison
-      </a>
-</div>
 
 ### Contributions
 
