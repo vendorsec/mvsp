@@ -5,7 +5,7 @@ layout: page-narrow
 
 ## Comparison
 
-In order to provide context on how the MVSP controls align to common security standards, we have provided a comparison in OSCAL format between MVSP v3.0-20231109 <sup>(current)</sup> the commonly used standards.
+In order to provide context on how the MVSP controls align to common security standards, we have provided a comparison in OSCAL format between MVSP v3.0-20231109 <sup>(current)</sup> and commonly used standards.
 
 <div align="center">
       <a href="https://viewer.oscal.io/?url=https%3A%2F%2Fraw.githubusercontent.com%2Fvendorsec%2Fmvsp%2Fmaster%2Foscal%2Fmvsp%2FMVSP_v3.0-20231109-mapping-catalog.json"
